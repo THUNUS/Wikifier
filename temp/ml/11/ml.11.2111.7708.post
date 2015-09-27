@@ -1,0 +1,9 @@
+<ref name="video" type="sai">Chapter 'Advice for applying machine learning': Evaluating a Hypothesis, minute 5:05</ref>
+
+I believe there is a mistake in a logistic cost function:
+
+Is:
+... + (1 - y) * log(h(x))
+
+should be:
+.... + (1 - y) * log(1 - h(x))

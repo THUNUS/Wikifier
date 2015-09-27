@@ -1,0 +1,1 @@
+In <ref name="video" type="sci">Video 12.5, "Kernels II"</ref>, Prof. Ng said that each training example is used to create a landmark. Is this approach practical if the training set is very large? For example, what if the training set contains 10 million examples?

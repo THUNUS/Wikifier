@@ -1,0 +1,1 @@
+In the example code, EPSILON is 0.12 and I'm struggling to mathematically justify your last comment. We're only talking about the min and max of a range of real numbers. Do you suppose that +0.1 is approximately equal to +0.001? Thats the same difference in weighting as between 1 and 100.

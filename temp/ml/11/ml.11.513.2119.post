@@ -1,0 +1,3 @@
+He was describing a case where a quadratic function was used as a model for housing prices. The graph of the function fit the training set reasonably well, but being the graph of a quadratic function (with a negative coefficient), towards positive infinity the graph would "come down" again. With quadratic functions, there's no way around that.
+
+He used that as an illustration for the necessity to choose a model that actually matches the problem. I believe he suggested a higher order polynomial, or even something like $$1-\lambda e^{1/x}$$. Anything with a constant asymptotic behavior for $$x \rightarrow +\infty$$

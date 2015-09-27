@@ -1,0 +1,2 @@
+The in-video quiz reads "Predict y=0 if $$\$\$$$h_\theta(x)".
+I assume it should be "Predict y=0 if $$h_\theta(x)$$ < threshold".

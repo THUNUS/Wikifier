@@ -1,0 +1,3 @@
+Though this isn't technically possible due to the nuances of floating-point arithmetic, you would presumably end up with a case  where the set of local optima form a continuous line/plane/hyperplane/etc.  Our intuition suggests that there isn't any single line of regression that is of much use here, which matches with the idea that the graph of the cost function is flat.
+
+The algorithm (ignoring again the nuances of floating point arithmetic) has no particular problem with this and will simply not move through the entire iteration, as a flat plane has gradient 0 everywhere.

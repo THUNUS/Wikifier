@@ -1,0 +1,3 @@
+I think you can of course use a NN with 2 outputs as you describe and get good results.  The question is if this would provide any better performance.  I suspect that for the binary classifier case, the performance should be about the same for both since we are still talking about a single decision boundary.  It would be an interesting test to try them both.
+
+Note also, by experimentation, we have also shown that it is possible have B=ceil(log2(K)) outputs to classify over K possible classes.  i.e., consider the output to be a B-bit number.  Probably this DOES have performance disadvantage for K>2 since now there are fewer, but more complicated decision boundaries to be created.    

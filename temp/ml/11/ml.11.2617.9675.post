@@ -1,0 +1,13 @@
+Hi all,
+
+To produce the projection of vectors in X onto the eigenvectors given by the svd() function, we simply do
+
+Z = X * U(:, 1:K);
+
+More specifically, to project a vector u (size n x 1) onto another vector v (n x 1), we simply do
+
+projected_vector = u' * v;
+
+My question is: what is the mathematical theory behind the above method?
+
+Thanks!

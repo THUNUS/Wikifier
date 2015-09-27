@@ -1,0 +1,25 @@
+<button id = "b1" onclick="get()">
+click me!
+</button>
+<p id = "p1"></p>
+<script type="text/javascript">
+	function get(){
+		var xhr = new XMLHttpRequest();
+		xhr.onreadystatechange = function(){
+			if(xhr.readyState == 4 && xhr.status ==200 ){
+				info = xhr.responseText;
+				 document.getElementById("p1").innerHTML = xhr.responseText;
+			 	 alert("info:"+info);
+		}
+	}
+	var hosturl = "http://127.0.0.1:8000/";
+	var coursename = "shit";
+	var url_course = hosturl+"courseInfo/"+coursename+"/";
+	alert(url_course);
+
+	xhr.open("GET",url_course,true);
+	xhr.setRequestHeader('Content-Type','application/xml');
+	xhr.setRequestHeader('Access-Control-Allow-Origin','http://127.0.0.1:8000');
+	xhr.send();
+			}
+</script>

@@ -1,0 +1,1 @@
+Look at it this way: in the lectures Prof. Ng talks about how with the bowl-shaped surface the effective step size automatically scales down as you approach the minimum, even when alpha is constant. But with an abs() function the surface would be V-shaped and the step size constant even into the "nook"--so wouldn't it just rattle around in there?

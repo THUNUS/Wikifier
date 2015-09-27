@@ -1,0 +1,3 @@
+Minor mistake in VII Regularization / Regularized Logistic Regression Lecture
+
+3:50 Prof.Ng says "Gradient descent for regularized *linear* regression" - presumably he means logistic

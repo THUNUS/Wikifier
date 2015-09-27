@@ -1,0 +1,3 @@
+Hello, I have a question on K mean clustering.  In <ref name="lecture" type="sai">the lecture Optimization Objective</ref> we learn that K mean algorithm is just trying to minimize the distortion function J with regard to mu s and c_i s. But I don't understand why this is really the case as in the algorithm we are minimizing wrt c_i keeping mu constant and then wrt mu keeping c_i constant etc... I assume my question is imagine you have a function of 2 variables x,y J minimizing J on both x and y is not the same thing as minimizing on x keeping y constant and then on y keeping x constant (and looping) or am I wrong ?
+Thanks a lot
+Alex

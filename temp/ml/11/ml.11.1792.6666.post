@@ -1,0 +1,17 @@
+Hi,
+
+I am still coping up with the lesson due to busy schedule. 
+
+Here's my simple question:
+ I have this code from <ref name="video" type="sai">the video</ref>
+
+octave-3.2.4:56> while true,
+> v(i)=999;
+> i=i+1;
+> if 1==6,
+> break;
+> end;
+> end;
+
+yet I forgot to initialize the value of i. I should have i=1. When I run the code, it didnt do anything. How can I go back and edit it so that I can initialize the value of "i"? 
+

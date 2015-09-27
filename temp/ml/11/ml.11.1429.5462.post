@@ -1,0 +1,7 @@
+I believe there is an error in <ref name="video" type="sci">the "Backpropagation Intuition" at 4:50</ref>. I believe it should say in cyan color (underlined):
+
+$$ z_1^{(3)} = \color{magenta} {\Theta^{(2)}_{12} \cdot a^2_2} + \color{red} {\Theta^{(2)}_{11} \cdot a^2_1} + \underline{\color{cyan} {\Theta^{(2)}_{12} \cdot a^2_2}}$$ 
+
+instead of
+
+$$ z_1^{(3)} = \color{magenta} {\Theta^{(2)}_{12} \cdot a^2_2} + \color{red} {\Theta^{(2)}_{11} \cdot a^2_1} + \underline{\color{cyan} {\Theta^{(2)}_{12} \cdot a^2_1}}$$ 

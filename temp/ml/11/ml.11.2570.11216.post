@@ -1,0 +1,3 @@
+Not sure if anyone is coming back to this course as it ended a while ago, however, I did not have a time to go through it until last week..
+I would say a good way to handle the reviews would be to add another algorithm, to weigh the reviews according to their age. So older reviews would weigh less then newer. 
+Another problem that for example Netflix might deal with is that the reviews are coming from multiple users (whole family is sharing one account) so they might be highly inconsistent. A solution would be to add multiple profiles per account, maybe with an automatic recognition of the user within a single account.

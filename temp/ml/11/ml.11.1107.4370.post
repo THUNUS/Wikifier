@@ -1,0 +1,11 @@
+In the slides/lecture on Back Propagation Intuition, the informal cost function was defined as
+
+cost( i ) = y( i ) log Htheta ( x( i ) ) + (1 - y( i ) ) log Htheta ( x( i ) )
+
+In logistic regression, the second multiplicand in the second term of the cost function was always " log ( 1 - Htheta ( x( i ) ) ) ".
+
+For Back Prop, should these cost functions read as follows?
+
+cost( i ) = y( i ) log Htheta ( x( i ) ) + (1 - y( i ) ) log ( 1 - Htheta ( x( i ) ) )
+
+If not, could you explain why this last term has changed form relative to logistic regression?  Thanks!

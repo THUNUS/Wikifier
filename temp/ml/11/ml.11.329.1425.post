@@ -1,0 +1,9 @@
+Dear Sir/TAs,
+
+I realised there may a minor Notational Typo/Error in (<ref name = "video" type = "sci">Video 4 - 6 - Normal Equation</ref>) at 8th min.; or <ref name = "slide" type = "sci">slide No. 26 of docs_slides_Lecture4.pdf</ref>
+
+The no. of training examples is m and uses as superscript in parenthesis. So, while introducing the design matrix X in the example, by mistake this is put as subscript [reserved for feature no. which is only one feature in this case].
+
+Can you kindly confirm?
+
+Thanks & Regards

@@ -1,0 +1,7 @@
+Two formulas for â€œcovariance matrixâ€ are shown in <ref name="video" type="sai">this video</ref>:
+
+$$\Sigma=\frac{1}{m}\sum\limits_{i=1}^n (x^{(i)})(x^{(i)})^T$$
+and
+$$Sigma=\frac{1}{m}\sum\limits_{i=1}^m (x^{(i)})(x^{(i)})^T$$
+
+In the first formula there must be $$m$$ instead of $$n$$. The second formula is correct.

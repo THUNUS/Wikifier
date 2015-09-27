@@ -1,0 +1,1 @@
+I think those are good approaches, but I'm mostly interested in how these transformations will impact gradient descent. The lecture implied that the algorithm might converge slowly if outside [-3,3], and I am wondering if that is a strict rule or a flexible rule. Perhaps someone with experience running gradient descent with noisy data would care to chime in.

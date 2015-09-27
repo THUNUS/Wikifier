@@ -1,0 +1,1 @@
+In <ref name="video" type="sci">video of normal equation, concretely at about 8 minutes</ref>, when illustrating examples about design matrix, Prof. Ng seemed to make an mistake. The superscript and subscript for elements in X should be swapped. The subscript should be 1 and superscript should be from 1 2 ... m. Please check this out.

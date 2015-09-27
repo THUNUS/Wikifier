@@ -1,0 +1,1 @@
+In <ref name="video" type="sci">Video 16.2</ref>, Prof. Ng says we can drop the constant 1/m^(j) from the objective function without changing the result, in order to simplify the notation. While we're at it, why don't we also drop the constant 1/2 from both the main term and the regularization term? This would further simplify the notation.

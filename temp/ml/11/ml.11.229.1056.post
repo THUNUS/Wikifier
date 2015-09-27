@@ -1,0 +1,1 @@
+If we do Feature Scaling using one of the methods discussed in <ref name="video" type="mai">the videos</ref> (lets say, we divide by max).  My question is for performing prediction base on a new instance, for example - for predicting price of a new house, do we also scale that? If yes, how does one go about doing that? 

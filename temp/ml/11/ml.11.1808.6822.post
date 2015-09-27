@@ -1,0 +1,27 @@
+Well, *any* set of numbers can describe a "space".  :).  And in this case, theta and A are essentially interchangeable, no?
+
+Seems to me that random initializations also create a bias, just a random one rather than a regular one.
+
+In any layer but the first, the nodes are symmetric, so a bias on those nodes isn't particularly relevant, as far as I can see.  Put another way....
+
+Let's start with a degenerate neural network.  With zero inputs, the network isn't interesting, as the output must be constant, regardless of the number of layers or outputs.  With zero layers, we have an empty set and no network to speak of at all - also uninteresting.  Also, zero outputs isn't very interesting as it wouldn't do much aside from turning electricity into heat.  :).
+
+With one input, the network is similarly uninteresting as any outputs must be a relatively simple function of the input, perhaps shifted by a bias.
+
+With only one layer, regardless of the number of inputs, we have a degenerate neural network in which the outputs *are* the inputs.  Still not very interesting.
+
+The first interesting case is with N inputs, (N > 1), at least one output which is not necessarily a direct copy of the inputs, so at least 2 layers.  This degenerate neural network is our basic logistic regression.
+
+Apply M logistic regressions in parallel, and we have an N input, (N > 1), M output, (M > 0), 2 layer neural network.  Also effectively our one-vs-all classifier.  In this case, the order of the inputs isn't relevant nor is the order of theta.  They can all start at zero since they're working towards presumably different outputs, they'll generate different thetas.  (If they are the same outputs, they'll generate identical thetas, which is fine and correct).
+
+If we add a third layer, our first hidden layer, and, for fun, let's make it a single node...  then the single hidden node is functionally indistinguishable from our earlier logistic regression, and the outputs, (regardless of number), are largely uninteresting as their output can only be simple linear functions of that single hidden node.  Also, symmetry of the hidden node(s) still isn't important.  And similarly with any number of layers, so long as any hidden layer includes a single node.  (Any layer with zero nodes is so degenerate as to be totally uninteresting, although I think it begs the question of what might happen if you had an infinite number of layers bounded perhaps by zero node layers...)
+
+The first time symmetry becomes relevant is when we add the second node to any hidden layer.  At that point we need them to start different or they will end up computing the same values redundantly.
+
+My earlier analogy was with parallax of stereoscopic vision.  If they start from the same place, then a) they don't provide any different information and b) their discrepancy provides no information.  No matter how we make them different, we introduce a bias on a per-node basis.  I think that the best we can do is to create a bias such that sum of the biases over the nodes in the layer is zero.  A (flat) random distribution will have a norm around zero, and a regular distribution will necessarily be zero.  Any distribution which does not, is either not flat, or is not (linearly) regular.
+
+Let's consider a 3 layer neural network, 2 inputs, 2 hidden nodes, and 2 outputs.  In the case where the 2 hidden nodes are completely biased to inputs 1, and 2 respectively, the hidden layer becomes a sort of "pass through" of the inputs.  It's not biased.  It's symmetrical, although perhaps not very useful.  That is, a(2, 1) = 1 * a(1, 1) + 0 * a(1, 2) and a(2, 2) = 0 * a(1, 1) + 1 * a(1, 2).
+
+Now shift the input balance by an infinitesimal delta towards each other.  That is, a(2, 1) = (1 - delta) * a(1, 1) + (0 + delta) * a(1, 2) and a(2, 2) = (0 + delta) * a(1, 1) + (1 - delta) * a(1, 2).  They're still symmetric, but now they are producing much more interesting information.  Pick a value of delta.  Seems to me there's room for some optimization on the partials around delta as well.
+
+I think that regularlized seeds only produce symmetric output if the problem domain is symmetric.  It's not "symmetry" that needs to be broken on the hidden layers, it's identicality.

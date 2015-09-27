@@ -1,0 +1,21 @@
+Here's my thought.
+
+1. Are the problems of high bias or variance essentially problems of model complexity which, as such, can be addressed by actions that attempt to control model complexity?
+
+  Basically, I think the answer is yes.
+
+  High bias is the issue of properly expressing algorithmic solution to the problem. If your model can capture the features and express the reasoning that humans needs to do for classification, then bias will disappear. For example, one may not  be able to build two layer neutral network which can solve XOR even if he/she adds many parameters to it. 
+
+  But for variance, we're controlling it using regularization which tries to find the simplest answer.
+
+2. And can factors such as the regularization parameter Î» or the # of features be seen as controlling model complexity? 
+
+  Yes
+
+3. Besides, if you donâ€™t mind my asking, are there compact definitions of model complexity, which can be used when experimentally trying to assess and improve model performance?
+
+  I think you may find useful information at http://en.wikipedia.org/wiki/Regularization_(mathematics) . There are many ways to impose Occam's razor as the wiki says. One that we used for linear regression is http://en.wikipedia.org/wiki/Tikhonov_regularization.
+
+4. Is there a model-complexity measure related to the misclassification (generalization) error?
+
+  There's http://en.wikipedia.org/wiki/Mean_squared_error which basically connects the sum of bias + variance with error. But I'm not sure if one can call that as model complexity.

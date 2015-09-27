@@ -1,0 +1,6 @@
+I think there an 'i' missing in the sub-notation of the theta squared in the regulation term of the cost function <ref name="slide" type="sci">on top of slide 5</ref> of <ref name="lecture" type="sci">lecture 9 "Neural Networks: Learning - Cost function"</ref>
+
+i.e.it should read " theta sub ij, sup (l) squared"
+
+
+

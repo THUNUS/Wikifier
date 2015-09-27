@@ -1,0 +1,7 @@
+Hi,
+In PCA algorithm, when calculating the Ureduce matrix, the lecture says to pick the "first" k columns in the U matrix.
+I was wondering if there is any difference if I not use the first vectors, but other k vectors? 
+Can this lead to an improvement of the Dimension reduction in any way for some cases?
+thank you
+Carlos
+

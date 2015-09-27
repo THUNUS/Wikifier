@@ -1,0 +1,8 @@
+I was wondering about it the same. Then I looked at the expression for the cost function and noticed that the regularization term is directly added to cost. So it's a kind of "extra" cost or penalty, where lambda is the factor.
+
+Now if you rememeber that we need to minimize the cost. With a large lambda the cost balance shifts towards the regularization term. So to neutralize the effect of lambda (see the expression for the regularization term) the only way is to decrease the parameters (theta). The sum of parameter squares is a kind of "counter"-lambda.
+
+To see this on the example -- look in ex2_reg.m, where the lambda can be varied before calling fminunc. Set it to 0, 1, 100 each time running-through and dumping out theta.  You'll see that the parameters essntially are scaled by lambda, getting smaller ~ 10^-2 when lambda = 100.
+
+Amazingly simple yet effective technique!
+

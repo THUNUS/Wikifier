@@ -1,0 +1,1 @@
+I don't think there is a single measure for precision/recall in the multiclass scenario, because now there can be different types of errors (for example, class A being misclassified as C is different from class A being misclassified as B).  That's why I suggested showing the confusion matrix, because there isn't a single pair of numbers that can fully quantify the errors.

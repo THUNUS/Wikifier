@@ -1,0 +1,12 @@
+In the videos, he will often refer to $$h_\theta (x) = \theta' * x$$
+
+However... this seems incorrect to me, for example,
+
+$$\theta = [1;2;3]$$
+$$X = [1 2 3;4 5 6;7 8 9;10 11 12; 13 14 15]$$
+
+then $$\theta' * X$$ gives you: ***error: operator *: nonconformant arguments (op1 is 1x3, op2 is 5x3).***
+
+Concretely... [lol...] I would think it should be $$h_\theta(X) = sum( X * \theta )$$...
+
+am I missing something?

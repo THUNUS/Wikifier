@@ -1,0 +1,11 @@
+Dear Lingliang Zhang, I have found onr tricky solution to handle file format problem.
+
+Here is what I did:
+
+Just download programming execise ex1.zip from View Instructions page on Programming Exercise page. Once downloaded, just unzip it and follow instructions to run and submit WarmUpExercise as explained in <ref name="video" type="sci">short video 5-7</ref>. It should be okay.
+
+Now just copy WarmUpExercise and click paste on same directory/folder and you will get a copy of original file, open this copy modify code with your own code and change name of file to match with function name (in my case I used 'squareFn') and then save. Now run your function from octave, and I hove it will work. 
+
+Please let me know if anybody need further help.
+
+Regards

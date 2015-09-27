@@ -1,0 +1,15 @@
+Thanks Andrew: I think I get it. So, when Andrew referred to those vectors, (1,0,0,0), (0,1,0,0), (0,0,1,0), (0,0,0,1), they were the TARGETS of the neural network not the inputs. My bad there. I was confused for sure I thought he was saying that those were the inputs ( the x_i's ) which made no sense to me. Thanks a lot for clearing that up !!!!!
+
+One last clarification: So the output in this example would need to be be 4 neurons , and each neuron output would be one of the digits (0 or 1) so that the 4 outputs together end up being one of the four above ( i.e: either (1,0,0,0), or (0,1,0,0) or (0,0,1,0) or (0,0,0,1)  ) ?  Thanks so much.
+
+
+
+
+
+
+
+
+
+
+
+

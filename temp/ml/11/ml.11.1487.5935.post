@@ -1,0 +1,7 @@
+On <ref name="slide" type="sci">page 12</ref>, I would have expected the $$cost(i)$$ function to be
+
+$$
+cost(i) = y^{(i)} log(h_\Theta( x^{(i)}) ) + (1 - y^{(i)} ) log(1 - h_\Theta( x^{(i)} ) )
+$$
+
+I.e the last part is $$ log(1 - h_\Theta( x^{(i)} ) ) $$ instead of $$ log( h_\Theta( x^{(i)} ) ) $$ as stated on the slide.

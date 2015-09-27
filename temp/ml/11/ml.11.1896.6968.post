@@ -1,0 +1,6 @@
+Hi everyone, 
+
+I'm a little confused about the plot of  $$J(\Theta)$$ in the video as it took on negative values. If I understand the equations correctly, the values of $$ J(\Theta) $$ are necessarily non-negative: the result of a sigmoid function maps to $$0\leq y \leq 1$$ a log over $$y$$ should produce negative number, the sum of those should also be less than $$0$$ and the result is multiplied by $$-\frac{1}{m}$$ should produce a non-negative number. 
+
+Thanks for your help! 
+Stefan 

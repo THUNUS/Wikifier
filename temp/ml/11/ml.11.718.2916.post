@@ -1,0 +1,9 @@
+Hi all
+
+Just watched a few of the Neural Networks lecture.  There is a point in the notation which is confusing me greatly, which appears in the in lecture question of lecture 4 "Model Representation II".  
+
+Say there are $$n$$ number of inputs $$x_{0}, x_{1}, x_{2}....x_{n}$$, the lecture says the vector $$x$$ is n+1 dimensional and denotes this with $$x \epsilon \mathbb{R}^{n+1}$$.  
+
+Isn't this incorrect? x is only a ONE dimensional vector with n+1 elements? $$\mathbb{R}^{2}$$ would be a TWO dimensional matrix square-like matrix which his n x m elements and $$\mathbb{R}^{3}$$ would be a THREE dimensional cube-like matrix with n x m x k elements?
+
+Thanks a lot!

@@ -1,0 +1,1 @@
+The gradient descent technique is used to find the parameters of logistic regression method. Is there any normal  equation solution for the problem so that the parameters can be found without an iterative method?

@@ -1,0 +1,1 @@
+One example is text-based data. If your features are all the words used in a book or on a web page, then the total number of features will be the number of all the words that appear in all of your training data, which can be an enormous number. 

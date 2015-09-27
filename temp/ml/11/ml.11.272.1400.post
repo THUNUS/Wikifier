@@ -1,0 +1,7 @@
+You're right, that's one problem that can occur, and the trick is to detect the problem and change your initial conditions.
+
+Remember that gradient descent, in general, is not guaranteed to give you the global minimum on first attempt. We've just been considering a particular example which happens to be rather well behaved, a paraboloid. And parabolas will descend to the global minimum regardless of the initial conditions. I suspect Andrew picked this setup to make it easy on us while we learn. 
+
+Once you consider more complicated situations---cost functions which can have local maxima and minima---then the doors are opened to all manner of funky problems. So you really have to watch over the algorithm like a hawk to make sure it's working right. 
+
+Regression analysis is 1% pressing "run", and 99% plotting, testing, re-estimating, diagnosing, re-running, plotting, testing ...

@@ -1,0 +1,13 @@
+<ref name="slide" type="sci">Lecture about choosing the number of principal components, **docs_slides_Lecture14**, page 25</ref>, correct from
+
+$$
+\frac{\sum_{i=1}^k S_{ii}}{\sum_{i=1}^m S_{ii}} \ge 0.99
+$$
+
+to
+
+$$
+\frac{\sum_{i=1}^k S_{ii}}{\sum_{i=1}^n S_{ii}} \ge 0.99
+$$
+
+Thanks.

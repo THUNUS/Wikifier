@@ -1,0 +1,4 @@
+I'm not as far in the lectures and cannot comment on the particular cost function, but your statement *"Two different functions cannot have the same gradient."* is incorrect. Remember that any constant in a function does not have an influence on the derivative, as the derivative of a constant is always zero. This is apparently also known as the [constant of integration][1] which plays a role in case of the [antiderivative][2], i.e., the inverse operation of computing the derivative of a function.
+
+  [1]: http://en.wikipedia.org/wiki/Arbitrary_constant_of_integration
+  [2]: http://en.wikipedia.org/wiki/Antiderivative

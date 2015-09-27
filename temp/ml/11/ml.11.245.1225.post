@@ -1,0 +1,9 @@
+ 1. The transformation (scaling) does not have to be linear. It can be logarithmic or taking a square root or whatever depending on a particular situation. For example, squaring X sometimes helps to normalize a negatively skewed data set.  See [Linear statistical models. Data transformations][1] for more examples.
+
+ 2. Outliers make some methods of  feature normalization non-reliable. For instance, max-min normalization [ (value - mean) / range ] will not work very well because the range, i.e. max-min, is sensible to outliers. You should check  a sound textbook or - most preferably - an experienced statistician to find out  how a particular transformation deals with outliers.
+
+ 3. Regardless of the way one chooses to transform their data, I think it is desirable to keep the relative order of data points. In the case of US income, I would expect that the upper tail of the distribution will be quite different from the majority of data points after any reasonable transformation. So I am not surprised that most data entries "gathered" around -3.
+
+ 4. As far as I understand the lecture videos, the recommendations about [-3, 3] are given from the "gradient descent viewpoint".  So the intent is to make the gradient descent to work in the most optimal way.  Your situation may be different, and then you will take other considerations into account. Say, another algorithm may be more applicable than the batch gradient descent.
+
+  [1]: http://www.philender.com/courses/linearmodels/notes1/trans1.html

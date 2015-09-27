@@ -1,0 +1,15 @@
+I understand that mean-normalization is important; it translates the center of gravity of the data to the origin. When fitting to a subspace of a lesser dimension, that subspace conveniently passes through the origin. This way we can think of the sub-space as a vector space, i.e. it contains the null vector. (Have you noticed, in the video lectures,  that when Prof. Ng illustrates PCA by fitting some points in 2D to a line, that line "conveniently" passes through the origin?) 
+
+But why do we divide by the standard deviation? When applying different scales to each dimension, angles are not preserved. In particular, orthogonality is lost, so, after "de-scaling",  you end up with a non-orthogonal projection of the data onto the sub-space. The non-orthogonal projection of a vector onto the sub-space is not the nearest  point to the vector in that sub-space.  
+
+However, if we apply a different metric than the Euclidian metric, then this non-orthogonal projection might well be the nearest point. I.e., instead of defining the distance between to points $$x$$ and $$y$$ as:
+$$\sqrt{ (x_1 - y_1)^2+\ldots+(x_n -y_n)^2}$$ we use a "weighed distance metric" $$\sqrt{ w_1^2(x_1 - y_1)^2+\ldots+w_n^2(x_n -y_n)^2}$$. Intuitively, weighing the features differently makes sense. Suppose I apply PCA to my pastry recipes (my objective is to go to the next [Meilleur Ouvrier de France][1] competion with 2-3 jars of pre-mixed dry ingredients from which I can compose all my favorite pastries :-))
+
+If my ingredients are off by one table spoon of flour, then that is not a big deal. If they are off by one table spoon of salt, then oh, la, la! In both cases the Euclidian distance is off by the same amount. It makes sense to weigh the salt more heavily, and $$1/\sigma$$ may work well for that purpose. 
+
+I have a lot of good things to say about this ML course, but one thing bothers me, and that is how it systematically skips over "inconvenient" details to keep things simple. The fact that the data in the examples conveniently are centered on the origin, is one example. Looking at the programming assignment, there is no mention (or code) related to "de-normalization". It takes a clever eye to detect that coordinates in the figure that illustrates the result of PCA are not the same as for the given data; otherwise the distribution of the data in the two figures look identical. When applying PCA to face pictures, pictures are miraculously reproduced without applying any de-normailzation. It turns out that de-normalization step is buried in the displayData function, which we are not required to study. This is not only deceiving, it is bad programming practice.
+
+
+
+
+  [1]: http://en.wikipedia.org/wiki/Meilleur_Ouvrier_de_France

@@ -1,0 +1,6 @@
+Hi Philip: Just one question ( and I will read your notes. First I'm sending to the store  to get them in a binding. It's amazing what you did ). When Andrew calculates the error of the output neuron, using, delta_4 = a_4 - y say, , is he assuming that y_i is always zero or one ? This would seem to be the case, since you said above that a_i at the output neuron is the output of the sigmoid function.  Thanks.
+
+
+                                                                                                                      Mark
+
+

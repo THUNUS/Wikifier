@@ -1,0 +1,5 @@
+I'm not sure if this answers your question. But the cost isn't (x - y)^2 it's SUM over i{ ( h(x)i - yi )^2}.  h(x) = theta_0 + theta_1*x. If theta_0 is 0 and theta_1 is 0 you get:
+
+(0 + 0*1 -1)^2  + (0 + 0*2 -2)^2 + (0 + 0*3 -3)^3. = 1^2 + 2^2+3^2.
+
+Does that make sense?

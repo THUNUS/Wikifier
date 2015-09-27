@@ -1,0 +1,6 @@
+Even, towards the end of the lecture, the video tells that the Error terms for Unit j in layer L is simply the weighted sum of the Error Terms of Layer (L+1) with weights being the Theta values, but earlier equations told that the Error term is the element wise product of the above weighted Sum with the derivative of the sigmoid function evaluated at corresponding z values. 
+
+What I want to say here, is that the intuition of the back Propagation algorithm is missing few parameters (or atleast that's what I understood). Am I missing something here ??? Any help here would be greatly appreciated !.
+
+Also, didn't capture the notion of the error term being the partial derivative of the cost function w.r.t the z values, As in shouldn't y(i) be featuring somewhere there, since errors are mostly a function of the observed value and the calculated value ??
+

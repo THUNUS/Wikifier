@@ -1,0 +1,2 @@
+In the question for <ref name="video" type="sci">Video 3 of Sectin X (Model Selection Training, Validation, Test Set)</ref>, it states that we would expect to see Jcv lower than Jtest, and asks why.  I don't think this is correct.  In general, Jcv would be higher due to its role in selecting the model, and I would expect Jtest to be lower.  Of course this is "in general" and not 100% of the time, but rather averaged over many runs.  This is even mentioned in the lecture when Dr. Ng discusses Jcv is still an overly optimistic estimate of model behavior.
+

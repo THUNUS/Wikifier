@@ -1,0 +1,12 @@
+If the learning rate $$\alpha$$  is too big, we see in <ref name="video" type="sai">the video</ref> the gradient descent may diverge. 
+But we also know that for any step in gradient descent, if the cost function increase instead of decreasing comparing to the previous step, then we know that the learning rate was too big.
+
+So to choose an optimal learning rate, what about:
+
+- starting with a "big" value of $$\alpha$$
+
+- if first step of gradient descent make the cost function increase, then take $$\alpha / 2$$ instead and retry
+
+and we pick the first $$\alpha$$ that makes the cost function decrease.
+
+would that work to pick a "good" learning rate dynamically? would that always converge (at least in the case of linear regression)?

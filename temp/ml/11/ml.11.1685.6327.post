@@ -1,0 +1,1 @@
+Even where there's only 1 class, there's really 2. For example, if the class is 'dog', the classification is either 'dog' (ie output near 1) or 'not dog' (ie output near 0). So 1 class and 2 classes are interchangeable.

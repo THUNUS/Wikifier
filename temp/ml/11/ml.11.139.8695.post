@@ -1,0 +1,3 @@
+I'm voting with Matt. Also, those of you focussed on coding efficiency, squares were being used in regression well before computers came along.
+
+The main advantage of squares before computers is the calculus answer very early in the discussion. Absolute value does not have continuous derivatives. This means there is no way to create an equation that will guarantee you the minimum. Sure, you can do it by trial and error (as we do with gradient descent), but the 'Normal Equation' (lecture IV) has no equivalent for an absolute value cost function. If you don't have a computer, trial and error is not a particularly workable solution method.

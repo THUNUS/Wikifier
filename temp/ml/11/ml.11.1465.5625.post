@@ -1,0 +1,5 @@
+I think I understand this pretty well, but I just want confirmation that others might have the same question.
+
+If the decision boundary is the boundary that separates the regions x of the R2 where h(x)>0 from those where h(x)<0, then it is possible that the regions where h(x)>0 are not connected.  This makes sense mathematically, but I'm curious how you discover such a characteristic in the dataset PRIOR to designing the model structure? In the case where there are 2 features, it's easy enough since you can visually see it in a plot (if x1 is feature 1, x2 is feature two, and you use "X" or "O" to denote "success" or "failure" in the plot, such clusters become apparent.)
+
+But how do you discover such a relationship in higher dimensions????

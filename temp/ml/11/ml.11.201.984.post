@@ -1,0 +1,9 @@
+To calculate a partial derivative with respect to a variable x, pretend all other variables are constants and calculate the single variable derivative. For example, the single feature linear regression cost function, with one training example (m = 1), is:
+
+$$J(\theta_0, \theta_1) = (1/2) \cdot (\theta_0 + \theta_1x_1 - y_1)^2$$
+
+The partial derivative with respect to $$\theta_1$$ pretends that $$\theta_0$$ is a constant, so that when we apply the chain rule, we get
+
+$$\displaystyle\frac{\partial}{\partial \theta_1}J(\theta_0, \theta_1) = (1/2) \cdot 2 \cdot (\theta_0 + \theta_1x_1 - y_1) \cdot \frac{\partial}{\partial \theta_1}(\theta_0 + \theta_1x_1 - y_1) = (\theta_0 + \theta_1x_1 - y_1) \cdot x_1$$
+
+If it helps, think of $$\partial/\partial\theta_1$$ as $$d/d\theta_1$$. That's how you calculate it.

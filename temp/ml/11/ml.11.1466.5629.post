@@ -1,0 +1,7 @@
+I don't understand the difference between the "cross-validation set" and the "test set". Seems like just a naming convention for this course. Isn't it just k-fold cross-validation with k == 2? As I understand it we break the data up into k+1 groups (3 in the case of the lectures), training + k validation groups:
+1) Training set: used to train some aspect of the algorithm by minimizing the error (e.g. a set of theta)
+2) Test set: used to to train another aspect of the algorithm by minimizing the error (e.g. order of polynomial if we are using a polynomial)
+3) CV set: used to train another aspect of the algorithm by minimizing the error (e.g. regularization parameter)
+
+However, we could keep going like this and just increase the number of cross-validations. Is there a real difference between the cross validation set and the test set or are they just words? Seems to me, any partitioned set is a CV set. More than likely I'm missing something. Please explain.
+Thanks

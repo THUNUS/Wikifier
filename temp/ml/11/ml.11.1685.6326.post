@@ -1,0 +1,4 @@
+In <ref name="video" type="sai">the cost function video of neural network</ref> k is written to be as the number of classes.<br>.
+But at the same time we say binary classification has k=1 shouldnt it be k=2.<br>
+if that is so what is the case of k=2.<br>
+multiclass classification is k>=3.<br>

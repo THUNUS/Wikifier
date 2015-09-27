@@ -1,0 +1,1 @@
+The first video lecture of week 2 (at 8 minutes mark) has the note for theta transpose matrix [theta0, theta1, ... theta n] as (n+1)x1 matrix.  It should be 1x(n+1) matrix.

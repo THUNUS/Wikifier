@@ -1,0 +1,7 @@
+I think step is more correct than rolling because the variable update is discrete, not continuous. The steps are not of equal size, but there wasn't any claim that they would be.
+
+Perhaps this is a separate question, but I was wondering what happens in the unfortunate circumstance that we initialize at exactly a local maximum. The derivative will be 0, so step size is 0, so the algorithm terminates at the maximum. I'm sure there are ways around this, so I'll keep an eye out.
+
+Thanks,
+
+Damien

@@ -1,0 +1,9 @@
+I have now watched all the videos in this section and have a conceptual problem with the collaborative filtering approach. Basically, I would question whether the underlying dataset is not suitable for the purpose for which it is being used.
+
+As a concrete example, consider books as the product. For me, a book will receive a high rating if it has two things - interesting content and good writing. More importantly, a book will receive a low rating if it has suitable content but is poorly written. If it doesn't have suitable content, it won't have have a rating at all (from me) because I won't have read it. I obviously only read (and rate) books that I expect to be interested in. This factor is even stronger now that I do things like download the first chapter for fiction, or look at random pages for nonfiction.
+
+It seems to me that a more useful approach might be something like a social network clique analysis. Each edge represents 2 books that receive the same (or very close) ratings from the same user, or have simply been bought by the same person. The edge weights would have to be normalised by the total number of ratings/purchases for the two books at the end of the edge (so the edge weight is sort of the share of common ratings/purchases). The predicted rating for any book would then be the average of ratings that user has given to books within the clique.
+
+I'm not massively convinced by my proposed approach. I'd be interested in whether other students think this is a problem, and any other approaches that might work.
+
+BTW, in statistics at least, a type 0 error is where the right answer is given to the wrong question.

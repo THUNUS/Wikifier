@@ -1,0 +1,9 @@
+Now I'm trying to do the programming exercise I realise I didn't really understand the lecture on implementing gradient descent.
+
+When updating theta1 the partial derivative term is $$\frac{1}{m}\Sigma (h_\theta (x^{(i)})-y^{(i)}).X^{(i)}$$
+
+Is that $$.X^{(i)}$$ term on the end within the summation?  I thought not because of the brackets but then I can't work out what it is supposed to be.
+
+Can someone explain how to calculate that partial derivative term to a newbie?
+
+Thanks

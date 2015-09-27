@@ -1,0 +1,3 @@
+In the video called Getting lots of data and Artificial data as a part of  Application example: Photo OCR we are told to write classifiers which detects the gaps between the letters for segmentation. I know it is done by artificial intelligence but there more elegant was how to segment characters but it more part of the computer vision. Simply convert picture to the B & W and project all the white pixels(pixels of characters) to base axis x. You will gain several "cluster" on the axis x and there where is no cluster (the sum of projected pixels of characters is equal to zero) you know you cut the picture and you know you segmented another letter.
+
+ I hope it is easy to understand. good luck 

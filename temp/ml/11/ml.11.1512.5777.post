@@ -1,0 +1,15 @@
+In the Question in <ref name="lecture" type="sai">"Features and Polynominal Regression"</ref>, it says:
+
+
+"Suppose you want to predict a house's price as a function of its size. Your model is
+hÎ¸(x)=Î¸0+Î¸1(size)+Î¸2 root (size).
+
+Suppose size ranges from 1 to 1000 (feet2). You will implement this by fitting a model
+hÎ¸(x)=Î¸0+Î¸1x1+Î¸2x2."
+
+I got the answer right, but I do not understand why there are 2 hypothesis functions in the Question?
+The first one is polynomial regression. What is the second one for? 
+It was my understanding that if I use polynomial regression that I use it in the cost function as hÎ¸(x) as well as in the gradient descent function - is that wrong?
+Whats the difference between the "model" and "fitting a model" in general?
+
+I know I'm a bit behind schedule, but I'd rather have a good understanding then running for maximum points.

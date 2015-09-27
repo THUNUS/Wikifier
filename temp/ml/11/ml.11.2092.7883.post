@@ -1,0 +1,1 @@
+As I understand: the answer is - the theta symmetry. When initial thetas are all-0 the problem that initial symmetry is kept in the next steps. That's why you optimizing not n-dimensional function in real but almost 1-dimentional (as all theta(i) are equal).

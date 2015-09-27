@@ -1,0 +1,7 @@
+The concept of sliding windows is interesting, but considering it might requires 500 000 calls of a classifier to simply analyse a single image, how could it be used for e.g. detecting eyes/nose/mouth of a *video* in real time, sounds not practical no?
+
+are other methods than sliding windows for live video analysis (video surveillance with detection of anormal behaviors of whatever other applications requiring real time image vision). 
+
+anyone with thought and/or experience on that?
+
+thanks

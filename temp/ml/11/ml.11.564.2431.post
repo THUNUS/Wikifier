@@ -1,0 +1,7 @@
+Excellent question! And as has been pointed out, linear regression is always a trivially convex optimization, which is a fancy way of saying searching in a right-side-up bowl.
+
+But what if you're not doing linear regression? You might have a saddle point. And while it may seem unlikely to hit the saddle exactly, it can and does happen in real problems, for very "flat" saddles. So what to do? Perturb the solution, as another poster mentioned. But there's more!
+
+Any time you find a minimum in general optimization, you have to assume it could be a local minimum -- possibly in a subspace and not the full-dimensional parameter space. That's what happens at the (unstable) saddle point -- you're in a minimum in a "slice" subspace. So you perturb the solution, with plus & minus vector component in each dimension, to see if the solution is stable. If you're at a saddle, at least one of the perturbation components well send you rolling downhill.
+
+But even if the solution is stable, you may be at a local minimum (again, not applicable to linear regression, but still applicable to piecewise convex optimization and general nonlinear optimization) so you might do something like simulated annealing or randomized restarts. This is where optimization gets fun -- so much "fun" that it will make you grateful for situations where plain old linear regression works!

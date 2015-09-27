@@ -1,0 +1,7 @@
+I feel like I've understood things pretty well so far, but there's one thing that strikes me as very important that's not quite clicking. I didn't recall seeing any discussion of how we actually choose our theta values in the video lectures, so I went and checked out the course wiki and see:
+
+> Now we can make a random guess about our hÎ¸ function: Î¸0=2 and Î¸1=2.
+
+Random guessing seems extremely inefficient -- couldn't the parameters be any number between negative infinity and positive infinity? The way we've approached things so far involves guessing the parameters, plotting the results of the cost function, and finding the minimum. But, what if you never make a guess that corresponds to the minimum?
+
+Is this something for which human direction might be needed, or maybe something in the program (e.g., if this J(Î¸) is lower than the last one, keep guessing in that direction; if it is higher, try guessing in the other direction)? Thanks for any help!

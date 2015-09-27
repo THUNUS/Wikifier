@@ -1,0 +1,13 @@
+In <ref name="quiz" type="sai">the quiz in the video lecture "Recommender Systems: Vectorization: Low Rank matrix factorization"</ref>  the first element of matrix X was transposed while the last element was NOT transposed.  Also for THETA the first element was transposed and the last NOT transposed.  This does not make sense.  Can you please clarify what it chould be.
+If they should all be transposed then what is transpose(THETA)?  
+For example: if THETA = [theta^(1)'  ;
+
+                         ... ; 
+
+                       theta^(nu)' ]
+note the transpose sign, ' , above.
+
+Then is THETA' = [theta^(1) ... theta^(nu)]  
+ note no transpose sign, ' , here in result
+
+Jon

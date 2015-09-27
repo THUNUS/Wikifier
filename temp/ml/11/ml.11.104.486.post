@@ -1,0 +1,4 @@
+Look at the question "You want to predict how many of these items will sell over the next 3 months.". It asks you the number of  items shall be sold, not if an item shall be sold or not. Seems you basically misinterpreted the question.
+Obviously to predict future sales, you've got to know something about past sales, so the problem assumes knowledge about past sales (otherwise it would be pure guesswork)
+
+Hope it helps :-) 

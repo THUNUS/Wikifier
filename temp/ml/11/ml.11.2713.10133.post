@@ -1,0 +1,5 @@
+In an online learning algorithm for search, how do you ensure new results get a chance to emerge? Otherwise there seems to be a danger of getting stuck in a local minimum for the current top ten listings when the global minimum shifts. How much randomness needs to be introduced into the search results in order to allow a change in preferences to be noticed by the algorithm?
+
+As an example, let us say that "Android 1080p camera" learns that users are most likely to buy a Samsung Galaxy S3.  LG releases a new "Universe X4" model which was not in the search results at all before. How does one introduce this phone into the training data?
+
+As another example, let's say a HTC phone, which has been stuck at 21th place for months, suddenly becomes more popular because the banks need another bailout, forcing users to turn to cheaper phones, or HTC runs a really funny Superbowl ad. How can the online learning algorithm pick up on that trend and elevate that phone onto the first page of results?

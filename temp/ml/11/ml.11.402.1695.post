@@ -1,0 +1,8 @@
+in week2, comparaison are made to use either normal equation rather than gradient descent depending if you have only few features or ten of thousands, to million of features.
+i wondered what kind of problems could require up to a million of features?
+
+i can think about text related problems where each word or n-gram is a feature but i'm not sure what kind of problems could fit that setting.
+
+anyone has examples?
+
+thks

@@ -1,0 +1,5 @@
+I'm surprised that <ref name="video" type="mai">the Error Analysis videos</ref> did not mention transforming your variables as a possible "debugging" procedure to pursue. This is one of the first diagnostics I was taught to use when applying linear models, and since it's a fairly quick and dirty method, I assumed that it would at least be mentioned in passing.
+
+I'm referring to the check for heteroscedasticity in the errors mainly, which is a fancy way of saying "does my model fit my assumptions?" Often, a simple 1-to-1 transformation of your dependent variable (your output) will improve your model's performance when using linear regression. For instance, I believe it's common to transform pricing data to a log scale before fitting a model.
+
+I'm assuming the reason might be that this course seems to focus more on classification problems, and maybe it's not as applicable in that arena.

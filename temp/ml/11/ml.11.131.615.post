@@ -1,0 +1,27 @@
+Hi,
+
+there is an error in <ref name="quiz" type="sci">the inline quiz for https://class.coursera.org/ml/lecture/view?lecture_id=16 around 7:32</ref>
+
+The Matrix multiplication exercise is:
+$$
+\left[ {\begin{array}{cc}
+ 1 & 3 \\\
+ 2 & 4 \\\
+ 0 & 5
+\end{array} } \right] . 
+\left[ {\begin{array}{cc}
+ 1 & 0 \\\
+ 2 & 3
+\end{array} } \right] = \left[ {\begin{array}{cc}
+ 7 & 9 \\\
+ a & b \\\
+ c & d
+\end{array} } \right]
+$$
+
+We're asked to figure out "a", then "b", then "c", then "d". However the correct solution for "a" is not in the list of answers. 
+Picking the value for "c" while answering for "a" is the way to pass this question, but really it should be addressed and the right answer be found in the list.
+
+thanks
+
+Aurelien Marchand

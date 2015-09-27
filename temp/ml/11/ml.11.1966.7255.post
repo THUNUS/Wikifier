@@ -1,0 +1,4 @@
+If you refer to neural networks, there are basically two topics covered by your question:
+
+ 1. No, the cost function for the neural network as it is defined in <ref name="lecture" type="sai">the lecture</ref> is not convex. It can have local minima. It's in the videos ...
+ 2. The neural network has quite a lot of links between the different layers (in fact, every node in layer $$s$$ is connected to every node in layer $$s+1$$. This large number of connections lets the neural network learn more complicated models (e.g. polynomials of higher orders) than linear or logistic regression. If we initialize all values to zero (or to another specific value) all these connections will learn "the same behavior". So in fact our neural network wouldn't learn a lot of different models, but always the same single model.

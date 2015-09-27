@@ -1,0 +1,23 @@
+Hi,
+
+In week 2 of the PGM course from Daphne Koller (Markov Networks Fundamentals), in the video named **Conditional Random Fields**
+D.Koller said - at 18mn53- that CRF could be used to to help us "to train a discriminative classifier like SVM for improving performance"
+____
+
+In what way  ?
+_________
+
+To avoid correlated features ??
+________
+
+Do you know how to do that ?? 
+
+or is SVM as described by Andrew Ng the best optimization including this part (CRF) without mentioning it for the sake of the argument and to give an intuitive approach ?
+_____
+
+I am a little lost (perhaps as I am a non-native English speaker and overwhelmed by these technical terms as I am a newbie in Machine Learning and PGM)
+
+
+Thanks 
+
+

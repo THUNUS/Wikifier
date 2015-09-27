@@ -1,0 +1,16 @@
+Always plot the data. In this example, there's a global maximum at (0,0) and infinitely many local minima/maxima (concentric circles around the origin):
+
+![nasty, made up, error function][1]
+
+If you don't plot your data, how else can you know you've found the global minimum? (Ok so there *are* some automated techniques, eg random sampling, but all the cool kids plot their data.)
+
+Stuff that could go wrong here:
+
+ - theta = on ridge at about (6,6) --> gradient is zero --> fails to converge
+ - theta = (0, 6) --> finds local minimum at about (0, 8)
+ - theta = (0, 0.01) with a large learning factor --> maybe jump over the global minimum --> converge at a local minimum
+ - etc.
+
+Also, Bob Castleman, above, correctly points out, accidentally getting zero for your gradient is nigh on impossible anyway in numerical computing. It's more likely you'll converge to the wrong place.
+
+  [1]: http://dl.dropbox.com/u/1529411/Screen%20shot%202012-04-30%20at%204.01.07%20PM.png

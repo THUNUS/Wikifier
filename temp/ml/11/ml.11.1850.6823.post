@@ -1,0 +1,7 @@
+It seems to me that it's not "symmetry", per se, but rather identicality that needs to be broken.
+
+So long as the input seeds are different, the neural network should work, I'm thinking, (although it may find different local minima).
+
+For a flat problem space, I think we rather want our input seeds to be symmetric in the sense of having a sum total bias of zero.
+
+No?

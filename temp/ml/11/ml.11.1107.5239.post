@@ -1,0 +1,10 @@
+I think in the car/person/etc classification application the
+inputs x_i have little to do with the output classes. The x_i
+might just be image pixel values as in the autonomous driving
+example of a late Ng video or the other letter recognition
+example in some other video. Sort of "very raw features". 
+Somehow the net refines the features moving to
+the right. It figures out what it is in those pixels that
+makes the image likely to be of a car. The soft output 
+(.02, .3, .99, .1) truncates to (0,0,1,0) and says "it
+is most likely a car". 

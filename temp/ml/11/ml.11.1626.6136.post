@@ -1,0 +1,3 @@
+Hi
+I was going through <ref name="lecture" type="mai">the last session lectures</ref>, I was confused when it comes to the advantages of using Q learning over value learning. What significant advantage does value-action pair have over value function?
+Also does Q learning need a policy as in the case of value learning? Coz my understanding is that Q learning just takes the action that gives the max Q value.

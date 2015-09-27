@@ -1,0 +1,9 @@
+<ref name="lecture" type="sai">Beginning at about 6:55 in the optional lecture entitled Mathematics Behind Large Margin Classification</ref>, there is a minor mathematical faux pas (false step).
+
+While it is indeed true that $$\frac{1}{2}(\theta_1^2 + \theta_2^2) = \frac{1}{2}(\sqrt{\theta_1^2 + \theta_2^2})^2$$, it is not for the reason given.
+
+Professor Ng states that "the reason I can do that is because for **any** number ...", $$w = \sqrt{w^2}$$.  Technically, this is not correct, unless $$w \geq 0$$.  For example, if $$w = -4$$, then obviously it doesn't hold.
+
+By definition $$|a| \triangleq \sqrt{a^2}$$ (see: http://en.wikipedia.org/wiki/Absolute_value).
+
+Since $$\theta_1^2 + \theta_2^2 \geq 0$$ is already positive, then $$\frac{1}{2}(\theta_1^2 + \theta_1^2) = \frac{1}{2}|\theta_1^2 + \theta_2^2| = \frac{1}{2}||\theta||^2$$, since vector norms in real space are always positive.

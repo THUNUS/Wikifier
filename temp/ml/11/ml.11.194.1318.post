@@ -1,0 +1,4 @@
+well, 
+from what I know $$\Theta^T$$ is still a vector, just that it is a row vector not a column vector.
+
+However, I totally agree with the remark on the vector size. This error in the video confused me a little bit ;)

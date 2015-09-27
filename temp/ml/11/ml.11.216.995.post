@@ -1,0 +1,3 @@
+nice :) though i was more trying to think about a simple and "cheap" heuristic rather than making the choice of the $$ \alpha $$ a problem to solve in itself (otherwise, in the case of linear regression, we could just try to pick a big one first, then do the regression entirely, and if it diverges then retry). the idea of an heuristic might be helpful if working on a big data set (where you do want an optimal learning rate so it won't be either too slow or likely divergent).
+
+i guess i have to tell you good night :)

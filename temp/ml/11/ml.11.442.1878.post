@@ -1,0 +1,12 @@
+In the question it says that the correct answer is
+
+
+>Plot J($$\theta$$) = $$\frac{1}{m} \displaystyle\sum\limits_{i=1}^m$$[$$y^i $$ log h$$\theta$$ ($$x^i$$)
++ (1 - $$y^i$$) log (1 - h$$\theta$$($$x^i$$))] as a function of the number of iterations and make sure J($$\theta$$) is decreasing each iteration.
+
+
+But in the lecture Prof Ng says J($$\theta$$) = **-** $$\frac{1}{m} \displaystyle\sum\limits_{i=1}^m$$[$$y^i $$ log h$$\theta$$ ($$x^i$$)
++ (1 - $$y^i$$) log (1 - h$$\theta$$($$x^i$$))]
+
+
+Minor error but with major impact.

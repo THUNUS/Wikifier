@@ -1,0 +1,14 @@
+Dear all,
+
+I was wondering if anyone can explain me the intuition behind the log transformation (or square root transformation) of non-Gaussian features? This is demonstrated in the video "XV Anomaly Detection -- Choosing what features to use"  (Week 9). 
+
+![log transformation][1]
+
+I can see that features will be closer together when you take the logarithm, but it's not entirely clear to me why the features will all be centered in the middle now, when most of them were on the left side (near x = 0) before?  
+
+Thanks!
+
+-- Jo
+
+
+  [1]: http://www.freeimagehosting.net/newuploads/mpsx3.png

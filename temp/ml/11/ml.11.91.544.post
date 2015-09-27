@@ -1,0 +1,5 @@
+Hi..
+
+i have one more doubt. Initially before taking this class i thought that hypothesis function itself will be formed by system (i.e. learning algorithm itself will fit line equation or curve fitting). But now learned that we have to define curve fitting equation----> Is there any way on how to select curve fitting - either line or parabola or cubic spline?? if i select line for example shown in video, that fill be best.
+
+If i form parabola as hypothesis function, for that also cost function have minima --> but that may be wrong rite?? so, is there any way machine itself will form hypothesis function?? if not, then these pbm can be simply solved using optimization and iterative methods right??

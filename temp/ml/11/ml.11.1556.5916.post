@@ -1,0 +1,11 @@
+I needed two attempts to answer the in-lecture question from <ref name="video" type="sci">the first video of IX NN:Learning</ref>. I think I now partly understand the error in my thinking, but I don't really understand how an optimization method works. In my mind I'm drawing analogies between optimization-methods/cost-functions and walk-routines/consume-functions.
+
+The in-lecture question was:
+
+> Suppose we want to try to minimize J(Î˜) as a function of Î˜, using one of the advanced optimization methods (fminunc, conjugate gradient, BFGS, L-BFGS, etc.). What do we need to supply code to compute (as a function of Î˜)? 
+
+My guess was just J(Î˜), because I thought that the optimization method could figure out any partial derivatives it needed. After all it was being passed the original cost function. As I write (and edit) this question, I realize that I'm passing implementation code for the cost function, rather than a specification of the cost function. So does the need to pass additional code, for calculating partial derivative terms, stem from the optimization method being unable to infer the actual cost function (from my implementation of the cost function)?
+
+If we could pass a specification of a cost function, would that be sufficient information for an optimization method? 
+
+How would an optimization method receive code for partial derivative terms (as the number of partial derivative terms would vary from cost function to cost function)? Would it just use a variable argument list, and execute all the partial derivative code? Would the optimization method use all the partial derivative code to do some kind of gradient descent?

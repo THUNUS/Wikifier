@@ -1,0 +1,3 @@
+It is not true that a non-linear cost function is necessary non-convex. If you want to rigorously test for convexity, you've gotta check that the conditions that Sergey mentioned are true. In practice, it's usually good enough to ensure that the second derivative is everywhere non-negative. This should only fail if your function is badly behaved (for example, if it's discontinuos and therefore doesn't have a 2nd derivative everywhere). 
+
+Note that it isn't the linearity of the hypothesis that makes the cost function convex. For example, the cost function we're using for logistic regression is convex as well. Conversely, you could have a linear hypothesis and a non-convex cost function.

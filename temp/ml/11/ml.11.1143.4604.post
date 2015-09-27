@@ -1,0 +1,2 @@
+I also doubt the derivative formula of the cost function to update the thetas' value in <ref name="lecture" type="sci">lecture 6.5 at 06:55</ref>, should it be theta(j) = theta(j) - alpha***(1/m)***... ? 
+I checked carefully with the previous slide and saw the formula having the (1/m), but how come it is left out here ?

@@ -1,0 +1,1 @@
+Well, what you refer to as "normal" gradient descent is actually batch gradient descent - this is pointed out in the early lectures I think - so when b = m, that's the correct answer.

@@ -1,0 +1,3 @@
+There is another error in this lecture on <ref name="slide" type="sci">the slide titled "What is backpropagation doing?"</ref>
+
+The cost(i) function near the middle of the page is incorrectly written, with the second log term being wrong (compare with the equation at the top of the page).

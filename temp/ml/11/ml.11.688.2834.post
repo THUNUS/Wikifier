@@ -1,0 +1,8 @@
+so excuse me.I am confused.You say"Positive semi-definite means non-negative ( >= 0) values for every element of the matrix". plz see this link in wikipedia.http://en.wikipedia.org/wiki/Positive-definite_matrix
+Positive-semidefinite
+
+It is called positive-semidefinite (or sometimes nonnegative-definite) if
+
+    x* M x >= 0
+A matrix in which some elements are negative may still be positive-definite. An example is given by
+http://upload.wikimedia.org/wikipedia/en/math/9/2/f/92ff34215dedbfe4bd9df8a7fb9926a3.png

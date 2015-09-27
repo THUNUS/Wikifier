@@ -1,0 +1,19 @@
+These errors refer to the downloadable slides that accompany the video presentations. Same errors are in the video presentation:
+
+<ref name="slide" type="sci">Page 6</ref>.
+
+No mention that $$a^{(1)}_0$$ needs to be added to $$a^{(1)}$$.
+
+<ref name="slide" type="sci">Page 8</ref> 
+
+Two indices both named $$i$$: one is used to index the training samples, the other is the row index of the various matrices and vectors. Either bind the row and column indices by an inner for-loop or vectorize.
+
+In $$D^{(l)}_{ij} := \frac{1}{m}\Delta _{ij}^{(l)} + \lambda \Theta ^{(l)} _{ij}$$, the regularization term should also be divided by $$m$$.
+
+<ref name="slide" type="sci">Page 11</ref>
+
+In the handwritten expression at the bottom of this page, $$a^{(l)}_1$$ should be $$a^{(l)}_2$$
+
+<ref name="slide" type="sci">Page 13</ref>
+
+No mention of the $$g'(z^{(l)})$$ factor used in computing $$\delta^{(l+1)}$$.

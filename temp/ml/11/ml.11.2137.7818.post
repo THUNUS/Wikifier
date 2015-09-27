@@ -1,0 +1,8 @@
+Try watching <ref name="lecture" type="sai">the lecture</ref> again; he explains it quite clearly. In summary:
+1) Run the learning algorithm with 'q' different values for the element of the model you're optimising (lambda, degree of polynomial, number of hidden layers, etc.), using only the training data. Store the parameter vector theta that results from each run as theta(1..q)   (q is my choice of letter by the way)
+2) Run the model (note: just the model ie the hypothesis, not the learning algorithm) using each stored parameter vector against the CV data and store the error ie Jcv(theta(1..q)) of each run
+3) Choose the parameter vector with the lowest error on the CV data
+
+At this point you've trained several models, all of which may perform well on the training data, but may perform very differently on the unseen CV data, due to the different values of lambda/degree of polynomial/etc creating bias or variance to different degrees. The model that performs best on the CV data is the one most likely to perform best on unseen data in general, which is what you want. However, you can't take its performance on the CV data as an estimate of its performance on further unseen data, as by choosing the model based on the CV set, you've fitted the model to some extent to the CV set.
+
+Use the test set, which hasn't played any part in training or model selection at all, to estimate future performance, ie generalisation. That's what the test set is for.

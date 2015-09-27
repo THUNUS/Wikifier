@@ -1,0 +1,5 @@
+In the video discussing non-invertability, Dr. Ng mentions what I must view as extreme cases where the number of features is 1,000+ or even 1,000,000. I can't conceive of real-life problems that have that degree of features. Can any one think of any? Even in the case of trying to predict stock prices, I can't think of that many features. Is this how linear regression is used in real-life?
+
+Cheers,
+
+Daniel

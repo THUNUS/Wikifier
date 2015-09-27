@@ -1,0 +1,3 @@
+The function given as average error function for all training examples. This is where 1/m comes from in front of the sum. Can someone please explain why there is also 1/2?
+
+Thanks in advance!

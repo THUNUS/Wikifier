@@ -1,0 +1,4 @@
+Hi all.Please explain how we understand that one function is convex.I know in convex function we have only one global minimum.
+Can we use first and second derivative of a function?
+if we have one global minimum then we must have a point that first derivative in this point is zero and second derivative in this point is positive?
+plz give me an example from convex/non convex cost function.

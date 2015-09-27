@@ -1,0 +1,7 @@
+In the week 2 lecture on the normal equation, Prof Ng stated that it does not work for logistic regression.
+
+Perhaps this will be covered in a future video, but now that weâ€™ve covered gradient descent for logistic regression in week 3, can we elaborate on why there is no analytical solution?
+
+Given the different hypothesis and cost functions for logistic regression, such a solution would clearly be different from the normal equation, and seemingly involved to calculate.  But itâ€™s not obvious that there is no such solution.
+
+Iâ€™m no linear algebra expert, so Iâ€™m probably in over my head, but is there a good explanation as to why?

@@ -1,0 +1,13 @@
+As per the slides :
+
+I believe the formula is : (xi-average) / range.
+Here the range is the max -min values of the age of the houses.
+
+Feature scaling is really a part of Cartesian geometry where in you are trying to plot two values on X and Y axes.
+If X and Y are on a very very different scales the graph so obtained is not readable ( not used for conclusive evidence).
+
+The idea is to scale the X and Y in such a way that both are on the same scale.
+I personally think you can apply your equation too for feature scaling ( as long as you apply the same when you get and answer from the normal equation to predict). One can use a variety of functions to scale down ( applying logs , exponential functions et.al)
+
+Cheers,
+Sathish.

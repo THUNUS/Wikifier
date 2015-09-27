@@ -1,0 +1,4 @@
+<ref name="video" type="sai">In the back propagation intuition video</ref>,delta is defined as a weighted sum.
+However in <ref name="video" type="sai">the backpropagation algorithm video</ref>,the delta is defined as the 'weightedsum.*g'(z^3).
+why is this ignored in <ref name="video" type="sai">the intuition video</ref>?
+am i going wrong somewhere?thanks:)

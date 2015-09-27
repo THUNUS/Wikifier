@@ -1,0 +1,7 @@
+Assume I'm using a large amount of data. In that case, outliers and skewness will always be an issue (possibly for every feature). I then have at least three options:
+
+1. Transform every feature into [-3,3] using a monotone transformation (i.e. log, sqrt, scale)
+2. Transform the bulk of the data into [-3,3] and leave the outliers outside this range
+3. Transform the bulk of the data into [-3,3] and discard the outliers
+
+My question is not about what is the "best" analytic method, but rather what is the best way to handle gradient descent. How will gradient descent behave in each of these options?

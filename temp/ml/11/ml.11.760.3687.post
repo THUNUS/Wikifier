@@ -1,0 +1,7 @@
+Dear Grebenets,
+
+You have correctly pointed out the typo in the video lecture and accompanying pdf. In fact, the submission does not go through with the minus sign of the regularization term in the gradient. Though you do get confusingly similar plots (for the suggested lamda values).  I did waste about a couple of hours sorting this out, as I had noticed the plus term in "ex2.pdf".
+
+Surprisingly, the vectorized code that we write for the last part of Exercise 2 is the first submission in Exercise 3. And, the typo above is corrected in page 7 of "ex3.pdf".
+
+Best Regards

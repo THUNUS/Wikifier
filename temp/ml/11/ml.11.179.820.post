@@ -1,0 +1,7 @@
+I wanted to add an important point to <ref name="video" type="sai">this video</ref>. 
+
+To calculate $$\theta$$, the formula given is $$(X^TX)^{-1}X^Ty$$.
+
+In particular, note the presence of a matrix inverse. Like it was said in a previous video, a matrix inverse does not always exist! 
+
+As a result, when discussing the pros and cons of Normal Equations vs Gradient Descent, one point against Normal Equations is that it doesn't always give an answer!

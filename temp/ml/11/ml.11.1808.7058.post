@@ -1,0 +1,26 @@
+I did some playing around with the initialization, and in term of performance, the NN seems rather robust to the way it is initialized, but some extreme values do cause problems.  Generally you want to keep values less than order unity so.   3 experiment below based "ex4":
+
+**uniform random initialization between +/- epsilon, (zero bias):**
+
+epsilon =
+     0.00000     0.000001     0.00001     0.00010     0.00100     0.01000     0.10000     1.00000    10.00000   100.00000
+
+accuracy% =
+35.860   96.240   96.860   98.420   98.420   98.340   99.580   98.540   82.400   35.260
+
+**uniform random between bias-epsilon and bias+epsilon,  epsilon=0.001:**
+
+bias =
+     0.00000     0.10000     1.00000    10.00000   100.00000
+
+accuracy% =
+97.940   95.600   95.360   10.000   12.140
+
+**initialize with +epsilon or -epsilon with equal probability (zero bias):**
+
+epsilon =
+   1.0000e-06   1.0000e-05   1.0000e-04   1.0000e-03   1.0000e-02   1.0000e-01   1.0000e+00   1.0000e+01   1.0000e+02
+accuracy% =
+   97.460   97.280   99.060   99.060   99.140   98.400   98.420   71.320   36.800
+
+all with lambda=0.1 and 100 iterations.  

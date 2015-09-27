@@ -1,0 +1,10 @@
+     The grad(J(T)) is equal to (1/m)*(X'XT - X'y). Minimum of J(T) 
+     corresponds to the grad(J(T)) = 0 condition.
+     This gives an "normal equation" X'XT=X'y. The solution of the equation is T=inv(X'X)X'y
+     as mentioned in lectures. The logic for this is multiplying both sides of the equation to
+     the inv(X'X) matrix which gives inv(X'X)(X'X)T = inv(X'X)(X'X)y, which give the solution
+     above as inv(X'X)(X'X)=I. But why T=inv(X)y isn't a solution? 
+     
+     I could apply the same logic to the "normal equation" X'XT=X'y, but multiply both sides on inv(X') 
+     instead. This will give XT=y. And this will give T=inv(X)y after multiplication of both
+     sides of equation on inv(X). What is wrong with this logic?

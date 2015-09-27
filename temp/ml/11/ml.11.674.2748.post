@@ -1,0 +1,8 @@
+Dear Sir/TAs,
+
+I realised we have a minor Notational Typo in "<ref name = "video" type = "sci">Video 6 - 5 - Simplified Cost Function and Gradient Descent</ref>" @ 9:00 min.; or <ref name = "slide" type = "sci">slide No. 21 of "docs_slides_Lecture6.pdf"</ref>
+
+The index used for parameters 'theta' was 'j' consistently throughout all lectures, except at the point above, where 'i' was mistakenly used. 
+We have been using 'i' to index the training examples. 
+
+Thanks & Regards

@@ -1,0 +1,18 @@
+Hi there,
+
+I performed a quick search in the forum and it seems nobody has noticed or discussed what I'm about to say.
+Maybe I understood it wrong, but since I'm unsure I brought this up here to discuss with you guys.
+
+At 13:29 in the "Normal Equation" video lecture, Mr. Ng mentions that (X'*X)-1 (which is pinv(X'*X)  in Octave) is an (nxn) dimension matrix.
+The wierd thing is that a few minutes earlier he says X is a (n+1)xM matrix. Therefore, if
+X is a (n+1)xM matrix and
+X' is Mx(n+1) matrix, (X*X') should end up as
+a (n+1)x(n+1) matrix.
+
+Please, could anyone check this out?
+Obviously, ignoring the bias (column filled up with 1 values) you will get (X'*X)-1 being nxn, but I didn't see he saying he would ignore it.
+
+Thank you for your attention!
+
+Best regards,
+Marcel

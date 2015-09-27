@@ -1,0 +1,4 @@
+from <ref name="lecture" type="sci">the lecture of unsupervised learning</ref> i have grasped a few points 
+ a)  the data is not labeled.
+ b)  and been given a set of data the task is to find a structure.
+  the question that arises is if the data is not labeled , after clustering how do v classify the objects. I mean once the clusters are formed , how does the machine identify and label the clusters. 

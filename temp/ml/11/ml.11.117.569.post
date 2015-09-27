@@ -1,0 +1,3 @@
+I believe the labeling process is done manually, that is, we, the people/human, look at the cluster and pull out the similar characteristics to determine the cluster's classification.
+
+Clustering simply answers the questions: "Are there underlying patterns in this dataset? And if so, where are the boundaries?"

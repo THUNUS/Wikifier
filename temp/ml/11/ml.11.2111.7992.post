@@ -1,0 +1,3 @@
+I also believe its an error. 
+
+...+ (1 - y) * log(1 - h(x)) : This is what was mentioned in <ref name="lecture" type="mai">previous chapter(s) on **logistic regression**</ref>. e.g. <ref name="file" type="sci">lecture9.pdf page 3</ref>.

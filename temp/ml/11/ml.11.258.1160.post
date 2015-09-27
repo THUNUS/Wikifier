@@ -1,0 +1,1 @@
+At 4:52 in the video, a new graph is introduced with the x-axis label "Number of Iterations" and the y-axis is labeled "J(theta)".   The plot the instructor draws on the graph is actually J(theta) as a function of theta.  The label on the x-axis should be theta.

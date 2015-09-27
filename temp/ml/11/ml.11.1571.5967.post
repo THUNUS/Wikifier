@@ -1,0 +1,5 @@
+I don't understand the significance of the term g'(z2) in the caculation of small_delta_2. In <ref name="lecture" type="sai">lecture "Back propogation Intuition"</ref> he talks about how to calculate the error in node/unit j in layer l. This doesnot include any such term as g'(z) nor does any other individual node error calculation so, where does this term come when we calculate the error for the complete hidden layer.
+
+Can someone help me understand this?
+
+thanks

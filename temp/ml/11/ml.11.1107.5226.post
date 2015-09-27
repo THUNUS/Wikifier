@@ -1,0 +1,14 @@
+I just added a comment to <ref name="note" type="sci">my notes (12.20.12a)</ref> noting that all the activations
+are really analog "soft bits" in the 0-1 range running along those
+internal network lines, since they are each the outputs of g(z)
+functions. Sometimes bit means "soft bit" in my writeup. 
+In answer to your question, yes I think y_i means a hard
+bit, 0 or 1, since it is an output of the ith training set element. 
+By the way, I imagine the final overall output of a classification net would
+be rounded into hard bits to make the determination "yes it is a car". 
+Ng does not say much about the inputs x_i. I suppose they could
+be real numbers (like price of a house) or soft bits or hard bits. 
+I once did some work with soft bits and would guess that in a
+hardware implementation, 3-8 hard bits to represent a soft bit
+would work OK. In the first case, bit = 0,1/8/2/8....7/8,1 for example. 
+Maybe real neurons output soft bits encoded as pulse rate.

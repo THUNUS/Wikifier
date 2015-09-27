@@ -1,0 +1,7 @@
+I don't understand how you complete the equation for J (when minimizing).
+
+The problem he gave was when J(0). 
+I don't get how if the points are at (1, 1) (2, 2) and (3, 3) how in the equation h theta(x(i)-y(i))2
+sorry for not having the right notation but I hope someone can get what i mean. (x(i)-y(i))2 for points (1,1) would be 0 squared right? I don't see how he got 1 squared + 2 squared + 3 squared.
+
+Thanks. 

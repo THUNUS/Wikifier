@@ -1,0 +1,13 @@
+Your question is quite practical and maybe require a more deep statistical tool to work out. The normalization, in statistics, resemble the Z-Score but as you know, whether  you can use Z-Score as a tool depends on whether you have the SD. Also, the range can be replaced by a better fit, such as a SD but if the population is finite (N) and the sample size (n) is more than 5% of N then the SD must apply a correct factor such as: SD/sqrt(n)*sqrt((N-n)/N-1)).
+
+So, I believe the formulas we learnt can be adjusted to better suite the data we hold on our hands.
+
+So, just a wild try to answer your question, please correct me if you find any mistake:
+
+1 - If the distribution is skewed then you can transform it using a series of means of different samples, this tool will enable you to work with a more bell shaped form of data distribution.
+
+2 - For outliers, just apply the formula to determine the outliers and prune them.
+
+So, it is to say that, in my opinion we should study the data first before minimizing the cost, or even try to find the h(x).
+
+What do you think?

@@ -1,0 +1,1 @@
+Allowing the number of examples to grow as the algorithm progresses creeps back towards the initial problem of summing over all the examples ( the whole big O thing)  I would expect (and this is entirely intuitive) that you would get better results by shrinking the gradient descent steps.

@@ -1,0 +1,3 @@
+Good question!  I guess we need to take the Computer Vision course...
+
+One possibility off the top of my head:  sliding windows is rather like a linear search through the data. Maybe a form of binary search would be faster - for example, chopping the image into quadrants or smaller chunks, and running a trained classifier to look for the possible presence of the actual feature you are interested in.  Then you could run your feature detector on the smaller chunk at less cost.

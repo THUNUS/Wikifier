@@ -1,0 +1,17 @@
+You can safely ignore this if you want your code to be portable between Matlab and Octave, but one of the cool new features of Octave >= 3.6.0 is [broadcasting][1].  Now you no longer need to look up/test how to use repmat every time you need it!  Or am I the only one that does that?  Anyway now in Octave the Cocktail party problem algorithm could be something like this (untested):
+
+`[W,s,v] = svd( (sum(x.*x,1).*x) * x' )`
+
+By default Octave will warn you if it does any broadcasting, so if you expect the dimensions to be what you need, the warning will let you know something is wrong.  If you want to use broadcasting in your scripts, you should probably wrap the specific lines so as to turn off the warning only for that line, e.g.:
+
+`warning('off','Octave:broadcast');`
+
+`[W,s,v] = svd( (sum(x.*x,1).*x) * x' );`
+
+`warning('on','Octave:broadcast');`
+
+Or recover the previous behavior by making it error out if it finds a case where it wants to do broadcasting:
+
+`warning('error','Octave:broadcase');`
+
+  [1]: http://www.gnu.org/software/octave/doc/interpreter/Broadcasting.html

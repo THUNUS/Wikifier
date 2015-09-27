@@ -1,0 +1,10 @@
+Professor Ng concludes the introduction to the method with the following steps for making a prediction on a new data point:
+
+"on a new input x, to make a prediction, pick the class i that maximizes the h(i)(theta)(x).
+
+So, the question is, in this one vs. all approach, would we expect the total predicted probabilities to equal 1?
+
+Taking Total = sum over (i) of h(i)(theta)(x), does Total = 1 or will the algorithm produce a Total probability prediction that does not make sense?
+
+If the latter, can the probabilities be normalized so that they do make sense and accurately summarize the probability predictions of the i separate one vs all logistic regression models?
+

@@ -1,0 +1,9 @@
+This is my first introduction to neural networks so I'm still trying to understand them.  
+
+Primarily, I get that each level of a neural network is akin to a series of linear regressions.  And if a linear regression is a "curve" fitting algorithm corresponding to a straight line in N-space, then a series of such things correspond to a series of straight lines in that same space.  I also get that neural networks are like a bunch of linear regressions connected both I parallel and in series.
+
+The two intuitions I lack are first, the number of elements in a level...  Is this just akin to a level of resolution?  I guess I'm not understanding the use of the "feature" analogy here.  (no one talked about "features" in this problem space when I was in school.)
+
+And secondly, how does one visualize the multiple levels of a neural network?  My best intuition so far is that the levels are akin to the arms of a robotic arm, since the jacobians look a lot like the jacobians I learned in my robotics class decades ago, kind of like how a two channel remote control helicopter can't fly upside down.
+
+Does anyone have any better intuitions and/or visualizations on these things?

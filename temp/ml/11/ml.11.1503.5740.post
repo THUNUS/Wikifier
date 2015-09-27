@@ -1,0 +1,8 @@
+Hi, I am not very clear the reason why we will need **cross validation set**. Isn't it the same idea as **test set**? Could you please elaborate more of it?
+
+Also here are some more question about cross validation setï¼Œ
+
+ - If **cross validation set error** is high but the **test set error** is low, what should I do? 
+ - If **cross validation set error** is low but the **test set error** is high, what should I do?
+
+Thanks! 

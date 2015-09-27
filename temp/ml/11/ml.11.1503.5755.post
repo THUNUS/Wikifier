@@ -1,0 +1,10 @@
+The cross validation  set is used to select  a model out of several models or for selecting extraneous parameters to the problem such as the regularization parameter.  The test set is employed for measuring the predictive power of the selected model.
+
+Assume for instance that in a regression problem, I decide to employ a polynomial hypothesis. How will I figure out the right polynomial degree for my problem? You split you examples into three portions: a training set, a cross validation set and a test set. To select the appropriate model,  you may 
+consider a finite set of polynomial hypothesis, you calibrate them as usual and you determine the cross validation error for each model. You select the model with the lowest cross validation error. One you have selected you model, the test error for that model is an optimistic measure of its predictive ability i.e how you model will perform on unseen examples.
+
+In summary cross validation set is used for model selection and selection of extraneous parameters (parameters different from the weights) and the test set is use to test the predictive power of you model.
+Note that the training error has been minimized to obtained the parameter of the hypothesis .  It is a poor indicator of the predictive power of your model. Indeed, I can always over fit given data (hence low training error) yet have dismal predictions.
+
+
+

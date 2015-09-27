@@ -1,0 +1,6 @@
+I was listening to <ref name="video" type="sco">the [Model Representation][1] video</ref> where Prof Ng used the term "hypothesis" as the mapping function from x to y and said that the reason was just history.  
+From what I remember from my PG classes in statistics, this is because all sort of regression testing is essentially a null hypothesis testing.  You set up the hypothesis that Y and unrelated to X and the reject it by calculating the correlation between X and Y.  The same applies to even more complex learning methods, where there is an implicit null hypothesis being tested.  In practice you just do the regression and draw inference
+I think this is the reason why there is a "hypothesis" term involved.   
+
+
+  [1]: http://d19vezwu8eufl6.cloudfront.net/ml/recoded_videos/02.1-V2-LinearRegressionWithOneVariable-ModelRepresentation%20%5Bae9a08cd%5D%20.mp4

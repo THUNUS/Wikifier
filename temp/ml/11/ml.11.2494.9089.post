@@ -1,0 +1,5 @@
+In the lecture about using dimensionality reduction for visualization, prof Ng. uses an example of N features for each country and reduce them to 2.
+Then he says that the two remaining variables can be interpreted as z1 = country size /GDP and z2 = per person GDP.
+
+how could one came with such an interpretation?  it is simply an intuition no? 
+how to interpret the meaning of remaining variables in general when using Dimensionality reduction for visualization?

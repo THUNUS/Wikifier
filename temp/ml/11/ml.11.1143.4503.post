@@ -1,0 +1,1 @@
+<ref name="lecture" type="sci">At approximately 3:55 in the lecture "Simplified Cost Function and Gradient Descent" (lecture 6.5)</ref> in the formula for the logistic regression cost function the left square bracket should be inside the summation symbol, not on the outside of it.

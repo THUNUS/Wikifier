@@ -1,0 +1,5 @@
+In <ref name="lecture" type="mci">week-6 lectures</ref> pactical solutions to the high bias/variance problems were proposed. For example, the problem of high variance (which arises when a model overfits the training data) can be addressed by experimentally applying feature reduction or polynomial complexity reduction, or by increasing the value of the regularization parameter Î» of the learning algorithm or by adding more examples to the training set, or by experimenting with combinations of the above actions.
+
+Are the problems of high bias or variance essentially problems of model complexity which, as such, can be addressed by actions that attempt to control model complexity? And can factors such as the regularization parameter Î» or the # of features be seen as controlling model complexity? Besides, if you donâ€™t mind my asking, are there compact definitions of model complexity, which can be used when  experimentally trying to assess and improve model performance?
+
+In the case of classification for example, is there a model-complexity measure related to the misclassification (generalization) error?

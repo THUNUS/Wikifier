@@ -1,0 +1,29 @@
+When randomly initializing the centroids,we may initialize cluster centroids such that we end up getting local minima.
+
+Solution given to this problem was to run a loop for some constant time.
+
+I wanted to suggest one method for this.
+
+Suppose we initialized one cluster centroid of K cluster centroids.Now to initialize i choose the farthest from these two points
+like : 
+
+
+
+
+for i = 1 : m-1 (excluding previously selected example as cluster centroid .. lets say x(1) )
+
+{
+ 
+  code which will compute the distance of x(i) from x(1) and 
+
+   select the x(i) which is farthest from x(1) and make this x(i) as mu(2) i.e. second cluster centroid.
+
+}
+
+This way i can do it for other K-2 cluster centroids.
+
+Effectively i have included here some logic of our K-means algorithm.
+
+Please comment on this.
+
+Thank you

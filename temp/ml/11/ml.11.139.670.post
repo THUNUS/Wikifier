@@ -1,0 +1,9 @@
+Abs will work in theory. 
+
+I think the squared function is used because the math is easier to deal with
+
+For example, the derivative of an absolute value is hard to work with when trying to work out the math for things like gradient descent. 
+
+
+
+

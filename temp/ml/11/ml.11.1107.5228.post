@@ -1,0 +1,21 @@
+Thanks Philip. That helps a lot. and thanks for adding to your notes. I'll send that to be bound instead !!!
+
+The one thing that I find confusing is that Andrew mentions that in say a 4-class problem the inputted x_i's could be {1,0,0,0}, (0,1,0,0), (0,0,1,0), (0,0,0,1) so that the first means a car, the second means a motorcycle etc and there would be 4 nodes at the input so each digit would go into each of the input nodes.  ( unless I'm not understanding correctly ? ) 
+
+But don't these codings serve to identify the target ? I would think you need the inputs ( the x_i's ) to be actual features of the output ? 
+The coding system above seem like more a coding of the output scheme ? Thanks for any clarification about that. It's really appreciated.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

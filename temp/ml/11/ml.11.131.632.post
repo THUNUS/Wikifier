@@ -1,0 +1,7 @@
+Hi, Aurelien.
+
+  I've had a quick look at <ref name="video" type="sci">the video of "Matrix-Matrix Multiplication"</ref>, and it seems to be fine now.
+  
+  The current list of suggested answers is " 7 12 10 6" . The "a" element stands at the intersection of the second row and the first column of the product matrix.  Then we have to take the second row of the first matrix and multiply it by the first column of the second matrix, which would give us 2 * 1 + 4 * 2 = 10. This answer is on the list, so this problem must have been fixed.
+
+ 

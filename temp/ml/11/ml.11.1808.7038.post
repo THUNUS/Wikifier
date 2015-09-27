@@ -1,0 +1,10 @@
+For example, if we just scale the random weights up equally (so they should still be "approximately equal" - if you're correct), we shouldn't see large variations in magnitude. But .....
+
+    >> randInitializeWeights(3, 3) .* 10000
+    ans =
+    
+       646.913    11.847  -671.444   505.881
+       225.756   647.506   576.899  -178.041
+      -913.774   402.172   444.304  -348.592
+
+... you can see we get magnitudes from approximately $$10^1$$ to $$10^3$$. Do you agree?

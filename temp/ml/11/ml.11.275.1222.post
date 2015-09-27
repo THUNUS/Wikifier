@@ -1,0 +1,11 @@
+Good time of day.
+
+As I think, there is a mistake at the end of the video, that I mentioned at the title of this thread.
+Andrew says that matrice:
+$$(X^T X)^{-1}$$ 
+has a size of [n*n], but X has size [m*(n+1)], so
+matrice $$(X^T X)^{-1}$$ would have a size [(n+1)*(n+1)]
+
+Please, correct me, if it is wrong. :-))
+
+P.S. Maybe mistake is not so important for this course, but from the math view it is that one.

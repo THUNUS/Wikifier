@@ -1,0 +1,7 @@
+I don't think there is any difference between the two examples that you gave.
+
+You can also write:
+
+    if condition
+        statements
+     end

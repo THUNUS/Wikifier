@@ -1,0 +1,7 @@
+I just want to ask whether there is an error in the video when Andrew is explaining the J(0) he says that after we expand the function we get -
+
+    1/6 * (1^2 + 2^2 + 3^2)
+
+ whereas shouldn't it actually be `1/6 * ((-1)^2 + (-2)^2 + (-3)^2)` - While the end answer is correct in essence there is a mistake in the expansion, and in this case it wouldn't matter because having a number to the power of an even number always gives a positive result. Here is how I do the expansion: 
+
+    1/6 * ([0*1 - 1]^2 + [0*2 - 2]^2 + [0*3 - 3]^2) = 1/6 ((-1)^2 + (-2)^2 + (-3)^2)? 

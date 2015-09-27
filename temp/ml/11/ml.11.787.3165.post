@@ -1,0 +1,4 @@
+Two points:
+
+ 1. Ng earlier makes this point: You probably don't intuit that there are factors for pricing a house that are eventually decreasing in price. Though, if you were to use as covariate, say, distance from city center, it may be that people want to live sufficiently far away from the city center so that they can have extra space, but not so far that they're in the middle of nowhere. In this sense, using a quadratic function may be sensible: prices increase up to that average optimal point of distance from city center, and then they decline because you start to get into the middle of nowhere.
+ 2. Moreover, it may be fine to use a quadratic (i.e., squared term) if you never expect to input values at which the marginal effect is decreasing. In this sense, the quadratic function works fine because you avoid the area wherein it causes a problem. 

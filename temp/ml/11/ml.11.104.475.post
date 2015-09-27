@@ -1,0 +1,10 @@
+Hi,
+
+For the question <ref name="lecture" type="sci">in the Supervised Learning lecture</ref>, I didn't quite understand the distinction in the examples between:
+
+1. You have a large inventory of identical items. You want to predict how many of these items will sell over the next 3 months.
+2. You'd like software to examine individual customer accounts, and for each account decide if it has been hacked/compromised.
+
+Why isn't the first one a classification problem since we are essentially trying to determine whether each item in inventory will be sold or not sold during the 3 month period? Apparently the answer is regression because we can view the large inventory as a continuous value.
+
+Please let me know. Thank you.

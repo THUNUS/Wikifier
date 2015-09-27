@@ -1,0 +1,13 @@
+While watching the set of videos for the Linear Algebra Review, there were two numbers that Andrew wrote down that I believe to be a mistake.  Please correct me if I am wrong, but I thought it may be helpful to point them out in case others were confused by this as well.
+
+**Video: Matrix Multiplication**
+**Time: 7:15 into lecture**
+While exploring a matrix multiplication, Andrew solved the problem correctly below, but when he tried to rewite the answer in the original problem, one of the numbers was written incorrectly.  The correct result was (matrix 9 15) and (matrix 7 12), but when it was rewritten above it was written as (matrix 9 15) and (matrix 4 12).
+*The 4 should have been a 7.*
+
+
+
+**Video: Inverse and Transpose**
+**Time: 9:23 into lecture**
+While demonstrating a transpose, an example was used to identify B(subscript 12) and A(subscript 21).  The correct number 3 was circled in both cases above, but when it was written below, it was written as a 2.
+*The 2 should have been a 3.*

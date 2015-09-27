@@ -1,0 +1,1 @@
+At about 7:30 the simplified cost function is presented without the factor $$\frac{1}{m}$$. Prof Ng states that this is cosmetically identical to the linear regression equivalent. However, the linear regression form does have $$\frac{1}{m}$$ and the next slide in the logistic regression video (quiz at 9:29) also has it.

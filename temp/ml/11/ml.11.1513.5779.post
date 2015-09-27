@@ -1,0 +1,15 @@
+**Î´j(l)** is defined as the â€œerrorâ€ of node **â€˜jâ€™** in layer **â€˜lâ€™.**
+
+In the Backpropagation algorithm
+
+   **for i= 1 to m      // m= no. of training examples
+
+{   â€¦â€¦..
+   ........    
+    
+    Î”ij(l) = Î”ij(l) + aj(l) * Î´i(l+1)  // the suffix â€˜iâ€™ in Î´ doesnâ€™t 
+                                 // conform to the original definition         
+}**
+
+
+Please explain 

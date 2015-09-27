@@ -1,0 +1,15 @@
+Hello.
+
+So in week 4, we were introduced to the concept of Neural Networks.
+
+The lectures for that week start off be exposing some of the difficulties encountered while using a non-linear hypotheses that included quadratic terms.
+That made sense because of the impracticality of computing on equations with enormously large number of features.
+
+Then we saw the videos of how the neurons in the brains work in learning and then we were introduced to Neural Networks. I felt like that explanation of how Neural Networks make for a better model was lacking. 
+
+I have successfully completed the hw and programming assignments but do not understand the intuition of how these Neural Networks are working. For me it's just a bunch of equations which taken on belief do the work.
+
+I would appreciate it if someone could explain maybe using the hand written digit recognition programming assignment as example for 
+1. why we went for the neural network design of 3 layers and not 4 or more
+2. why we got a higher accuracy - right now my understanding is that the neural network somehow leads to better decision boundaries that leads to 
+    higher accuracy but how does it achieve a better decision boundary ? 

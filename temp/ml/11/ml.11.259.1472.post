@@ -1,0 +1,1 @@
+you can try plotting a graph of $$J(\theta)$$ against $$\theta$$ for your $$\alpha$$ after every $$N^{th}$$ iteration (say $$N$$=100 or 1000), as shown in the video lecture. that will you some idea, how you should change your $$\alpha$$, if you need to change it at all. please refer to lectures Gradient Descent in Practice $$I$$ and $$II$$ for detailed explanation.

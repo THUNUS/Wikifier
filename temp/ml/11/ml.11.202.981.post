@@ -1,0 +1,1 @@
+Well, with Î± carefully chosen ;) and the parabola (as in the videos) you can end up jumping between the points with same J() value, i.e. the Î± * gradient (value of gradient is same for both of the points, different sign) will be exactly abs(x - y), where J(x) == J(y) and x <> y ;)

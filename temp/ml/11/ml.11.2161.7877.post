@@ -1,0 +1,7 @@
+Hi,
+
+In <ref name="video" type="sai">the video titled "Error Analysis"</ref>, its been mentioned to start with a quick and dirty implementation for the problem, use Learning Curves and analyse the Errors so as to make an informed decision about where to invest time/resources to improve. Also, since we are to find out the errors on CV Set,(which is randomly chosen) it may happen that a particular class of errors which are significant in number in one CV set are not significant in another CV Set.
+
+Therefore, it stands to reason that rather than choosing one CV set and performing Error Analysis, we should use multiple iterations where in we should choose different Test and CV Sets each time, and perform the Error Analysis on them. If this is the case, then it may also be possible that we need to optimize many different types of error(rather than the single type of error as mentioned in the video) up until the point of convergence. This arouses a new issue, as in How do we test point of convergence.... As in a particular breakup of Test Set-CV Set may give us good accuracies, but a diff set may not give the same ??
+
+I tend to think that this particular decision is heuristic rather than deterministic, but would like to be sure.

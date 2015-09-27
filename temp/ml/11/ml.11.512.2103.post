@@ -1,0 +1,5 @@
+It would not matter, if we took infinitesimal steps. But we don't. We use discrete steps, and the step size is dictated by alpha.
+
+If we let our step size go to zero, we'd end up with what the lecture refers to as Normal Equation, where indeed feature scaling is not necessary at all any more.
+
+However, as mentioned by in the lectures as well, this has pragmatic limits, where speed is concerned.

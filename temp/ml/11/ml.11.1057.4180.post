@@ -1,0 +1,5 @@
+<ref name="lecture" type="sci">In video lecture "6.4 LogisticRegression-CostFunction"  1.50 min.</ref> In Ð° blue box has no superscribe (i) at cost(h(x(i), y). I think it should be:   cost(h(x(i), y(i)).
+
+<ref name="lecture" type="sci">In video lecture "6.5 LogisticRegression-SimplifiedCostFunction..." 6.00min.</ref> Minor mistake in Gradient Descent. There are J(O)= - 1/m [Sum...]. I think it should be:  J(O) = - 1/m Sum[...]
+
+with respect, Anatoliy

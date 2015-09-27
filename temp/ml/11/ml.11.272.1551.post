@@ -1,0 +1,21 @@
+No, we should not assume anything.
+
+Just for clarity: if we're talking about the case of linear regression as it was presented in the lectures - this function has no maximum, and grows indefinitely from one single local minimum. Several people mentioned this on the thread, the "already in a maximum" situation is simply not valid for linear regression. [Cost Function - Intuition I][1] video starting from 4:20 gives an example of how you calculate the cost function and gives the intuition of why it has no maximum. If this helps, you can read it like this:  regardless of how badly someone would approximate the input, there will always be someone else how would approximate even worse :).
+
+But I guess the question was about a more general case where a function has several optima. Let me just repost my answer to [another question][2]:
+
+---
+
+While dealing with a function which has several local optima, your gradient descent algorithm will find just one and get stuck there. In general, it's possible to improve the situation but, in fact, many real problems have _exponentially many_ local optima, so you never really expect to find the global one: instead, you pragmatically look for the local one which is "good enough". 
+
+Possible improvements:
+
+- run your algorithm from different starting points and choose the "most minimal" minimum
+- add noise to input data, so that gradient descent wouldn't get stuck in a "too shallow" local minima and will only find the minima which are reasonably smaller that the noise you'd added
+- add momentum to a gradient step, so that each step becomes say, "new descent + 5% of previous descent" which means your gradient descent could scramble out from "shallow minima" or maxima due to inertia of the previous steps.
+
+Also, if you'd decide to implement in those improvements, you might want to test them against some known problem first - say, draw a sophisticated polynomial and give it to your updated algorithm and see if it would find the best minimum.
+
+
+  [1]: https://class.coursera.org/ml/lecture/view?lecture_id=7
+  [2]: https://class.coursera.org/ml/forum/thread?thread_id=337

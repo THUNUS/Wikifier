@@ -1,0 +1,20 @@
+In <ref name="lecture" type="sci">the video lecture 14.4</ref>, the matrix to be used for projecting onto a lower dimensional subspace, Ureduce, is constructed using the first k vectors of the matrix U where USV' = svd(XX' / m). X is the data matrix, where each column is 1 training vector and XX' / m is the covariance matrix. This covariance matrix is referred to as 'Sigma' in <ref name="video" type="sai">the video</ref>.
+
+From my understanding of PCA, the vectors we are looking for to perform the projection are the eigenvectors of the covariance matrix associated with the first k largest eigenvalues. In that case, shouldn't we be performing SVD on the data matrix X instead of the covariance matrix XX' / m? 
+
+Suppose we write:
+TWY' = svd(X/sqrt(m)) where TWY' is the SVD of X.
+This means X/sqrt(m) = TWY'.
+
+Now the covariance matrix should be:
+XX'/m = (TWY')(YW'T') = TW^2T' (Because Y is orthonormal)
+
+Now T is the matrix with the eigenvectors of XX'/m as its columns and W^2 (the square of the singular values) are their corresponding eigenvalues. Hence, the first k columns in T should be the first k principle components. Therefore, we should actually be performing SVD on X and not Sigma = XX'/n because T is obtained from the SVD of X.
+
+Basically what I'm trying to say is that for X/sqrt(n) = USV', U is the matrix containing the eigenvectors of XX'/n. Hence, we should be computing U from the SVD of X/sqrt(n) rather than XX'/n. 
+
+Also note that the when you perform SVD on a matrix A = USV', the resulting decomposition does not give the eigenvectors of that matrix itself. U and V gives the eigenvectors of AA' and A'A respectively. You can perform SVD on non-square matrices.
+
+Can anyone kindly verify this? Or have I misunderstood PCA and/or <ref name="lecture" type="sai">the lecture</ref>? Thanks in advance for any replies.
+
+P.S. apologies for the messed up attempt at expressing the matrix equations above. 

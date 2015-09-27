@@ -1,0 +1,6 @@
+The question at the end of the video on Mini-Batch Gradient Descent is asking 
+
+"Suppose you use mini-batch gradient descent on a training set of size m, and you use a mini-batch size of b. The algorithm becomes the same as batch gradient descent if:"
+
+ I had thought that batch gradient descent was the same as the stochastic gradient descent that was in the previous video so I picked that they become the same when the batch size (b) is equal to 1. It marked it wrong and said that it should be b = m. To me that seems like it would make the algorithm equal to just normal gradient descent without any of this batch or stochastic stuff. 
+Am I missing something here?

@@ -1,0 +1,19 @@
+Abs will work. The math is harder because of the conditionals involved in the definition. However, from a numerical algorithm perspective, the absolute value function requires more lines of code and branching. Both of which degrade performance because more code must be processed repetitively (the summation requires a loop) and because the branching hurts the ability for compiler optimizations that seek to pipeline the body of the loop to increase instruction level parallelism (ILP). Here is an example MIPS assembly (found on stack overflow) for ABS:
+
+       #assume you want the absolute value of r1
+            ori $2, $zero, $1           #copy r1 into r2
+            slt $3, $1, $zero           #is value < 0 ?
+            beq $3, $zero, foobar  #if r1 is positive, skip next inst
+            sub $2, $zero, $1        #r2 = 0 - r1
+    foobar:
+    #r2 now contains the absolute value of 
+
+3-4 instructions are executed to find the absolute value depending on whether r1 contains a positive or negative value. Branching typically stalls static pipelining algorithms because they are unknown at compile-time. This is what we would call "ugly". Now consider code that squares (its late, but I was not too sleepy to write this code): 
+
+    #assume you want to square the value of r1
+    		mul $1, $1, $1 		   #r1 = r1 * r1
+    #r1 contains the square of itself
+
+One line of code, only one register, and it can be pipelined by the compiler with other instructions in the loop body. Much cleaner. The downside to this code would be the potential for arithmetic overflows i.e if I have a 32-bit machine and r1 contains 4billion then the square being 16billion can not be represented using standard data types. One could argue this is a remote possibility in the majority of applications and its becomes even more remote with 64 bit machines. I would tend to agree and so the positives of performance and better resource allocation outweigh the negatives of potential overflow.  
+
+So squaring is much more efficient than performing absolute values.

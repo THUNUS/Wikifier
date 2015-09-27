@@ -1,0 +1,44 @@
+Hi there,
+I got a bit confused with the idea of vectorization when I was working on programming exercise.
+It was said that our hypothesis ( h0(x) ) was equal to :
+
+**h0(x) = sum ( theta(j) * X(j) )** // where sum iterates through all learning examples ( from j = 0 to n )
+
+
+
+And it is the same as : **h0(x) = theta.transpose() * X** // accroding to video from section V. Octave tutorial -> vectorization -> minute 4:00
+
+Let k be the number of features. So theta here is a **k+1** -dimensional vector and X is **n x k+1** matrix.
+So if we transpose theta we get a **1 x k+1** matrix, let's name it theta' .
+So how is it possible now to multiply 2 matrices, where the first one is 
+**( 1 x k+1 )** and 
+
+the second is **( n x k+1 )**.
+According to the video about matrix multiplication the number of columns from first matrix has to match the number of rows from the second matrix.
+and here we have **k+1 != n** , well maybe we can find such values of n and k that would fit this equation, but for example if we consider values from the exercise we have :
+
+**theta = zeros(2,1)** 
+
+,so this is 2-dimensional vector and 
+X which is **97 x 2** matrix
+after transpose theta we get **1 x 2** matrix times **97 x 2** matrix ,which can't be done, because **2 != 97**
+However I noticed on a video in section V. Octave tutorial -> Control Statements -> minute 10:00
+there is a code where we compute hypothesis in the following way :
+
+**h0(x) = X * theta** 
+
+and it works just fine.
+
+I am now confused why we don't transpose theta vector here and why the order of multiplication is changed ( instead of **theta' * X** we have **X * theta** ).
+It now seems to me like theta should be a **1 x k+1** matrix, where each column is theta(j), that corresponds to the j-th feature from matrix X. Then we transpose this matrix to get **k+1**-dimensional vector and finally
+we multiply X with this vector and not vector times X. Something like this :
+
+**theta = [ theta(0) theta(1) .. theta(n) ]** ( no semicolon between thetas  )
+
+**h0 = X * theta'** 
+
+
+Could someone explain this to me?
+
+
+

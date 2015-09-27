@@ -1,0 +1,3 @@
+At 4:50 in the 'Gradient Descent in Practice II - Learning Rate' video the x-axis of the second graph should be labeled $$\theta$$ instead of 'No. of iterations'
+and at 7:55 in the 'Normal Equation' video the superscript (example index) should run from 1 to m and the subscript (feature index) should be 1 for all rows because in that example there was only 1 feature.
+Maybe it can be corrected somehow before week 2 starts?

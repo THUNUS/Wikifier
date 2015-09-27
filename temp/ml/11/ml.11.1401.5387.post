@@ -1,0 +1,2 @@
+As per <ref name="lecture" type="sci">the video lecture on Plotting Data(Week 2)</ref> i tried running the command xlabel('time') but I'm getting an error :  A(I): Index exceeds matrix dimension. Can someone please help me figure out what went wrong? 
+Thanks

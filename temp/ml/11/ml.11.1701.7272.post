@@ -1,0 +1,7 @@
+Here's a hint to get you started:
+
+The decision boundary should be (roughly) the vertical line $$\\{(x,y)^{T} \in \mathbb{R}^2: x=0\\}$$, so the direction of $$\theta$$ should be horizontal (because $$\theta$$ is orthogonal to the decision boundary). If $$\theta$$ is a horizontal pointing vector (like $$(1,0)^{T}$$) then projecting a point $$p=(p_1,p_2)^{T}$$ onto $$\theta$$ is the same as returning $$p_1$$.
+
+Wikipedia has a fairly readable entry on [vector projections](http://en.wikipedia.org/wiki/Vector_projection)
+
+Let me know if you have any questions.

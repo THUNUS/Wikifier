@@ -1,0 +1,6 @@
+In <ref name="lecture" type="mai">the lectures for SVM</ref>, we are presented with a new cost function for the SVM's.
+
+The lectures mention that if the constant C is set to 1/lambda, it evaluates theta equal to the cost function of the logistic regression algorithm
+
+I do not see how this is being though because setting C=1/lambda gives us a lambda in the denominator of the cost function of the logistic regression algorithm which means the cost is now less by a factor of lambda ?
+

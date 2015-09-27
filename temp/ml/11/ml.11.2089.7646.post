@@ -1,0 +1,1 @@
+<ref name="quiz" type="sai">The quizz question during the lecture</ref> seems to have the wrong definition of Jtrain and Jcv as in both cases they include the regularization term, while in <ref name="video" type="sai">the video</ref> itself they are not defined with this term..in fact the lack of this term is a very important point in at least Jcv ! Or am I missing something ?

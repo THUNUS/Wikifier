@@ -1,0 +1,5 @@
+Im a little confused about something.
+
+In <ref name="lecture" type="sai">the lecture on the normal equation</ref>, he said that one common reason for discovering a noninvertable matrix was a lack of independence of input variables.  But then, we also talk about using higher order terms like x and x^2 I the same model.  So I'm confused.  Clearly, x and x^2 aren't completely independent variables.  And just as surely, with models in th hundreds or millions of variables, they can't all be free variables.  
+
+This seems like a contradiction to me.  Can anyone help me resolve it?

@@ -1,0 +1,4 @@
+For learning non-linear classifier with Logistic Regression, it was mentioned in the lecture that we can map our input vectors to ones that include higher order polynomials. For e.g., for a given input vector x = [x1, x2]T, we can apply a function to map x to x' = [x1, x2, x1^2, x2^2, x1x2]T. The resulting decision boundary would then work out to be non-linear (elliptical in this case). I would like to know whether this is a form of the "Kernel Trick" used in SVM? Or am I jumping the gun here?
+
+Regards,
+Hong Wei

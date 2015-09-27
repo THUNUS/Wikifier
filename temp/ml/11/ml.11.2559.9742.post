@@ -1,0 +1,5 @@
+As per your first question, I had the same doubt after watching the specific lecture but watch it again. We are selecting a feature per movie.
+
+Think about it. A theta is assigned to each feature. If you only have ratings there is no way to group them into less thetas (and less features) other than one per movie because you wouldn't know how to do it. If you select the number of features to be different than the number of movies it means you have information other than ratings per movie. For example, if you could have your users movie genre preferences then you would use a theta (and a feature) per genre.
+
+But using ratings per movie is better than genres because you could end underfitting the algorithm. The more features we have the better the algorithm will be. There is no risk of overfitting because we are selecting items of the training set, so the more accurate the algorithm is, the better.

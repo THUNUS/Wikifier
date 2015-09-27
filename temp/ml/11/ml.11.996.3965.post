@@ -1,0 +1,15 @@
+As per the lectures, to make a prediction on an input ( for multi class classification ), the class i that maximizes the hÎ˜(x) has to be picked.
+
+It does sound logical that we pick the maximum one. However what if all the classes output an value less than .5 ?
+
+Let us assume that we have 5 classes. And the function provides 0 , 0.1 , 0.3, 0.1, 0 as the probability.
+
+
+I might choose 3rd class because it is the max, however it also might mean that the input falls under no category. for example if we end up having .1,.1,.2,.2,0 , then selecting 3rd of 4th is really not good.
+
+IMHO the prediction should be 
+max of  hÎ˜(x) , for values  hÎ˜(xi) >= .5 
+
+And if none is >= .5 , then it should be classifies as alien.
+
+Thanks

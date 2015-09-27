@@ -1,0 +1,7 @@
+The trade-off between stochastic GD and batch GD seems to be between computational efficiency and the risk of arriving at an inaccurate/imprecise destination.  In this sense, mini-batch GD represents a kind of compromise between these two considerations.  However, since concerns about precision feature more properly as the algorithm terminates, Prof. Ng suggests gradually decreasing learning-rate alpha in proportion to the iteration number.  
+
+But doesn't the selected number of examples (b) offer the same opportunity for optimization?  Why not allow the number of examples to grow as the algorithm progresses?  To put it another way, why not begin gradient descent with a stochastic approach, and slowly transition towards a batch approach?
+
+One possible counter-argument could appeal to damages to such an algorithm's big-O efficiency.  However, I suspect that, perhaps, some clever means of increasing (b) would prove worthwhile (e.g., by increasing it non-linearly by a factor log(x) or x^0.5).
+
+Am I off-base?

@@ -1,0 +1,5 @@
+Hi,
+The landscape for the cost function is smooth in all lectures. What about a noisy cost landscape? 
+One solution would be to run many gradient-descents using many random initializations. In some cases (or atleast in my case), one needs to run 100's of gradient-descent in order to find 'minima' which would be as good as finding 'cost' over entire parameter-space and then finding min(cost). 
+Is there a better way to handle noisy landscape. 
+I am currently using a some other algorithms to tackle these noisy landscapes but I am interested in knowing if some of you might have a different take/algorithms for this?  

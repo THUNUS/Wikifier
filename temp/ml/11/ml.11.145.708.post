@@ -1,0 +1,5 @@
+The sum of squared distances cost function I believe is an [elliptic paraboloid][1].
+
+In <ref name="lecture" type="mai">the normal equation lectures</ref>, Professor Ng mentions that the sum of squared distances cost function can be minimized exactly with an explicit formula for $$\theta$$. This is done using the standard multivariable method alluded to above. The analytic solution is pleasant to have, because it means we understand this problem really well, but it does not make gradient descent worthless in practice, even for this purpose. A comparison of gradient descent and computing $$\theta$$ with its formula is given in the lectures.
+
+  [1]: http://en.wikipedia.org/wiki/Paraboloid

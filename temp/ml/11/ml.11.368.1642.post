@@ -1,0 +1,9 @@
+Ok, let's try again. In the part of video that you've mentioned there's such expression:
+predictions = X* theta  % predictions of hypotesis on all m 
+pay attention to comment - here we get a m*1 vector of predictions - not a single value. One item in a vector for one training example. 
+If you're unsure how this happens - read rules of matrix multiplication: http://en.wikipedia.org/wiki/Matrix_multiplication
+
+And about your first example (h0(x) = theta.transpose() * X // accroding to video from section V. Octave tutorial -> vectorization -> minute 4:00) - watch that video carefully exactly on the minute you've mentioned, you'll see in right top corner column vector x. Because in that part Andrew talks about calculation of h for single training example and there h is a function of a vector x. Notice that here you can see small x (not X).
+About  // where sum iterates through all learning examples ( from j = 0 to n ) - there's sum through features, not examples. Examples are from 1 to m and features are from 0 to n (0 is a fake constant feature)
+
+Is it any clearer now?.

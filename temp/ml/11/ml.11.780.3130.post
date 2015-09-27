@@ -1,0 +1,5 @@
+In the regularization videos, we use penalty terms like $$\lambda \sum_{j=1}^n \theta_j^2$$. There's only a single constant $$\lambda$$ here, so largeness in each of the $$\theta_j$$ gets penalized the same amount.
+
+But say for example we're trying to predict the price of a house from its number of square feet and its number of bedrooms. The coefficient on square feet should be much smaller than the number of bedrooms -- an extra square foot of house is worth a lot less than an extra bedroom. So at least in this case I'd think we'd want to penalize a numerically large coefficient for the bedrooms more heavily.
+
+I suspect that the answer to this question involves feature scaling.

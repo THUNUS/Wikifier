@@ -1,0 +1,6 @@
+In this example:
+http://dl.dropbox.com/u/64325990/Machine%20Learning/Examples%20and%20Intuitions%20II.PNG
+
+How does he know he needed to use (x1 AND x2) along with ((NOT x1) AND (NOT x2)) followed by (x1 OR x2) to compute (x1 XNOR x2)?
+
+Additionally how is XOR different from OR?  What does the X in front of OR/NOR represent?

@@ -1,0 +1,3 @@
+In this video: https://class.coursera.org/ml/lecture/view?lecture_id=31 at 09:30, the matrix X should be [1 1; 2 2; 3 3] and not [1 1; 1 2; 1 3]
+
+(The computations work out only because of the particular choice of theta.)

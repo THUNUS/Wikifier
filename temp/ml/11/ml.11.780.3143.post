@@ -1,0 +1,3 @@
+I too think this can be solved by a simple feature scaling. For example you could scale square feet data logarithmically. That way the absolute differences between large areas will be smaller compared to differences between smaller areas.
+
+Or you could turn lambda into a n-length vector of regularization coefficients, turning penalty into $$\displaystyle\sum\limits_{j=0}^n \lambda_{j}\theta_{j}^{2}$$. Notice that you now don't have to exclude $$\theta_{0}$$, just let $$\lambda_{0}$$ be 0. But I'm not completely sure how you could learn the lambda parameters. If anyone has any idea about this, please let me know.

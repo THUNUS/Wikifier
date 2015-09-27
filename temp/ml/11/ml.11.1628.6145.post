@@ -1,0 +1,2 @@
+As shown in <ref name="video" type="sai">the neural network (back propogation) video</ref>, detla_i is calculated from delta_(i+1).
+If we consider the delta_i values to be the activation values for level i and apply forward propogation, will be get the delta_(i+1) values?

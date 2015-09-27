@@ -1,0 +1,7 @@
+Thanks alot.Another question about convexity.
+If we have a cost function like above formula:
+(1/2m) âˆ‘(h_Î¸ (x((i)) )-y((i)) )^2 
+then what must h_Î¸  be so as to be convex?
+for example h_Î¸ (x)=Î¸0+Î¸1*x1+Î¸2*x2+Î¸3*x3+Î¸4*x4
+or h_Î¸ (x)=Î¸0+Î¸1*x+Î¸2*x^2
+or h_Î¸ (x)=Î¸0+Î¸1*x1+Î¸2*x2+Î¸3*x1*x2

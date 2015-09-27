@@ -1,0 +1,2 @@
+I haven't checked the video, but you seem to have an error at least in your step 'simplified'.
+From y = 1 if $$5 - x_1 + 0 x_2 \ge 0$$, you'd arrive at $$5 \ge x_1$$. Your conclusion is swapped around. Does that answer your question already?

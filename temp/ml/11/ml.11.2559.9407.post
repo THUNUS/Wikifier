@@ -1,0 +1,14 @@
+During the recommender systems lectures, Dr. Ng went through some examples genres that the algorithm might have automatically learned.
+
+I understand that naming the genres was just an example, and we probably wouldn't truly know the genre it is emphasizing.
+
+How do you know how many features you should learn in any given case?  For example, movies could have a dozen or so broad categories and hundreds of more narrow genres.  The same with products, you could have distinct categories, but hundreds of subcategories.
+
+**Does the recommender system ALSO select the number of features it will create?**  I'm fairly certain that is not the case.  Any clarification would help.
+
+**Second Part:**
+In the final RecSys lecture, Dr. Ng shows how to predict the recommendations for a new user.  However, there are clearly going to be instances where not all users have rated a given movie.
+
+**So in that case, is it the average of only those who have rated and the null (question mark / not rated) values are ignored or should they be taken into account as well?**
+
+I think they should be accounted for as Dr. Ng's own example, if you have a movie that only two people have seen / recommended, why would you be so eager to recommend it?

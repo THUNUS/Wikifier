@@ -1,0 +1,36 @@
+Hi George: It's a good question and related to one that I asked.  Take the following with a grain of salt because I'm
+not 100 % certain it's correct but hopefully someone will correct me if it's not.
+
+I think ( and Philip confirmed this recently )  Andrew is assuming that the output node has a sigmoid/logistic activation function which implies that the inputs at the very beginning, the x_i,  are 0's and 1's.  (the hidden layers are sigmoidal also but this isn't necesasary since
+he uses g as the function. the only differrence is that the difference wouldn't be g(a)(1-g(a)  ).  I hope this is the case or else I'm
+more confused than I am aware of !!!!!!!!
+
+But, if you wanted to look at a more general case, I'm pretty sure that the only thing that changes is the cost function. So, for example, if you wanted the output activation function to be the identity, then you'd essentially be viewing the neural network as a regression. But, as far as how you would change the hidden layers, for that case, I'm not sure. I they they would stay sigmoidal/logistic or arctan because all I have ever seen for the hidden layers in the various books/publications I've been looking at is the sigmoid or the arctan.
+
+Anyway so, once you have the sigmoidal/logistic or arctan activation functions for the hidden layers and say the identity for the output ( assume this but I guess it could be other things), the derivation would be the same as what andrew did except the cost function would be the sum of the squared differences. This is because Andrew never actually directly took derivatives of the cost function in  his derivation. What we did was derive/write down an expression and then say that it was equal to the derivative of the cost function. See below for a more detailed derivation. The problem is that the notation used in below is totally different from Andrew's which is why Philip's link should be better.
+
+
+If any of the TA's read the above and could comment on it's veracity, I'd appreciate it.
+
+Also, just so people don't think that above is a critcism of Andrew, I think he is doing a great job with the lectures given the
+constraints. He has limited time and doesn't expect so many pre-reqs so he can't go into the gory details like some of the books/papers do.
+
+
+#==============================================
+
+http://www.scribd.com/doc/44397618/Neural-Networks
+
+
+
+
+
+
+
+
+
+
+
+
+
+http://www.scribd.com/doc/44397618/Neural-Networks
+

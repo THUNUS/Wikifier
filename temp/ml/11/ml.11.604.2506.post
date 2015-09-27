@@ -1,0 +1,2 @@
+It is just a minor error.  Yes, it is a n+1 x n+1 matrix.  It does not shrink.  I think the main point at that part of the video it is about the process being O(n^3).
+

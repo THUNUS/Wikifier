@@ -1,0 +1,166 @@
+<html>
+	<head>
+      <style type="text/css">
+        body{color:#efd;background:#0;padding:0 5em;margin:0}
+        h1{padding:2em 1em;background:#100}
+        h2{color:#bf8;border-top:1px dotted #fff;margin-top:2em}
+        p{margin:1em 0}
+		
+	}
+      </style>
+	  <script type="text/x-mathjax-config">
+		MathJax.Hub.Config({tex2jax: {
+		inlineMath: [['$$','$$']],
+		displayMath: [ ['\\','$$'] ],
+		balanceBraces: true,
+		preview: ["[math]"]
+		}});
+	</script>
+	  <script type="text/javascript"
+			src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+		</script>
+		<script type = "text/javascript" src="http://ajax.googleapis.com/ajax/libs
+/jquery/1.4.0/jquery.min.js"></script>
+	  </head>
+     
+      <body onload="linkElem();relatExtr()">
+        <h1><font face="Impact" size = "6">WiKification Demo</h1>
+		<button id = "br1" name = "count" onclick = "rediret1()" style="border-radius: 14px; border: 1px solid rgb(24, 171, 41); display: inline-block; cursor: pointer; color: rgb(255, 255, 255); font-family: Arial; font-size: 8px; padding: 8px 15px; text-decoration: none; text-shadow: rgb(59, 92, 53) 0px 1px 0px; background-color: rgb(68, 199, 103);">Machine Learning</button>
+		<button id = "br2" name = "count" onclick = "rediret2()" style="border-radius: 14px; border: 1px solid rgb(24, 171, 41); display: inline-block; cursor: pointer; color: rgb(255, 255, 255); font-family: Arial; font-size: 8px; padding: 8px 15px; text-decoration: none; text-shadow: rgb(59, 92, 53) 0px 1px 0px; background-color: rgb(68, 199, 103);">acoustics1-001</button>
+		<button id = "br3" name = "count" onclick = "rediret3()" style="border-radius: 14px; border: 1px solid rgb(24, 171, 41); display: inline-block; cursor: pointer; color: rgb(255, 255, 255); font-family: Arial; font-size: 8px; padding: 8px 15px; text-decoration: none; text-shadow: rgb(59, 92, 53) 0px 1px 0px; background-color: rgb(68, 199, 103);">advancedchemistry-001</button>
+		<div>
+		{%block title%}{%endblock%}
+		<button id = "b1" name = "count" onclick = "countNum()" style="border-radius: 14px; border: 1px solid rgb(24, 171, 41); display: inline-block; cursor: pointer; color: rgb(255, 255, 255); font-family: Arial; font-size: 8px; padding: 8px 15px; text-decoration: none; text-shadow: rgb(59, 92, 53) 0px 1px 0px; background-color: rgb(68, 199, 103);">Get number of links</button>
+		
+		<p id = "r1"></p>
+		<p id = "r2"></p>
+		</div>
+		{% autoescape off %}
+        {% block content %}
+        {% endblock %}
+		{%endautoescape%}
+		<script type="text/javascript">
+
+		var coursename = document.getElementById("title").innerText;
+		coursename = coursename.split(" ")[0];
+		function linkElem(){
+			var linked = document.getElementsByTagName("p");
+			var count=0;
+				for(var i =0;i<linked.length;i++){
+				var content = linked[i].innerText;
+				var keyword = "(([Pp]roblem|[Qq]uizz*|[Qq]uestion|[Ee]xam|[Mm]odule|[Ll]ecture|[Ss]lide|[Vv]ideo|[Hh]omework|[Ww]eek)( *[0-9]+ *?[\.-]? *?[0-9]*)(?![0-9]*%))";
+				var reg = new RegExp(keyword); 
+				var patt = content.match(/(([Pp]roblem|[Qq]uizz*|[Qq]uestion|[Ee]xam|[Mm]odule|[Ll]ecture|[Ss]lide|[Vv]ideo|[Hh]omework|[Ww]eek)( *[0-9]+ *?[\.-]? *?[0-9]*)(?![0-9]*%))/g)
+				if (patt !=null){
+					for(var j = 0;j<patt.length;j++){
+						re = new RegExp(/(([Pp]roblem|[Qq]uizz*|[Qq]uestion|[Ee]xam|[Mm]odule|[Ll]ecture|[Ss]lide|[Vv]ideo|[Hh]omework|[Ww]eek)( *[0-9]+ *?[\.-]? *?[0-9]*))/i)
+						result = re.exec(patt[j])
+						if(result[3][0]==' '){
+							result[3] = result[3].substring(1)
+						}
+						if(result[3][result.length-1]==','||result[3][result.length-1]=='.'){
+							result[3] = result[3].substring(0,result.length-2);
+						}
+						linked[i].outerHTML=linked[i].outerHTML.replace(result[0],"<a href=\"\\resolve\\"+coursename+"\\"+result[2]+"\\"+result[3]+"\">"+result[0]+"</a>");
+					}
+					
+					count++;
+				}
+				names = document.getElementsByName("name");
+				codes = document.getElementsByName("code");
+				for(var m = 0;m<names.length-1;m++){
+					var patt = names[m].innerText.trim().split(" ");
+					var str = "("
+					for (var iter = 0; iter<patt.length;iter++){
+						if(iter!=patt.length-1){
+						str += patt[iter]+".{0,1}";
+						}else
+						{
+						str +=patt[iter];
+						}
+					}
+					str +=")"
+					if(str!="(Classification)"&&str!="(Cost.{0,1}Function)"){
+						var re = new RegExp(str,"ig")
+					}else{
+						var re = new RegExp(str,"g")
+					}
+					reg = content.match(re);
+					if (reg !=null){
+					for(var j = 0;j<reg.length;j++){
+						result = reg[j];
+						var re2 = new RegExp("(<a name.*>)(.*)(</a>)","g");
+						var group = re2.exec(linked[i].outerHTML);
+						if (group!=null&&result.match(group[2])){
+						linked[i].outerHTML=linked[i].outerHTML.replace(group[0],group[2]);
+						linked[i].outerHTML=linked[i].outerHTML.replace(result,"<a name = \"concret\" href=\"\\resolve\\"+coursename+"\\"+"lecture"+"\\"+names[m].innerText+"\">"+result+"</a>");
+						}else
+						{
+							linked[i].outerHTML=linked[i].outerHTML.replace(result,"<a name = \"concret\" href=\"\\resolve\\"+coursename+"\\"+"lecture"+"\\"+names[m].innerText+"\">"+result+"</a>");
+						}
+					}
+					
+					count++;
+				}
+					
+				}
+				
+				}
+				
+			}
+			</script> 
+		<script type="text/javascript"> function relatExtr(){
+			var linked = document.getElementsByTagName("p");
+			var count=0;
+				for(var i =0;i<linked.length;i++){
+					var a = $(linked[i]).find("a");
+					if(a.length>=2){
+						for(var a_iter = 0;a_iter<a.length;a_iter++){
+							if(String(a[a_iter].innerHTML).match(/[Ss]lide/g)){
+								for(var new_iter = 0;new_iter<a.length;new_iter++){
+									if(String(a[new_iter].innerHTML).match(/[Ll]ecture/g)||String(a[new_iter].innerHTML).match(/[Vv]ideo/g)){
+										if(new_iter>a_iter){
+											var content = String(linked[i].innerHTML);
+											var child = String(a[a_iter].innerHTML);
+											var parent = String(a[new_iter].innerHTML);
+											var reg3 = /[0-9]+/igm;
+											var index = content.substring(content.indexOf(child),content.indexOf(parent)+parent.length);
+											a[new_iter].outerHTML = "";
+											a[a_iter].outerHTML = "<a class = \"inherit\" parent = \"lecture\" child = \"slide\" href = \"\\resolve\\"+coursename+"\\lecture\\"+String(a[new_iter].innerHTML).match(reg3)[0] + "\\slide\\"+String(a[a_iter].innerHTML).match(reg3)[0]+"\">"+child+" of 	"+parent+"</a>";
+											;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+		
+		
+			
+			
+			
+		}</script>
+		<script type= "text/javascript"> function countNum(){
+			var a = document.getElementsByTagName("a");
+			var h = document.getElementsByTagName("h4");
+			var p = document.getElementById("r1");
+			p.innerHTML = "Links Number Totally = "+a.length+"<br>"+"Posts Number Totally = "+ h.length;
+			var button = document.getElementById("b1");
+			b1.outerHTML = "<button id = \"b1\" name = \"conceal\" onclick = \"conceal()\" style=\"border-radius: 14px; border: 1px solid rgb(24, 171, 41); display: inline-block; cursor: pointer; color: rgb(255, 255, 255); font-family: Arial; font-size: 8px; padding: 8px 15px; text-decoration: none; text-shadow: rgb(59, 92, 53) 0px 1px 0px; background-color: rgb(68, 199, 103);\">Conceal the result</button>";
+		} </script>
+		<script type="text/javascript"> function conceal(){
+			var a = document.getElementsByTagName("a");
+			var p = document.getElementById("r1");
+			p.innerHTML = "";
+			var p2 = document.getElementById("r2");
+			p2.innerHTML = "";
+			var button = document.getElementById("b1");
+			b1.outerHTML = "<button id = \"b1\" name = \"count\" onclick = \"countNum()\" style=\"border-radius: 14px; border: 1px solid rgb(24, 171, 41); display: inline-block; cursor: pointer; color: rgb(255, 255, 255); font-family: Arial; font-size: 8px; padding: 8px 15px; text-decoration: none; text-shadow: rgb(59, 92, 53) 0px 1px 0px; background-color: rgb(68, 199, 103);\">Get number of links</button>"
+		}</script>
+		<script type="text/javascript"> function rediret1(){self.location='http://127.0.0.1:8000/learn/ml/'}</script>
+		<script type="text/javascript"> function rediret3(){self.location='http://127.0.0.1:8000/learn/advancedchemistry-001/'}</script>
+		<script type="text/javascript"> function rediret2(){self.location='http://127.0.0.1:8000/learn/acoustics1-001/'}</script>
+		
+      </body>
+</html>

@@ -1,0 +1,8 @@
+In the linear regression lecture, all the x variables were assumed numerical and somewhat continuous (like number of bedrooms - though not continuous, feature scaling normalizes it like it were continuous). **My question is - how do we account for/represent ordinal values that aren't continuous?**
+
+For example, if the price of a house depends not only on area, number of bedrooms, but things like 
+
+"Does it have a Home Owners Association?" - the values of which would be Yes or No (which can be represented as 1, -1 or 0, 1 or any other way)
+"The month in which it is sold" - we cannot simply take the month number, since December = 12 is not greater than January = 1.
+"Stucco, Brick, Concrete or Wood Finish?" - again, we cannot simply assign numerical values here, because we don't know if Brick is better than Concrete when determining the price of a house. 
+

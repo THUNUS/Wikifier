@@ -1,0 +1,7 @@
+There appears to be an error in the "correct" answer for this question.
+
+When asked to compare the standard method with the multivariate method, the statement: *"The original method can be more computationally efficient than the multivariate Gaussian model, and thus might scale better to very large values of n (number of features)"* is marked as wrong, when it's clearly exactly what Prof. Ng just lectured about.
+
+
+
+

@@ -1,0 +1,2 @@
+In video lectures it says that without feature scaling linear regression might take a long time to converge, but i can't see why.
+As i see it, we use product of partial derivatives and learning rate parameter to determine the step, and partial derivatives would be proportional to our scale, so it should not matter.

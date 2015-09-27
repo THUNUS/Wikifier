@@ -1,0 +1,5 @@
+Think about it like this: you want to fit the data to the underlying pattern, not to the noise in the data.
+
+You can imagine that, if you think price and house size is linear, when you plot real data, it'll look like a line, but it'll be noisy around that line. If your model goes through every point in the example data, then your model is describing the noise, not the fundamental trend. If you'd used a different set of example points, they'd be noisy around the line in a different way, and the over-fit model would look very differently. 
+
+On the other hand, a well-fit model won't change much when using a different set of training data, because it's modeling the underlying trend, not the (random) noise around the underlying trend. 

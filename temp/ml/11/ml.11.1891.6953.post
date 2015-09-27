@@ -1,0 +1,13 @@
+Hi everybody,
+
+I'm not sure if someone already posted it, but I think I found an error in <ref name="lecture" type="sci">the video lecture 9-4 "Implementation note: Unrolling parameters"</ref>. On <ref name="slide" type="sai">the second slide</ref> there is an example of a neural network with the following layers:
+
+$$s_1 = 10, s_2 = 10, s_3 = 1$$
+
+Prof. Ng then writes that the weights are given as $$\Theta^{(1)} \in \mathbb{R}^{10 \times 11}, \Theta^{(2)} \in \mathbb{R}^{10 \times 11}, \Theta^{(3)} \in \mathbb{R}^{1 \times 11}$$ (and similar for $$D^{(1)}, D^{(2)}, D^{(3)}$$).
+
+But as we learned earlier, $$\Theta^{(j)}$$ is the matrix of weights controlling function mapping from layer $$j$$ to layer $$j+1$$. So $$\Theta^{(3)}$$ gives the mapping from layer $$3$$ to layer $$4$$ â€“ but there is no layer $$4$$ in the example. So I think it should be
+
+$$\Theta^{(1)} \in \mathbb{R}^{10 \times 11}, \Theta^{(2)} \in \mathbb{R}^{1 \times 11}$$ (and similar for $$D^{(1)}, D^{(2)}$$)
+
+in this example, shouldn't it? Because basically, there are only 2 layers $$s_2$$ and $$s_3$$ where we need to calculate the activation values!?

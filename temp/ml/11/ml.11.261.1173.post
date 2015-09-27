@@ -1,0 +1,5 @@
+Interesting question.  Here are my thoughts:
+
+Considering the case of a set of data points which lie on a circle, in 2D, and assuming a linear fit, any line through the center of the circle would minimize the usual cost functions.  Thus, if the center of the circle is at $$(x_0, y_0)$$, you would have a set of lines $$(y - y_0) = a (x - x_0)$$ for any real "a".  Plotting the cost function, this would give you a degenerate minimum along the line $$(y_0 - a  x_0, a)$$, but of course deviating from that would be worse, so you end up with a valley--something like a "parabolic sheet", or whatever that's called.
+
+Going to a sphere (N-sphere), would give you 2-fold (N-fold) radial symmetry and thus more degenerate parameters.  So for the sphere you would have a plane of equally good solutions, etc.  You could also try fitting with a quadratic, even in 2D, and I think you would still retain the symmetry, but offhand I don't know what the fit would look like (perhaps a parabola that intercepts the circle at 3 equidistant points?) 

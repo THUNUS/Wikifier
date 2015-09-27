@@ -1,0 +1,2 @@
+This must be trivial, but why do we choose the principal eigenvector as solution for the maximisation problem max u^T \Sigma u, subject to u^T u = 1 ?
+Using the Lagrange multipliers method, don't we end up with something like \Sigma u - \lambda u = 0, which holds for all eigenvectors, not only for the principal one? 

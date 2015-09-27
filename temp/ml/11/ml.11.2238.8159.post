@@ -1,0 +1,11 @@
+<ref name="video" type="sai">at 16:35</ref> the constrint should be 
+
+p^(1) ||Theta|| >= 1
+
+which at the moment is key to understanding where the margin originates from.
+
+Actually
+
+p^(1) ||Theta|| >= 0
+
+is not that bad to writeout, because comparing the effects of the two constraints clarifies this.

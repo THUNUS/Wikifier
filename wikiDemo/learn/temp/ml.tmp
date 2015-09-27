@@ -1,0 +1,86 @@
+Welcome  +1
+What is Machine Learning?  +2
+Supervised Learning  +3
+Unsupervised Learning  +4
+Model Representation  +5
+Cost Function - Intuition I  +7
+Cost Function - Intuition II  +8
+Gradient Descent Intuition  +10
+Gradient Descent For Linear Regression  +9
+What's Next  +12
+Matrices and Vectors  +13
+Addition and Scalar Multiplication  +14
+Matrix Vector Multiplication  +15
+Matrix Matrix Multiplication  +16
+Matrix Multiplication Properties  +17
+Inverse and Transpose  +18
+Multiple Features  +19
+Gradient Descent for Multiple Variables  +20
+Gradient Descent in Practice I - Feature Scaling  +21
+Gradient Descent in Practice II - Learning Rate  +22
+Features and Polynomial Regression  +23
+Normal Equation  +24
+Normal Equation Noninvertibility  +25
+Basic Operations  +26
+Moving Data Around  +27
+Computing on Data  +28
+Plotting Data  +29
+Control Statements: for, while, if statements  +31
+Vectorization  +30
+Working on and Submitting Programming Exercises  +32
+Classification  +33
+Hypothesis Representation  +34
+Decision Boundary  +35
+Cost Function  +58
+Simplified Cost Function and Gradient Descent  +36
+Advanced Optimization  +37
+Multiclass Classification: One-vs-all  +38
+The Problem of Overfitting  +39
+Cost Function  +40
+Regularized Linear Regression  +41
+Regularized Logistic Regression  +42
+Non-linear Hypotheses  +43
+Neurons and the Brain  +44
+Model Representation I  +45
+Model Representation II  +46
+Examples and Intuitions I  +47
+Examples and Intuitions II  +48
+Multiclass Classification  +49
+Cost Function  +50
+Backpropagation Algorithm  +51
+Backpropagation Intuition  +52
+Implementation Note: Unrolling Parameters  +53
+Gradient Checking  +54
+Random Initialization  +55
+Putting It Together  +56
+Autonomous Driving  +57
+Deciding What to Try Next  +59
+Evaluating a Hypothesis  +60
+Model Selection and Train/Validation/Test Sets  +61
+Diagnosing Bias vs. Variance  +62
+Regularization and Bias/Variance  +63
+Learning Curves  +64
+Deciding What to Do Next Revisited  +65
+Prioritizing What to Work On  +66
+Error Analysis  +67
+Error Metrics for Skewed Classes  +68
+Trading Off Precision and Recall  +69
+Data For Machine Learning  +70
+Optimization Objective  +71
+Large Margin Intuition  +72
+Mathematics Behind Large Margin Classification  +73
+Kernels I  +74
+Kernels II  +75
+Using An SVM  +76
+Unsupervised Learning: Introduction  +77
+K-Means Algorithm  +78
+Optimization Objective  +79
+Random Initialization  +80
+Choosing the Number of Clusters  +81
+Motivation I: Data Compression  +82
+Motivation II: Visualization  +83
+Principal Component Analysis Problem Formulation  +84
+Principal Component Analysis Algorithm  +85
+Choosing the Number of Principal Components  +86
+Reconstruction from Compressed Representation  +87
+Advice for Applying PCA  +88

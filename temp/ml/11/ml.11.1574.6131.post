@@ -1,0 +1,1 @@
+I think ML can't solve the problem 100% accurately, and there must be a limit where the model can never reach no matter what a perfect algorithm is developed and how much training data we get. Take the ZIP code recognition as example, if the handwriting is terriblely illegible, even human being can't recognize it, how do we expect a machine to do better?

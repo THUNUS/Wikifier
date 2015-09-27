@@ -1,0 +1,1 @@
+(<ref name="video" type="sai">Around 6:00 of 'Choosing the Number of Principal Components'</ref>).  I suppose there must be a guarantee along the lines of $$S_{11} >= S_{22} >= ... >= S_{nn}$$?  Otherwise we'd have to be lucky indeed for $$S_{11} ... S_{kk}$$ to sum to >= 99% of the total.

@@ -1,0 +1,1 @@
+In <ref name="lecture" type="sci">video lecture  "7.4 Regularization . Regularize Logistic Regression" 5.25 min</ref>. In formula of J(O) has no ( ) at second logarithm. It should be    log(1-h(x(i))   instead    log1-h(x(i))

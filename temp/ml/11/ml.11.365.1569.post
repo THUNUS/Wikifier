@@ -1,0 +1,6 @@
+The problem is that X' and X are not invertible, whereas X'X mostly is.
+
+X (and with that also X') are mostly non square matrices (m > n). But if you multiply X' by X you get a square matrix (n by n).
+Now, if X has independent columns (so X' has independent rows) the matrix X'X will be invertible. This can be proved.
+
+So you only can invert X'X and not simply X' or X.

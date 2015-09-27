@@ -1,0 +1,9 @@
+I will start posting here, so that the whole thread isn't just the post comments.
+
+    Just a little thought: Suppose we are using logistic sigmoid function as activation function and we have 1 output neuron. Then the output of neuron may be 1 only if the dot product of weights times input to the neuron is infinity. output=sigmoid(Î¸Tâˆ—input)
+
+If you have 1 output neuron, then that's 2-class classification (i.e. positive/negative). Assuming the output is likelihood of the example being positive, the output of the negative class is $$1 - h_{\Theta}(x)$$. It was mentioned in the lectures that if you have 2 classes, you use 1 output node while for more than 2 classes you use $$K$$ outputs.
+
+Also, see the section titled _"Outputs sum to one"_ in this paper: http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.36.8806&rep=rep1&type=ps (page 29, section 4.3.3).
+
+What's really interesting is that $$k^{th}$$ output is not used for softmax regression (at least according to the CS229 class). I think this is because neural networks have much larger amount of error than softmax regression since the cost function of neural network is not convex (in other words it can have local optima).

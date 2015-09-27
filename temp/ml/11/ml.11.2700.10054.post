@@ -1,0 +1,6 @@
+Hello. 
+I was wondering about some further applications of neural networks - we have seen in this course how NN are used for classifiers.
+However, in nature there are many application of nerve systems that are not just choosing from a final set of values, but are doing
+something similar to regression - for instance when we try to catch flying ball, and we are trying to estimate some location in space and time where we can meet him, given it's location, speed oreintation (and obtaining these 'input' values from just observing the ball is in itself a complex computational process that is not classification). I don't expect to build anytime soon such NNs, but I was wondering whether there are algortighms that make NN work for regression problems. 
+Now, to an even more theoretical question- are there algorithms that make NN a turing machine ? I can imagine that it makes things 
+more complicated, since we need some representation of memory, and time dependancy, but then I guess it would enable solving many more types of problems, wouldn't it ?

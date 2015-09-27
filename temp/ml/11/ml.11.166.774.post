@@ -1,0 +1,7 @@
+One example pointed out by Prof. Ng during Week 1 was how a classifier can classify two speakers who speak simultaneously.  The result of the classifier is a discrete classification of a speaker speaking Spanish and a speaker speaking English.
+
+I am curious --- what sort of features would have been used here to do the classification?  I suspect that the mixed audio file where both speakers are speaking is a G.711 format or maybe a .wav or .mp3.  Given that it is a sequence of audio bytes played against a timescale, what sort of features would have allowed a classifier to differentiate the audio corresponding to the English speaker from the audo corresponding to the Spanish speaker?
+
+Any insights?
+
+Thanks.

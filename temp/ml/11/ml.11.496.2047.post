@@ -1,0 +1,9 @@
+To dear TA and other students who have finished the 7th lecture
+ 
+Why is the coefficient of the regularization term divided by m?
+I can understand why it is divided by two, because the derivative of the regularization term will have a 2, so that will eliminate.
+but I couldn't see why is divided by m. 
+
+Actually we can modify the value of /lambda to be lambda over m. so i think there must be some meaning to put a m in that term.
+
+Thanks.

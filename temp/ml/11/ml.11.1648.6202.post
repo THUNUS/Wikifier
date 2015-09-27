@@ -1,0 +1,6 @@
+Hi. 
+Maybe not that important an issue, but on <ref name="lecture" type="mci">the 'what to do next' (week 6) lectures</ref>, it's mentioned that the number of features should be increased or decreased, 
+to reduce high bias / high variance, and then later steps include ajusting lambda, the regularization constant.  but wouldn't  it make sense to start always with a large number of features, and than increase Lambda as long as high variance exists - which will seems to me should make the process simpler ?
+(by avoiding removing or adding features)
+the reason I think it could possibly make sense is that it apears to me that increasing the regulation term is prety much equivalent to decreasing the  number of features, isn't it ?
+(or maybe it could  be thought of as a generalliastion of removing features  ? ) 

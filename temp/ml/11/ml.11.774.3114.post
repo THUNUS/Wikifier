@@ -1,0 +1,14 @@
+Though these are small errors in the video, but I just wanted to share.
+
+1. Should not J($$\theta$$) be a function of (n+1) parameters rather than of (m+1) parameters? (please see the <ref name = "slide" type = "sci">slide no. 24 in the tutorial</ref>, just below the horizontal line).
+
+2. In the <ref name = "slide" type = "sci">slide 26</ref> and in the <ref name = "video" type = "sai">video</ref> too X is written as a matrix with elements 
+
+$$\begin{pmatrix}1&x_1^{(1)} \\\ 1 & x_2^{(1)} \\\ 1 & x_3^{(1)} \\\ ... \\\ 1 & x_m^{(1)}\end{pmatrix}$$
+
+
+Should it not be written as 
+
+$$\begin{pmatrix}1&x_1^{(1)} \\\ 1 & x_1^{(2)} \\\ 1 & x_1^{(3)} \\\ ... \\\ 1 & x_1^{(m)}\end{pmatrix}$$
+
+Please see the sub and superscripts with x.

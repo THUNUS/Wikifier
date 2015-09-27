@@ -1,0 +1,7 @@
+I think it is said in one of the first linear regression videos that linear regression has one optimum and no other  local optima. However, the following intuition videos talk about local minima and sensitivity to the starting point of the search.
+
+Is it also true that linear regression have no local optima:
+
+a) for a problem with multiple features?
+
+b) when linearly combining complex or aggregate features?

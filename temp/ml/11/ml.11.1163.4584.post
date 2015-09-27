@@ -1,0 +1,5 @@
+Hi, I don't get why $$z^{(2)}$$  is 3 dimensional [<ref name="lecture" type="sci">2:45 of lecture 8-4</ref>]:
+$$z^{(2)}1$$, $$z^{(2)}2$$, $$z^{(2)}_3$$ each are the elementwise products of a matrix "cell" with an x value [0:3] to me that is only 1 dimension and grouping the Z together raises it to 2 dimensions not 3... Ideas?
+
+Note: edited to proper mark up
+

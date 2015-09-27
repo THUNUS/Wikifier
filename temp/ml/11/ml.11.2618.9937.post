@@ -1,0 +1,3 @@
+Thanks a lot for the response, but I'm not sure I understand what you mean.  Are you suggesting 'pausing' the learning and collecting up a sample of new data to use for tuning and testing, (then using it again as training data), and just repeating this every so often?  Wouldn't there be a problem with lack of randomness in the samples (since they are all being collected consecutively)?  I suppose it will depend on how much seasonality you have in the data.
+
+Maybe we could use a sort of 'sliding window' of data, randomising which data items are used for training/validation/testing each time.  Though this feels more like repeated batch learning rather than continuous learning.

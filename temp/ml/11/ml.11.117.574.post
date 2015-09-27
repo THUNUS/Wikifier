@@ -1,0 +1,1 @@
+you are a bit off track in saying the data is "not labeled".  The data has attributes dictated by your features, thusly your features "label" your data.  For example, my netflix recommends "Cerebral" "Fight the System" "Documentaries".  Each of those quoted things is an independent attribute but put together they define a cluster.

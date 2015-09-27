@@ -1,0 +1,7 @@
+Hello everyone,
+
+In the lectures, we are applying a Likelihood maximization approach which implies the maximization of the likelihood of the data over the entire network. Can we elaborate a bit more on the method? Some additional math wouldn't hurt in this case.It would be nice to see a bit of the proof that leads to the update rules given in the lecture. 
+
+Also, under this approach, could we use a neural network to fit an arbitrary distribution ? If yes, than could that happen with the aid of a different model (e.g., a Gaussian rather than sigmoid)?
+
+Maybe a small lecture on the mathematical intuition behind Likelihood based back-propagation would be very helpful to unravel the full potential of the approach.

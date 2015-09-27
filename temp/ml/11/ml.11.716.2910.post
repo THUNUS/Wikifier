@@ -1,0 +1,4 @@
+In Week 2's lectures, Dr Ng talks about cases when the normal equation may be non-invertible:
+1. redundant features - linear dependent features
+2. too many features
+What result would gradient descent give you in these cases? Would gradient descent even give you any results?

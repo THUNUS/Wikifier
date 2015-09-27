@@ -1,0 +1,13 @@
+In the last example given, we have the pipeline stage "Face Detection" splitting into three components: Eyes, Nose, and Mouth segmentation. In Prof. Ng's ceiling analysis table on the right (timestamp: 12:13), he treats the order of the three segmentation stages in serial rather than in parallel when counting the improvement rate, i.e. he is assuming the result of Eyes segmentation is fed into Nose segmentation, and the result of Nose segmentation is fed into Mouth segmentation, and so on; hence his calculation of 95%-91% = 4%, 96%-95% = 1%, and 97% - 96% = 1%.
+
+I am a bit confused here. Why not just put them into a serial pipeline then?
+
+Or, if it were supposed to be parallel, shouldn't we calculate the improvement rate as such?
+
+Eyes segmentation improvement: 95% - 91% = 4%
+
+Nose segmentation improvement: 96% - 91% = 5%
+
+Mouth segmentation improvement: 97% - 91% = 6%
+
+I guess basically I am unclear about how the manual coding works into this flow chart. Can anybody help clarify?

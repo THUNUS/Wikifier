@@ -1,0 +1,54 @@
+This just has to do with logic, truth table is probably the easiest way to explain logical equivalence. The X stands for exclusive, by the way. `Exclusive OR` is different from `inclusive OR` in that, well, a and b can't both be true. (`There's one seat in the car so exclusively either of you are going to get to the party` vs. `It is the case that either Mary or Ami will show up (not false if they both do).`)
+
+1/ The statement `a XOR b` is true only when a and b are different, with a and b taking on two possible values: true and false.
+
+Example statement: Either (a) [you unblinkingly stare at the weeping angel], or (b) [they rip you apart], no middle ground.
+
+Table:
+
+    a    XOR    b
+    1     0     1
+    1     1     0 (XOR is true because a is true and b false)
+    0     1     1 (XOR is true because a is true and b false)
+    0     0     0
+
+2/ The statement `a XNOR b` is simply `not (a XOR b)`, i.e. it is true when a and b are NOT different.
+
+Example statement: (a) [You shall survive the weeping angels] if and only if (b) [you keep staring at them].
+
+    a   XNOR    b
+    1     1     1 (XNOR is true because a is true and b true)
+    1     0     0 
+    0     0     1 
+    0     1     0 (XNOR is true because a is false and b false)
+
+3/ The statement `a OR b` is a disjunction, it is true when either a or b is true or both a and b are true.
+
+Example statement: It is sufficient for either (a) [you] or (b) [someone else] to look at the weeping angel.
+
+    a    OR     b
+    1     1     1 
+    1     1     0 
+    0     1     1 
+    0     0     0 (You're dead, Jim.)
+
+4/ The statement `a AND b` is a conjunction, it can only be true when both a and b are true.
+
+Example statement: (a) [The Doctor always travels by the Tardis] and (b) [he always travels with a companion].
+
+    a   AND     b
+    1     1     1 
+    1     0     0 
+    0     0     1 
+    0     0     0
+
+Now, there are tricks to construct equivalent logical statements, which I have neither time nor interest to introduce you to. The only concrete "method" is to understand the statements and use your logical capacity to ... constrain the outcome to get what you want (whole statement true only when etc.. etc..).
+The best I can do is verify that the statement Prof. Ng used is indeed equivalent to a XNOR b.
+
+    (a    AND    b)    OR    (not a    AND    not b)
+     1     1      1      1        0       0       0   
+     1     0      0      0        0       0       1   
+     0     0      1      0        1       0       0   
+     0     0      0      1        1       1       1   
+
+1-0-0-1 is indeed the truth signature for `a XNOR b` as seen above. A simple translation would be: It is the case that either (a) [both a and b are true] or (b) [both a and b are false]. Which is the definition of XNOR.

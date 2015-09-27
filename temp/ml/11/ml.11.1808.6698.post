@@ -1,0 +1,7 @@
+I have to admit that I've been wondering about the symmetry problem since the introduction of neural networks.  But random initialization doesn't make much sense to me.
+
+If the initial values of theta correspond to, for instance, visual positions, then symmetric positions correspond to identical perspectives duplicated.  There's no parallax in identical positions.  For maximum parallax, we'd want the initial values to be maximally spaced, or at regular positions across the input range.  So, for 10 first level units, we'd want to space them at .1, .2, etc.
+
+It also occurs to me that for some problems, certain portions of the input space are likely to lead to more useful propagation results and for those areas, it might make more sense to concentrate the input values.  So akin to using a nonlinear division of input parameters like, say, exponential divisions.  This would lead to a sort of concentration graph over the range of possible input parameters.  That is, it should be possible to run something akin to gradient descent to determine optimal values of input parameters given that we know how to compute the output parameters.
+
+So my question...  Why random numbers rather than something more tailored, or at least, something with regular variation?

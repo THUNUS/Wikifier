@@ -1,0 +1,29 @@
+Why that complicated? I'm getting to this from a different direction, and here's the train of thought. 
+
+So, the task is to draw a line through a set of points and minimize the "vertical discrepancies" between the _training set_ points $$(x,y)$$ and their corresponding _prediction line_ points$$(x, \hat{y})$$. So we define a cost function which is just an averaged sum of those discrepancies: 
+
+$$J(\theta)=(1/2m)*\sum_{i=1}^{m} (h(x^{(i)}) - y^{(i)})^{2}$$ 
+
+---
+
+We can rewrite this as $$J(\theta)=(1/2m)*\sum_{i=1}^{m} (\theta^{T}x^{(i)} - y^{(i)})^{2}$$ 
+
+and then as $$J(\theta)=(1/2m)*||X\theta- y||^2$$, with $$X$$ being a matrix where i-th row contains all $$x^{(i)}$$ values (same as in Andrew Ng's videos, I guess).
+
+Finally, the same in a matrix form:
+
+$$J(\theta)=(1/2m)*(X\theta - y)^T(X\theta - y)$$. 
+
+---
+
+We need to minimize the above function and, as in any minimization problem, we take a derivative (with respect to $$\theta$$) and equate it to zero. Note, as we're working with matrices it's not "just 0" but a vector of zeros: 
+
+$$\triangledown J=1(/2m) \cdot X^{T} \cdot (X\theta - y) = 0$$ 
+
+$$X^{T} \cdot (X\theta - y) = 0$$ 
+
+$$X^{T}X\theta = X^{T}y$$ 
+
+$$\theta = (X^{T}X)^{-1}X^{T}y$$ 
+
+So now we know that the "best" line (with the smallest cost function value) is when $$\theta$$ reaches the above value. Does this look like the alternative answer the question you raised?

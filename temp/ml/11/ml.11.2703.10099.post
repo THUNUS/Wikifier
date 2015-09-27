@@ -1,0 +1,13 @@
+Hi!
+
+You are right, implementing sliding windows inside videos are too "expensive". Instead, when videos are processed, there's a detection operation that is used to find only areas with significant data. These areas are called "spatial-temporal" patches or cuboids and they usually must have at least two requirements: 
+
+1. They are rich in geometry, contain some sort of geometrical discontinuity, such as corner, blob or edge (the "spatial" part)
+2. They contain some sort of movement (the "temporal" part)
+
+There are several image processing methods to detect these patches. 
+If you are interested in this field check out: Laptev STIP detector (that is based on detection of corners) and Dollar cuboid detector (that detect harmonic discontinuities).
+
+BTW, these methods are sometimes used in images too (actually from my experience sliding windows are quite rare) and usually it's impractical to measure 500,000 correlations for each image. For example when you look at the image of the walking people that we saw in the course, you can detect only areas that are complex enough, geometrically, and therefore not detect all the windows that contain the background.
+
+I Hope it was helpful!

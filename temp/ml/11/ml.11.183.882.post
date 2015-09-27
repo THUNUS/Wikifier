@@ -1,0 +1,11 @@
+If I'm following you correctly, with theta initialized to all zeros, you will indeed have
+
+    1/(2*3) * ([0*1 - 1]^2 + [0*2 - 2]^2 + [0*3 - 3]^2) = 1/6 ((-1)^2 + (-2)^2 + (-3)^2)
+
+with
+
+    X = [1; 2; 3]
+    Y = [1; 2; 3]
+    theta = [0; 0; 0]
+
+I'm not sure which particular part of the videos you are referring to, but I can confirm that is correct.

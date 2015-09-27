@@ -1,0 +1,5 @@
+I noticed what I think is a mistake, in the slide just before the test and in the test it says 
+Pi . ||theta|| >= 1  if yi =1 that part is fine, but below it says
+Pi . ||theta|| <= -1 if yi =1 also! I think the yi part should be = 0 as it was at the start of the lecture. After all how can the projection times the size of theta both be >=1 AND <=1?
+
+Regarding the question, it is a good one and makes you think. My reasoning was that the line is midway and vertical, that theta points along the x1 axis and so looking at the projections of the points onto theta we want them all to be greater than one in magnitude, when multiplied by the size of theta. The smallest magnitude of projection is 2 so theta has to be the reciprocal of this to accomplish this is what is needed.

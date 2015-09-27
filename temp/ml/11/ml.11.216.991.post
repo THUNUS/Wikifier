@@ -1,0 +1,3 @@
+just my humble input, it looks like (alpha) x (partial derivative of cost function) can be regarded as a problem of sequences and series. we could take limit of the sequence and see if it converges, if it does it would most likely be a good 'alpha' value.
+
+nothing concrete.. 4am local time here, just throwing some ideas around (:

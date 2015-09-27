@@ -1,0 +1,4 @@
+In <ref name="video" type="sci">Video 16.2</ref>, Prof. Ng shows how to compute theta for each user separately. He then shows how to compute thetas for all the users jointly (using a double summation). 
+
+
+What is the purpose of the joint optimization? The estimates of each of theta for each user appear to be independent of each other. The do not appear to interact.

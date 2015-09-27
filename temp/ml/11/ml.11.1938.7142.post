@@ -1,0 +1,1 @@
+Look also at <ref name="lecture note" type="sci">Week 4, Lecture8.pdf, p.20 of 42</ref>:  The superscript *(L)* refers to the L-th layer of the network.  The first subscript *i* refers to the i-th output of that layer (value a-i); the second subscript *j* is the weight of the j-th input of that node.

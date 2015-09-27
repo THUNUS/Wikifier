@@ -1,0 +1,8 @@
+I think you raise a fair point about non-randomness and seasonality.
+
+First, no I didn't mean to pause the learning. Rather, run online learning as usual, but just before using a new datum to train, first run it through the algorithm to check its accuracy. Subsequently save a record of whether the algorithm did well or not on this datum. 
+Once you have this in place, you can have a live feed of algorithm accuracy by averaging the accuracy over a sample of the saved records; for example, everything in the last 10 minutes, or a random sample of 20,000 records over the last 24 hours. How you sample the saved records could be tailored to avoid the effects of seasonality and the non-randomness of the incoming data.
+
+Why this works for cross-validation and testing is because every single datum that comes in has never been seen by the algorithm before it is trained by it, so the accuracy won't be overestimated because you're used the sample in training (a side effect of this is that you can't replay an old stream of data to the algorithm to test it's accuracy because it will already have been trained by that old data). 
+
+Hope that makes some more sense :)

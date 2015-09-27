@@ -1,0 +1,1 @@
+You can learn the lambdas by treating you cost function as a function of the lambdas and enforcing the positivity of the lambda . You will end up with a constrained minimization problem. There are algorithms for dealing with this type of optimization.

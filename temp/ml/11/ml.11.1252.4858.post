@@ -1,0 +1,5 @@
+In <ref name="lecture" type="sci">lecture 9.2</ref> (specifically on <ref name="slide" type="sci">slide 8</ref>) when the Back-propagation algorithm is first described, it looks like the index/subscript i is used for two different things:
+
+It is initially used for the index of training examples, e.g. (x^(i), y^(i)) in the for loop, and
+At the bottom, it is used as the index for parameters in each layer, e.g. Dij^(l) is the ith parameter of jth node in layer l.
+Is that correct? Easiest correction would be to change loop index to k, then use x^(k) and y^(k) in the first and third lines of the loop, respectively, and leave the rest as as.

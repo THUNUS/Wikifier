@@ -1,0 +1,15 @@
+In slide p.11 of Logistic Regression, it explains about non linear cases of decision boundaries.
+
+One explains that
+
+$$h_{\theta}(x) =g( \theta_{0} + \theta_{1}x_{1} + \theta_{2}x_{2} + \theta_{3}x_{1}^2 + \theta_{4}x_{2}^2 )$$
+
+Another exsplains that 
+
+$$h_{\theta}(x) =g( \theta_{0} + \theta_{1}x_{1} + \theta_{2}x_{2} + \theta_{3}x_{1}^2 + \theta_{4}x_{1}^2x_{2} + \theta_{5}x_{1}^2x_{2}^2 + \theta_{6}x_{1}^3x_{2} + \ldots  )$$
+
+I do not understand how to define polynomial expression. I mean that one is using square of variable x1 and another one is using product of square of variable x1 and square of variable x2. I do not understand this difference. 
+Is there any regular way to define polynomial ? 
+If someone has ideas, could you kindly let me know.. 
+
+Thanks in advance.

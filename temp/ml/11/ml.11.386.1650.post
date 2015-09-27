@@ -1,0 +1,18 @@
+The video has this:
+$$X=\left [ \matrix{
+1 & x^{(1)}_1 \cr
+1 & x^{(1)}_2 \cr
+\vdots & \vdots \cr
+1 & x^{(1)}_m \cr
+}
+\right ]$$
+
+But I think that it should have this:
+
+$$X=\left [ \matrix{
+1 & x^{(1)}_1 \cr
+1 & x^{(2)}_1 \cr
+\vdots & \vdots \cr
+1 & x^{(m)}_1 \cr
+}
+\right ]$$

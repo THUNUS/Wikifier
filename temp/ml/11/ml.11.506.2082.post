@@ -1,0 +1,5 @@
+While it's true that's a handy operator as a shorthand, I'm not sure it gets around the problem. Also, it should be "X\y".
+
+More information for the curious here: http://www.mathworks.com/help/techdoc/ref/mldivide.html
+
+If A is an m-by-n matrix with m ~= n and B is a column vector with m components, or a matrix with several such columns, then X = A\B is the solution in the least squares sense to the under- or overdetermined system of equations AX = B. In other words, X minimizes norm(A*X - B), the length of the vector AX - B. The rank k of A is determined from the QR decomposition with column pivoting. The computed solution X has at most k nonzero elements per column. If k < n, this is usually not the same solution as x = pinv(A)*B, which returns a least squares solution.

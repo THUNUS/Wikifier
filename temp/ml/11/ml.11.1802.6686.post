@@ -1,0 +1,5 @@
+Hello,
+I was wondering whether any knows if $$h_{\Theta}(x)$$ has to always be a sigmoid function?
+Can we use other functions?
+I can't recall seeing it in <ref name="lecture" type="sai">the lecture</ref>. 
+Thanks.

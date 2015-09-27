@@ -1,0 +1,9 @@
+In Collaborative filtering, we have values that are not filled in. Suppose a user did not watch a movie then we have to put an 'na' in there.
+
+If I am going to take an SVD of this matrix, then I have to put some number in there - say 0. Say I factorize the matrix, now I have a method to find similar users (by finding out which users are closer together in the reduced dimensional space). But the predicted preference itself - for a user to an item will be zero. (because thats what we entered on the unknown columns). 
+
+So I am stuck with the problem of collaborative filtering vs SVD. They seem to be sorta the same, but not quiet. 
+
+What is the difference, and what happens when I apply an SVD to a collaborative filtering problem (I did, and the results seem acceptable in terms of finding nearby users, which is great, but how?). 
+
+Any pointers much appreciated.

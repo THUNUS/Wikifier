@@ -1,0 +1,8 @@
+Question:
+Suppose an implementation of linear regression (without regularization) is badly overfitting the training set.In this case,we would except
+
+Answer:
+The training error J(Theta)  to be low and the test error Jtest(Theta) to be high.
+
+
+Can somebody please explain me this? 

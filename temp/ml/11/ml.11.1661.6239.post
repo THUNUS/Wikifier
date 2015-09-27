@@ -1,0 +1,7 @@
+In <ref name="video" type="sai">the Backpropagation Algorithm video</ref>, the instructor says that $$\delta = a - y$$, but in the Backpropagation Intuition video, he writes $$\delta = y - a$$.
+
+As far as no proof or derivation of the algorithm formulae is given, we can not decide where is the correct definition and where is an error.
+
+In addition there are a lot of inconsistencies between these two videos. See, e.g., this thread https://class.coursera.org/ml/forum/thread?thread_id=1487
+
+I think that one of these videos should be re-written for the next round of this course.

@@ -1,0 +1,3 @@
+No it doesn't help, and I still think that X is whole matrix and not only one sample. Check out video in section V. Octave tutorial -> Control Statements -> minute 9:00 - 10:00.
+
+And you can see there that X is a 3x2 matrix and not a row vector 1 * (numOfFeatures + 1).

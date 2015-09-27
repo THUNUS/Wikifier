@@ -1,0 +1,13 @@
+Hi.
+
+In the definition of the hypothesis the indices of the sumation begins at $$j=\theta$$, but it should be $$j=0$$.
+
+Another error: The octave-code for the unvectorized implementation says:
+
+$$  thetat(j) * x(y)$$
+
+It should be:
+
+$$ theta(j) * x(j) $$
+
+The video lecture is fine. It has not those errors

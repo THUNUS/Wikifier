@@ -1,0 +1,24 @@
+Hi,
+
+Of late I am facing the problem with browser IE8 that once quiz is shown and answered the video does not get refreshed when I press the 'Continue' button. 
+It was working with other lectures earlier.
+I did not change the security settings. 
+
+I am also getting this error on page as below (which I have already reported to technical stuff)
+Webpage error details
+User Agent: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; GTB7.3; .NET CLR 2.0.50727; InfoPath.2; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729)
+Timestamp: Tue, 5 Jun 2012 10:18:56 UTC
+Message: Object doesn't support this action
+Line: 1
+Char: 1198
+Code: 0
+URI: https://eventing.coursera.org/204.min.js?client=spark&user=23810
+Message: Object doesn't support this property or method
+Line: 1
+Char: 1140
+Code: 0
+URI: https://eventing.coursera.org/204.min.js?client=spark&user=23810
+
+
+Can someone help? 
+Thanks in advance.

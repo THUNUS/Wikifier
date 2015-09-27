@@ -1,0 +1,14 @@
+I watched the video and believe I understoof the material. How ever the in video question that pops up I do not understand how they got the answer y=1 when x<sub>1</sub> < 5.
+
+According to the video lecture:
+
+$$h_\theta(x) = g(\theta_0 + \theta_1 x_1 + \theta_2 x_2)$$
+
+to get desicion boundary we subsitute in the $$\theta$$ values  I get the following:
+
+y=1 if $$5 - x_1 + 0x_2 \geq 0$$
+
+simplied: $$x_1 \geq 5$$ therefor $$y = 1$$ when $$x_1 \geq 5$$
+
+Am I missing something here or is there an error in the answer? Thanks in advance
+

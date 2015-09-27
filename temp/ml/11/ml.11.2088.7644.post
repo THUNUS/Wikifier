@@ -1,0 +1,1 @@
+In <ref name="video" type="sci">Video 12.6</ref>, Prof. Ng said that if you're using a Gaussian kernel you should use feature scaling. Is feature scaling unnecessary for kernels other than the Gaussian kernel? Or is it recommended for all kernels?

@@ -1,0 +1,6 @@
+I understand that for a classification problem with h(x) involving polynomial regression, overfitting can happen.
+
+However, for training sets provided in <ref name="exercise" type="sai">ex3</ref> and <ref name="exercise" type="sai">ex4</ref> (image of the digit), I feel that J(Î¸) canâ€™t be prone to overfitting because each of 400 features represents independent data without polynomial. 
+It is basically hÎ¸(x) = Î¸0 + Î¸1x1 + Î¸2x2 + Î¸3x3 + Î¸4x4+... there are no Î¸2x2^2 or Î¸5x1x2
+
+So how is it that regularization is necessary in cases like <ref name="exercise" type="sai">ex3</ref> and <ref name="exercise" type="sai">ex4</ref>? (different reasoning maybe?)

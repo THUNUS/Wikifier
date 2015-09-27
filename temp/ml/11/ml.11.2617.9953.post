@@ -1,0 +1,8 @@
+I'm not sure exactly what you're asking.
+
+If it's why we multiply. Prof. Ng. gave some intuition as to what u' * v means in one of the earlier lectures. It's [the dot product][1], and it measures the length of the projection (the size of the shadow cast, if you will) of u onto v if you were to plot them on the real plane (and v has length 1, as is the case with PCA).
+
+If it's the wider concepts of eigenvectors, orthonormal bases, singular value decomposition and all that jazz, the mathematical theory is linear algebra :)
+
+
+  [1]: http://en.wikipedia.org/wiki/Dot_Product

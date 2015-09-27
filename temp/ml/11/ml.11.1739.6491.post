@@ -1,0 +1,9 @@
+In <ref name="video" type="sci">Learning Curves (Week 6) @ 11:20</ref>, Professor Ng says this:
+
+"Plotting learning curves like these can often help you figure out whether your learning algorithm is suffering from bias or variance or even a little bit of  both."
+
+Bias results from underfitting and variance from overfitting, right?  How can a learning algorithm suffer from both underfitting and overfitting?
+
+Thanks,
+
+Tim

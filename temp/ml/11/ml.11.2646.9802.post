@@ -1,0 +1,3 @@
+Professor Ng said in the 'Density estimation' video that the independence assumption is mathematically required, but even if it doesn't hold true the algorithm still works out fine on a pragmatic level. I assumed that it's better if the examples are independent but some dependency doesn't doom the algorithm. 
+
+In the monitoring example, we're assuming that the cpu usage and network traffic are linearly dependent (which is the reason for the new features). Does dropping either feature $$x_3$$ or $$x_4$$ increase the efficiency by decreasing dependency? I could imagine that this holds true because the two dependent features are "over-represented." 

@@ -1,0 +1,1 @@
+If there are multiple classes you have to train n classifiers for one vs all in which case you can evaluate each in the usual way using Precision and Recall. On each example it either predicts it right or wrong. I don't think it matters which wrong set it fell into.

@@ -1,0 +1,1 @@
+The hypothesis function takes a set of inputs and produces an output, i.e. it guesses the answer given a specific set of input variables. Theta is a set of unknown values in the function that describes the relationship between the input and output. The values of Theta is determined by the learning algorithm and the training examples. 

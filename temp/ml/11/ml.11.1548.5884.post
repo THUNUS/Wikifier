@@ -1,0 +1,8 @@
+On <ref name="slide" type="sci">the slide "Cost Function"</ref> Dr. Ng shows two equations for J, the first is for logistic regression and the parameter is "lower theta". The second equation is for NN cost function and the parameter is "upper theta". Lower theta is a vector and the calculation of J is straightforward.
+
+My question is about the calculation of NN J using upper theta (which is a matrix). What is passed to the hypothesis function h() in this case? We're using the sigmoid function yes? If so, then sigmoid uses theta (a vector) along with a training example x. But in the case of upper theta for the NN cost function, are we still passing a vector? Is this a row in upper theta? 
+
+A problem I've been having in the nnCostfunction.m programming question is that there are two thetas defined, theta1 and theta2. Which one do we use in the calculation of J ??
+
+
+

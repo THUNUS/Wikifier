@@ -1,0 +1,3 @@
+Since you're continually learning, a cross-validation set (to tune parameters) wouldn't make sense. I'd tune parameters and see what the resulting accuracy is on new data as it comes in (before using it to learn). 
+
+For the test set, a similar situation applies. All examples are new data, so just reporting your accuracy (prior to using that datum to learn) over a sample of incoming data would be just as good a guide to how the algorithm can generalise as a dedicated test set. 

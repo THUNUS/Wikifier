@@ -1,0 +1,5 @@
+Hi, 
+
+In <ref name="lecture" type="sci">week2 class, lecture "Normal Equation" at timestamp 2:45min</ref>, Prof Ng. Andrew said: imagine a cost function $$J(\theta) = a\theta^2 + b\theta + c$$. I wonder that how does $$\theta^2$$ comes in. Although, he has mentioned that $$\theta$$ is a parameter. However, as per my little knowledge, the cost function, roughly speaking, defines a way to determine how far our hypothesis $$h_\theta(x^{(i)})$$ is from the ground-truth, for instance $$ y^{(i)} $$. Undoubtedly, $$J$$ is a function of $$\theta$$. However, $$\theta's$$ are fitted into the hypothesis $$ h_\theta (x^{(i)}) $$. I feel confused when I look at the definition of cost functions e.g. mean-squared-error, etc.
+
+So, my questions are: firstly, that why parameters $$\theta's $$ are squared. And secondly, what could be the benefit of defining a quadratic cost function and in what conditions quadratic cost function is good enough to employ??

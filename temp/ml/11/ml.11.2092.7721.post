@@ -1,0 +1,1 @@
+Thanks for replying. I think <ref name="video" type="sai">the video</ref> only explained that if all theta is 0 then in the future gradient descent process all the unit in hidden layers will be the same and "less interesting". but what I want to know is the "shape" of the cost function that how the all-0 initialization would fall into a undesired local minimum.

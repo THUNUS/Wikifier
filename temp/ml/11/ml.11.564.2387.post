@@ -1,0 +1,3 @@
+I would expect Batch Gradient Descent to miss the saddle point most of the time, slide right across it, and then moving on to lower pastures.
+
+You can actually try it out. Feed your Gradient Descent algorithm, e.g., a cubic hypothesis, and see what happens. Intuitively, I'd predict that only for very fine-tuned values of alpha would you be able to converge on the saddle point, and only if you start 'above' it.

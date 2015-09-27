@@ -1,0 +1,1 @@
+Short question: in the formula for optimization objective, why we remove m(j) motivating that it is just a constant but we still keep 1/2?  Isn't it a constant too?

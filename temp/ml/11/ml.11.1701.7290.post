@@ -1,0 +1,11 @@
+Hi Anon,
+
+My logic in this answer is the following (which is mostly intuitive and the rest is a couple of calculations):
+
+The separating line should be a straight line that maximizes the distances between the data points and itself, is a way such as the closest points from each class (which have an x-coordinate of -2 and 2 respectively) will fulfill the following equalities (inequalities should become equalities at the points that lie the closest to the decision boundary):
+
+theta * x1 +1 = 0      and  theta * x2 -1 = 0      (it might be the other way around but that's the idea).
+
+Now, intuitively, the closest points x1 (class 1) and x2 (class 2) to the line, must be, a)  x1, the one that has a -2 x-coordinate in the first class,  and b) x2 should logically be the one that has a +2 x-coordinate. Logically, their y-coordinate should be about 1 (although not shown). Based on this, one can substitute in the previous equations and find that theta1 = 1/2 and theta2 = 0 which is a reasonable separating line.
+ 
+Of course there may be a different version to this scenario (say, x1 corresponds to the -3 x-coordinate and x2 be again at (2, 1) ); but this case however does not yield any of the given choices in the quiz...

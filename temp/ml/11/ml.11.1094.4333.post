@@ -1,0 +1,11 @@
+<ref name="lecture" type="sci">In lecture 9-2</ref>, Dr. Ng showed the delta (error) function of each layer.
+
+Assume there are four layers in total, I can understand the delta function of output layer is
+$$\delta_j^{(4)} = a_j^{(4)} - y_j$$
+
+Dr. Ng showed that 
+$$\delta^{(i)} = (\Theta^{(i)})^T \delta^{i+1} .* g'(z^{(i)})$$
+for i = 2 and 3 (about 5:40 in the video)
+
+How are these delta functions of hidden layers derived?
+Thanks!

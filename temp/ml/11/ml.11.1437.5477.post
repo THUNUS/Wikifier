@@ -1,0 +1,2 @@
+hello, I finished watching <ref name="video" type="mci">the videos for week 4</ref> but still a bit confused by how do we determine the size of matrix theta.
+In particular, the last question in <ref name="lecture" type="sci">the last lecture called "Multiclass Classification"</ref> got me puzzled. Does anyone know how we get 60 elements in $$\Theta ^{(2)}$$?

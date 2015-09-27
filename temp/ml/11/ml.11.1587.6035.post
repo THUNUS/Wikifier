@@ -1,0 +1,14 @@
+Neural networks with hidden layers are able to come up with non-linear hypotheses.
+
+Therefore, neural networks outperform linear models which don't use non-linear features(like quadratic terms) because they can fit non-linear functions. This was what happened in programming assignment.
+
+The advantage Neural networks have over linear models which use non-linear features is that they generally require smaller number of parameters to come up with a hypothesis of comparable complexity.
+
+examples:-
+
+1. In the lecture videos, we saw how a neural network with 1 hidden layer can implement a XOR function which is non-linear. That neural n/w required 9 parameters(i.e the no. of weights in the network). However if you try the same using a linear model, you will require a much high number of parameters/weights.
+
+2. In the programming assignment, the neural n/w had about 10000 parameters(401*25 + 26*10). This number may seem large but its much smaller than number of parameters which you would need if you used a linear model with quadratic terms.
+
+
+In the programming assignment, if we had not used any hidden layer, the neural network would not have been able to come up with a non-linear hypothesis and probably not performed as well as it does when it has a single hidden layer. If we had more hidden layers, then no. of parameters would be even larger and it we would be more likely to overfit.

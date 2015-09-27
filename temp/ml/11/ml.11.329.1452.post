@@ -1,0 +1,2 @@
+Ye, he has swapped the indices around.
+But you haven't noticed that earlier in the lecture (shortly after 2:00) the same mistake appears in the J function, $$J(\theta_0, \theta_1, ..., \theta_m)$$ instead of $$J(\theta_0, \theta_1, ..., \theta_n)$$.

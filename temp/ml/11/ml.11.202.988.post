@@ -1,0 +1,3 @@
+i believe by stating that alpha is fixed, it's assumed an appropriate value of alpha is chosen.
+
+all that's left to solving the minimization problem is to perform iterations and simultaneous updates to theta 0 and the theta 1 to achieve the global minimum for a linear regression problem

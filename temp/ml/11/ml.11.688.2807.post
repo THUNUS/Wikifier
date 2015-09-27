@@ -1,0 +1,23 @@
+Informally, definition of convex function goes like this: a function is convex on interval $$[a, b]$$ (or some area of $$n$$-dimensional space) if set of values it produces on this interval is a convex set.
+
+And a set $$S$$ is convex if for any two points from set $$x_1, x_2$$ a line connecting these points lies entirely in this set: $$\forall x_1, x_2 \in S: \forall \lambda \in (0, 1): (1 - \lambda) x_1 + \lambda x_2 \in S $$. For example
+
+![Convex sets][1]
+
+We can use first and second order derivatives and whatever information we find useful about function being optimized. 
+
+If we have minimum then first order derivative at minimum equals to zero, that's property of minimum.
+
+I probably should note that cost function is something we choose when working on machine learning problem and often we guide our choice of function by its properties, e.g. convex, friendly to optimization, analytic properties like easy to find derivatives. 
+
+But there are cases when cost function isn't straightforward, for example cost functions in neural networks which would be covered later in the course.
+
+In my opinion we could either prove that function is convex (e.g. bowl-like shape of squared error, a combination of convex functions) or assume that it's not convex. If assumption turns out to be false then we haven't loosed much.
+
+
+Here's graphs of two hypothetical functions of one variable:
+
+![Convex and non-convex functions graph][2]
+
+  [1]: http://www2.isye.gatech.edu/~spyros/LP/img103.gif
+  [2]: http://www.freeimagehosting.net/newuploads/f3cat.png

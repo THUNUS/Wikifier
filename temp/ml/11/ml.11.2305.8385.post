@@ -1,0 +1,13 @@
+<ref name="slide" type="sci">PCA algorithm lecture, **docs_slides_Lecture14**, page 17</ref>, correct from
+
+$$
+\cdots \Sigma_{i=1}^n \cdots
+$$
+
+to
+
+$$
+\cdots \Sigma_{i=1}^m \cdots
+$$
+
+Thanks.

@@ -1,0 +1,3 @@
+Hi,
+
+In the sliding window video at 11+ min time the splits between two character was found out to classify if that is a positive or negative example. I would like like to know how the split was found out? Should I convert the patch to binary image and then find it out or it should be done on gray scale image patch? If the image was converted to binary image to find out split then may I know which method was followed for this? Is it a global thresholding like Otsu's method or some local thresholding. If it was done on gray scale image then how can i apply that? Can I get some info on it please ? Thanks.

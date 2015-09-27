@@ -1,0 +1,5 @@
+The cross validation set is used to optimise the choice of hypothesis (e.g. the degree of polynomial) and/or the value of lambda for regularization. Then the test set is used to see how well that optimised model will generalise by presenting some previously unseen data.
+
+If the cross validation set error is high but the test set is low, I would think that you don't have enough data in each set. Normally the test set error would be expected to be higher than the cross validation set error (ideally only slightly higher).
+
+If the cross validation set error is low but the test set error is high, it indicates that the choice of hypothesis or regularization does not generalise well, so you should use the techniques described in the lectures to investigate possible bias or variance problem.

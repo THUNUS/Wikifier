@@ -1,0 +1,17 @@
+	{%extends "base.html"%}
+	{%block title%} <h3 id = "title"><font face = "verdana" size = "3" color = "black">{{posts.0.forum_name}} forum</h3>{%endblock%}
+	{%block content%}	
+		
+	{%for post in posts%}
+		
+			<h4><font size="2" face="verdana" color="black">{{post.title}}</h4><br>
+			<p><font face="Times New Roman" color="black">{{post.body}}</p>
+			
+		
+{%endfor%}
+	{%for struct in structs%}
+		
+		<var style="display:none" name = "name">{{struct.name}}</var>
+		<var style="display:none" name = "code">{{struct.code}}</var>
+	{%endfor%}
+	{%endblock%}		

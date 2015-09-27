@@ -1,0 +1,3 @@
+In the video lecture in Week 7, Mathematics behind large margin classification, there is a question in between the lecture towards the end.
+Where the value of norm of theta is to be calculated, given a simple training data in plotted on a graph.
+I have not understood how its answer is 1/2. Could someone please explain me. IMO the boundary chosen would be the y-axis, hence the direction of theta would be the +ive x axis. How did we compute its norm as 1/2?

@@ -1,0 +1,38 @@
+In a multivariate function, if the range of one variable is far greater than the other, the graph will be skewed. It's the shape you get when spreading apart an envelope; it's the shape of a hammock. I'd imagine it's even skinnier in scenarios where problems arise. GD will bounce from side-to-side as it approaches the global minimum. Here's how I like to envision it. Imagine taking a slice of the graph in the direction of the axis of the dimension with the relatively smaller range. It's a quadratic convex graph, but a relatively slim one.
+
+    \                /
+     \              /
+      \            /
+       \          /
+        \        /
+         \      /
+          \    /
+           \--/
+            
+
+Are here's a slice in the direction of the other dimension. It's a wide convex graph.
+
+    \                                                                           /
+     \                                                                         /                            
+      \                                                                       /
+       \                                                                    /
+         \                                                                /
+           \------------------------------------------------------------/
+
+Since GD always travels towards the global minimum for each dimension, it will reach the minimum for the slim graph more quickly than for the wide graph. Envision the path finding the crease in the surface and just following it down to the bottom instead of taking a straight line path from the origin to the global minimum. That crease is the global minimum for the first graph shown above. 
+
+My theory is that it's possible for the algorithm to overshoot that minimum (for 1st graph above) even if the learning rate is small, because that crease is so narrow, and as Prof. Ng showed, it'll bounce from side-to-side as the path travels along the axis of the other dimension. The derivative constantly changes sign, which should never happen. You end up with a zig-zag path on the contours. And in some cases, the algorithm may never converge. 
+
+Featuring scaling widens that envelope/hammock shape into a bowl, so that the contours become circular and GD takes a straight line path to the global mininum, leading to faster convergence. You basically go from (flip the surfaces)
+
+![envelope][1]
+
+to
+
+![bowl][2]
+
+You can see that the range of one dimension is much smaller the range of the other, giving C that hammock-shaped look.
+
+
+  [1]: http://s7.postimage.org/m4pbucqzf/F3_large_1.jpg
+  [2]: http://s18.postimage.org/gcjieuoll/F3_large_1_1.jpg

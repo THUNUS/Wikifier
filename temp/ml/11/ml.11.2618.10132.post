@@ -1,0 +1,3 @@
+To check for variance, you could route maybe 1/10th of the data to a cross validation proceedure, only checking the cost of those examples and plotting that over time against cost for incoming training examples.
+
+Storage is relatively cheap, so I would suggest keeping the all data you can, so you can re-train if you decide to change the features, add quadratic features, etc.

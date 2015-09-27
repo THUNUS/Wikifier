@@ -1,0 +1,5 @@
+The regularization term is penalizing all higher dimension terms, leading to a linear equation if $$\lambda$$ is too high. So, let me rephrase the original question: should higher order dimensional terms be penalized more? What would the harm be of changing the regularization term to be:
+
+$$\frac{\lambda} {2m}  \sum_{j=1}^n {j * \theta_j^2}$$
+
+In calculations, $$\lambda$$ would become a vector. The intuition here is to slightly penalize higher dimensionality. What is the result in practice?

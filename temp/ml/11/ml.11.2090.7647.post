@@ -1,0 +1,11 @@
+There was an typo in the Cost Function equation given in <ref name="video" type="sci">the video - Deciding what to try next (first video week 6)</ref>. 
+
+In the equation of cost function, the **regularized term had summation from 1 to m**. **It should be from 1 to n**, since we have precisely n thetas (excluding theta0, which we don't regularize)
+
+Kindly correct it in the presentation as well. 
+
+Regards
+
+Update: In <ref name="video" type="sai">video "Regularization and Bias/Variance (11 min) "</ref>, Prof. Ng is saying that variance term goes from 1 to m ? Isn't it has to go from 1 to n ? Did he just make a mistake.  
+
+Vaid, Abhishek

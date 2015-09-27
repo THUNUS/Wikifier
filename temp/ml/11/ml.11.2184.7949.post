@@ -1,0 +1,10 @@
+<ref name="slide" type="sai">Slide SVM Decision Boundary</ref> and the following couple (cannot remember exactly how many sorry),
+
+where 
+
+ ||$$\theta$$|| . p(i) >=  1,  if y = 1
+
+ ||$$\theta$$|| . p(i) <= -1,  if y = **1**
+
+that should be 0 right?
+

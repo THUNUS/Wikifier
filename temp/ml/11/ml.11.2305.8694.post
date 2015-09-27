@@ -1,0 +1,1 @@
+Also in <ref name="video" type="sai">the video "Principal Components Algorithm" at 8:54</ref>, the final column of the U matrix should be labeled U^(n) instead of U^(m). The "m" seems to have been corrected into an "n" on <ref name="slide" type="sai">page 17 of the slides</ref>.

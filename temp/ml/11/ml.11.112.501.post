@@ -1,0 +1,15 @@
+Should I have been able to answer the question that popped near the end of the lecture? I'm not sure if it's just me, or the question shouldn't have been there because the concepts hasn't yet been discussed thoroughly. In fact, I still don't know why the answer is such. (I haven't watched Gradient Descent Intuition lecture yet. Hopefully, my confusion will be resolved after watching it).
+
+In case you don't remember, this is the question:
+
+Which of the following are true statements? Select all that apply.
+
+A. To make gradient descent converge, we must slowly decrease Î± over time.
+
+B. Gradient descent is guaranteed to find the global minimum for any function J(Î¸0,Î¸1).
+
+C. Gradient descent can converge even if Î± is kept fixed. (But Î± cannot be too large, or else it may fail to converge.)
+
+D. For the specific choice of cost function J(Î¸0,Î¸1) used in linear regression, there are no local optima (other than the global optimum).
+
+The correct response is C and D.

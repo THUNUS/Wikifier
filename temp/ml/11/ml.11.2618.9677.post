@@ -1,0 +1,1 @@
+Hi, I have a question - If I am using the online learning algorithm, and thus continually updating my parameters with new training data, at what point (if any) do I do any cross-validation or testing of my model features?

@@ -1,0 +1,2 @@
+Why are 4 output nodes needed for separating 4 classes? Seems like two nodes could be used, for example class I = (0 0)', class II = (0 1)',
+class III = ( 1 0 )', class 4 = (1 1)'. I've only watched <ref name="lecture" type="sci">the first lecture</ref>, so maybe this question's answered later?

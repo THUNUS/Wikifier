@@ -1,0 +1,1 @@
+Good Question. Practically it will have 10 million landmarks, so similarity function is going to be way computationally intensive and that too for each example. Concretely, Professor also said that, you should switch to linear kernels when datasets are huge(in order of millions) or use NN.

@@ -1,0 +1,39 @@
+ "Suppose its output is [.43, .23]. In this case, it would be classified as a hit 
+ since its hit probability of .43 is greater than its miss probability of .23."
+
+ This seems like an opportunity to me also. What if we prepend an extra activation 
+ output (of 0) to indicate no winner, and then use logical arrays to apply a threshold 
+ check against the activations. When we choose the maximum using max, ties yield the 
+ first index, so the first (extra ) activation index will be returned if there are no 
+ winners above the threshold. For example:
+
+     % set up a pseudo activation vector to test with:
+     a = [.1;.2;.3;.4;.4;.3;.2;.1;0];
+     
+     % add a dummy activation to indicate no winner
+     a = [0; a];
+     
+     % set your threshold
+     threshold = .4; 
+     
+     % find the first(!) max value greater than the threshold or index = 1
+     [prediction,index] = max([a >= threshold] .* a);
+     
+     % adjust the indices to remove the effect of the added activation
+     index = index - 1
+     
+     % And if index is 0, I know that there was no winner.
+     
+ I think this addresses the problem you raised. But it brought up another one for me: 
+ What if my activation threshold is 0.4? Now I end up with index = 4! But that's really 
+a lie, since the fifth item is also  at or above the activation. And doesn't this tie result 
+really tell me that I don't  have a definitive prediction at all?
+
+ So, I might throw on an additional check for that:
+     
+     %set a tieThreshold value to detect nearly equal activations, e.g., 10 percent of my threshold
+     tieThreshold = 0.10 * threshold
+     
+     % Now, tortuously, I will reset index to 0 if there is a near-tie given my tie threshold value
+     index = (1 - (sum([abs(prediction - a) <= tieThreshold]) > 1)) * index
+     

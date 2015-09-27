@@ -1,0 +1,9 @@
+Hi,
+
+For the case of High bias, plotting Training Set Data against Number of examples gives a graph that increases at first and then flattens off. As mentioned in <ref name="lecture" type="mai">the lectures</ref>, for the high bias - the graph doesn't change much i.e. we get a straight line even if the number of training examples increases. Then, shouldn't it be the case that adding more training examples should make the Training Set Error increase and not flatten out ??
+
+Also, for the CV Set, initially the error should decrease since we are finding a good straight line, but after that shouldn't the error increase because of the exact same reason as above(as the straight line that we have more or less remains the same) ?
+
+And again, why is the gap between Training Set and CV Set for high bias is pretty low as compared to the case for high variance. The lecture simply talks about the intuition behind the nature of the graphs and not the intuition behind why the gap is higher for high variance and smaller for high bias.
+
+Any help, please ??

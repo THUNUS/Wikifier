@@ -1,0 +1,5 @@
+Hi Mendel,
+
+Nice effort there. But even if you get the value of $$X^{T}X$$ beforehand, how do you calculate $$\theta$$ from your equation? Because, as far as I know, there is no such thing as matrix division. So, you need to calculate $$(X^{T}X)^{-1}$$ anyway. Now, about computing $$X^{T}X$$ using the summation method you derived (i.e. $$S_{ab} = \sum{x_a^{(i)}x_b^{(i)}}$$), or direct method shown in lecture. I would really like the later one. But, please TA and/or instructor, comment on this thread. Mendel's approach is interesting.
+
+Thanks.

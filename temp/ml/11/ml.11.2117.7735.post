@@ -1,0 +1,27 @@
+In one of the review exercises, I came across this question:
+
+> Suppose a massive dataset is available for training a learning
+> algorithm. Training on a lot of data is likely to give good
+> performance when two of the following conditions hold true. Which are
+> the two?
+> 
+>
+>  - When we are willing to include high order polynomial features of x (such as(such as  x1^2, x2^2, x1*x2, etc.)
+
+Now, according to my interpretation, adding a lot of polynomial features, will indeed make the system susceptible to high variance and will need more data to resolve it's over-fitting nature. However, my answer was wrong and explanation was this. 
+
+> As we saw with neural networks, polynomial features can still be
+> insufficient to capture the complexity of the data, especially if the
+> features are very high-dimensional. Instead, you should use a complex
+> model with many parameters to fit to the large training set.
+
+Now, my question is that, what is the difference between "parameters" and "features"? According to my understanding, what describes your data, are known as features. and We use the term parameters for thetas which describe the model. Now the statement in the answer - 
+>Instead, you should use a complex model with many parameters to fit to the large training set.
+
+is completely confusing. It is so because, we have to have equal number or parameters, as we have features (n+1 in total, including theta0). Now, if we do not add polynomial features, how else do we fit a complex model with many parameters to our dataset? Without polynomial features, the only features in our dataset will be original features. To fit these, we'll require a model, which has equal number of parameters. 
+
+Hence, the argument given in the answer, seems unsubstantial to be me. If anyone has any better interpretation of this, please let me know.
+
+Regards
+
+Vaid, Abhishek

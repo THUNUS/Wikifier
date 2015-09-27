@@ -1,0 +1,4 @@
+In the video giving intuition about regularization, a quadratic function is used on an example to be "just right" (no over/under fitting): http://cl.ly/0M0t2k3p3z3i161M2X1C
+
+but since a quadratic function is a bow shape, i have hard time to understand it could be a good hypothesis at all, especially for house prices prediction (what i mean is that the curve is supposed to end up like that: http://cl.ly/2p3o0i3O3d3Q01261q1K and thus being a very poor model of prediction for higher size of house).
+

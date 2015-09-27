@@ -1,0 +1,15 @@
+Hello,
+
+I haven't been with the course from the beginning but I'm trying to catch up.
+I have seen that, at least in some implementations, the regularization term (the one weighted by lambda) is the norm of Theta. (If I'm not mistaking, throughout the course it is the norm squared, but that has little significance I think.)
+
+I would like to understand why this is so, i.e. why is it that a small norm of theta (which is actually the normal vector of the separating hyperplane, in a geometric sense?) corresponds to a smoother decision boundary.
+The interpretation of the other term is clear to me: it quantifies the degree of misclassification.
+
+
+I am looking perhaps for an explanation similar to that in the case of logistic regression, where the learned function is a combination of polynomials, weighted. There, it makes sense to minimize the sum of weights squared since that would imply only a subset of the polynomials participate towards the solution.
+
+If anyone could point me in the right direction/lecture where this is discussed, that would already be great. 
+
+Regards,
+Emil

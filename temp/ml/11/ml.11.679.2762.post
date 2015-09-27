@@ -1,0 +1,3 @@
+When I am trying to get calculus for y * log(h(x)) + (1 - y) * log(1 - h(x)) I have got x * (y - h(x)), however in lecture x * (h(x) - y) is mentioned as a correct calculus.
+
+So the question is does x * (h(x) - y) correct? Or possibly it's asumed that alpha = 1 / m (no minus) ?

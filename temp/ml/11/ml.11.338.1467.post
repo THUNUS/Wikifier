@@ -1,0 +1,45 @@
+If we set all the partial derivatives to zero, we get a system of equations.
+
+$$\sum{(h_{\theta}(x^{(i)})-y^{(i)})x_j^{(i)}} = 0$$ for $$j = 0, 1, 2, ... n$$.
+
+Expanding a little we get:
+
+$$\sum{(\theta_0x_0^{(i)}+\theta_1x_1^{(i)}+...+\theta_nx_n^{(i)}-y^{(i)})x_j^{(i)}} = 0$$ for $$j = 0, 1, 2, ... n$$.
+
+Therefore:
+
+$$\sum{\theta_0x_0^{(i)}x_j^{(i)}+\theta_1x_1^{(i)}x_j^{(i)}+...+\theta_nx_n^{(i)}x_j^{(i)}-y^{(i)}x_j^{(i)}} = 0$$ for $$j = 0, 1, 2, ... n$$.
+
+Therefore:
+
+$$\theta_0\sum{x_0^{(i)}x_j^{(i)}}+\theta_1\sum{x_1^{(i)}x_j^{(i)}}+...+\theta_n\sum{x_n^{(i)}x_j^{(i)}}-\sum{y^{(i)}x_j^{(i)}} = 0$$ for $$j = 0, 1, 2,  ... n$$.
+
+Therefore:
+
+$$\theta_0\sum{x_0^{(i)}x_j^{(i)}}+\theta_1\sum{x_1^{(i)}x_j^{(i)}}+...+\theta_n\sum{x_n^{(i)}x_j^{(i)}} = \sum{y^{(i)}x_j^{(i)}}$$ for $$j = 0, 1, 2,  ... n$$.
+
+All the sums are known, and we can even substitute $$S_{ab} = \sum{x_a^{(i)}x_b^{(i)}}$$ and $$S_{ay} = \sum{x_a^{(i)}x_y^{(i)}}$$ noting that $$S_{ab} = S_{ba}$$ and $$S_{ay} = S_{ya}$$.
+
+That gives us a system of equations:
+
+$$\theta_0S_{0j}+\theta_1S_{1j}+...+\theta_nS_{nj} = S_{yj}$$ for $$j = 0, 1, 2,  ... n$$.
+
+Writing this system in linear algebra terms, we can make the right hand side a $$n +1$$ dimensional vector where the $$n^{th}$$ column is $$S_{yn}$$.  This vector is $$X^{T}y$$.
+
+The left hand side is a product of a matrix and the $$\theta$$, $$n+1$$ dimensional vector.
+
+The matrix should look like:
+
+$$[S_{00}, S_{01}, S_{02}, ..., S_{0n}]$$
+
+$$[S_{10}, S_{11}, S_{12}, ..., S_{1n}]$$
+
+$$......................$$
+
+$$[S_{n0}, S_{n1}, S_{n2}, ..., S_{nn}]$$
+
+This matrix is $$X^{T}X$$.
+
+We can now restate the problem as such: find $$\theta$$ such that $$(X^{T}X)\theta = X^{T}y$$.
+
+Multiply both sides by $$(X^{T}X)^{-1}$$ and you get $$\theta = (X^{T}X)^{-1}X^{T}y$$.

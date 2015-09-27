@@ -1,0 +1,10 @@
+While dealing with a function which has several local optima, your gradient descent algorithm will find just one and get stuck there. In general, it's possible to improve the situation but, in fact, many real problems have _exponentially many_ local optima, so you never really expect to find the global one: instead, you pragmatically look for the local one which is "good enough". 
+
+Possible improvements:
+
+- run your algorithm from different starting points and choose the "most minimal" minimum
+- add noise to input data, so that gradient descent wouldn't get stuck in a "too shallow" local minima and will only find the minima which are reasonably smaller that the noise you'd added
+- add momentum to a gradient step, so that each step becomes say, "new descent + 5% of previous descent" which means your gradient descent could scramble out from "shallow minima" or maxima due to inertia of the previous steps.
+
+Also, if you'd decide to implement in those improvements, you might want to test them against some known problem first - say, draw a sophisticated polynomial and give it to your updated algorithm and see if it would find the best minimum.
+

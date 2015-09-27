@@ -1,0 +1,3 @@
+The standard method learned in multivariable calculus to minimize a function of two (or more) variables is to set all the partial derivatives equal to zero, and then solve those equations simultaneously for the variables in question.  This gives the critical points, and then we can check to see which one is the minimum.
+
+I assume the reason we are learning the iterative method instead is that those equations become gruesome to impossible to solve, especially as the number of independent variables grows?  I understand the iterative method, but I want to clarify why its needed.  

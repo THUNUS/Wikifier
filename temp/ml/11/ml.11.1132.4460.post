@@ -1,0 +1,11 @@
+Hi
+I am having problem running function in Octave. I made a text file named squareFn.m containing:
+function y = squareFn(x)
+y = x^2;
+
+Also I changed directory pointing to desktop where this file is residing. But when i try to run squareFn(5) , for example,  I receive error message like this:
+'squareFn' undefined near line 7 column 1
+
+Thinking that there are spaces in path name like C:\Documents and Settings\ ...\Desktop, I moved file to 'C:\' and chaned pwd accordingly, but still I am getting same error message.
+
+Any help in this regards please ....

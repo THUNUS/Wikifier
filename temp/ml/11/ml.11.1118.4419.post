@@ -1,0 +1,4 @@
+In the unrolling example on <ref name="slide" type="sci">slide 16</ref> of <ref name="lecture" type="sci">lecture 9</ref>, the figure shows a neural network with one hidden layer. However, the formulation below describes a neural network with two hidden layers: i.e. s1 = 10, s2 = 10, s3 = 10, s4 = 1.  Right?
+
+
+

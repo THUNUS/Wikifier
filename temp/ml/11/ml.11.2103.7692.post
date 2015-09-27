@@ -1,0 +1,9 @@
+So I just went through <ref name="video" type="sai">the lecture video</ref> that explains how we get a vector to project data on so that the projection error is minimized.
+
+The primary goal of dimensionality reduction and thus of PCA is to compress data from n dimensions to k dimensions where k<=n.
+
+Why then do we care at all about projection error ? All we need is some projection of the data at hand in order to reduce it's dimensions.
+
+What is the minimization of the projection error achieving ?
+
+

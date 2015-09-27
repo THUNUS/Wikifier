@@ -1,0 +1,9 @@
+I think there are three key points I found from lectures to solve this problem.
+
+ 1. there are only global optima (minimum value) for $$J(\theta)$$ in cases (so far in 2 weeks) where we are using gradient descent algorithm.
+ 2. the gradient descent algorithm starts with "repeat while converges { .... }".
+ 3. it can be mathematically shown that, $$J(\theta)$$ will decrease in every step of iteration, given proper choice of $$\alpha$$ (though, no proof was provided)
+
+So, assuming proper and safe learning rate ($$\alpha$$) set, I think it would be better to check the value of $$J(\theta)$$ in every iteration. Comparing it with the value found in previous iteration: If it stays same, we are at the optima we found the solution. If it decreases, we are good to proceed another iteration. But, if it increases, we need to change $$\alpha$$ for sure.
+
+How does that sound?

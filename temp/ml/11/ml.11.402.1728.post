@@ -1,0 +1,8 @@
+I'll note that the following example isn't quite right, as *simple* linear regression isn't usually used in the following example, but I hope it satisfies your question.
+
+The examples comes from finance. I imagine two examples:
+
+ 1. Suppose you have a database of borrowers for whom you have information on credit score, credit payments, mortgage payments, their education, race, age, etc. Depending on the richness of the data, it's not hard to see how the number of characteristics onto which you might want to regress could be very large.
+ 2. Second, consider you're monitoring some stock price whose price you observe every second and that you believe follows a non-Markovian random walk and that, to soak up the dependence on prior states, you need to introduce a "large vector" of covariates that control for $$T$$ prior states, where $$T$$ could be very large. Indeed, modeling time series doesn't usually work this way, but the example might satisfy your curiosity??
+
+Also, inverting matrices, especially large ones $$N > 5$$ (where $$N$$ is the dimension of the matrix) is time-consuming by hand and computationally, so you need not take number of observations (following the notation of this class) $$m$$ or covariates very large to rationalize using numerical estimation. I think most statistical packages use Newton-Raphson, which is "guaranteed" to converge (if your objective function is "well behaved"; I think objective functions for linear regression are; though I could be wrong), meaning the closed form benefit you get with the normal equation isn't so awesome. 

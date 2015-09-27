@@ -1,0 +1,9 @@
+In <ref name="video" type="sci">video for IX NN:Learning (Week 5) Cost Function</ref>, we have K = 1 or K >= 3, but no K = 2  since K = 1 would handle that case.
+
+But it seems to me that we should have no K = 1 but instead K = 2. That is, K should be >= 2.
+
+Here's my reason. If we train the network with K = 1 and supply it with an input not in the training set, then we will say the input is a hit if the output >= .5 probability, else the input is a miss. Consider the case where the input has output .43, which would be classified as a miss for the network with K = 1.
+
+Now suppose we train the network with K = 2 and supply that same input not in the training set. Suppose its output is [.43, .23]. In this case, it would be classified as a hit since its hit probability of .43 is greater than its miss probability of .23.
+
+What, if anything, is wrong with the above view? Shouldn't we be using K = 2 outputs for binary classifications?

@@ -1,0 +1,3 @@
+In <ref name="quiz" type="sai">the quiz question</ref>, the age ranges from 30 to 50. So as per the correct answer, the age feature is scaled by 20 = (50-30). Why not by 50? What is wrong in dividing by 50? 
+In my view, 50 is the maximum value of the age of a house. So dividing age of houses by 50 will take to the range from 3/5 to 1 (forget mean for time being). If we divide by 20, we get the values in the range 1.5 to 2.5 instead...
+

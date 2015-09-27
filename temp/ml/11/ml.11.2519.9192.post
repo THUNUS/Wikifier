@@ -1,0 +1,5 @@
+In the PCA lecture, Prof Ng defines variance of the data as $$ \frac{1}{m}  	\sum_{i=1}^{m}{||x^{(i)}||}^2 $$ .
+
+Does anyone has an intuition of what variance means exactly in that context and why this sum represents it?
+
+Thanks 

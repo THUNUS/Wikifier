@@ -1,0 +1,5 @@
+Cost is indeed less by a factor of lambda but the parameters required for the minimization would not change and still will be the same.
+
+Lets say we have to minimize $$ (x-2)^2 + 10$$ and  $$0.5*(x-2)^2+10$$. For both of these functions minimization comes for x=2.
+
+Sorry for taking a simple example but it illustrates the concept

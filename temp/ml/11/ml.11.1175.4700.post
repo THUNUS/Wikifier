@@ -1,0 +1,9 @@
+Okay, I'll have a go at explaining it a slightly different way and very extreme. Imagine you had 100 randomly generated (x,y) pairs, where x has 3 features each randomly drawn from the interval 0 to 1, and y is randomly either 0 or 1. With 3 features and allowing any polynomial combination of those features $$x_1^ix_2^jx_3^k$$ with k from 1 to M, there would be $$M^3$$ possible parameters. At M = 5, you have more parameters than data and could **exactly** fit the completely random training data.
+
+By definition of random, with your perfect algorithm, it would still be utterly useless to predict a new instance not in the training set.
+
+Now imagine that you actually generate 100 examples with a real relationship between x and y. This is what your algorithm is supposed to learn (and will). Then combine the two training sets into a single set of examples with the real features and the random features as the x values, and the logical AND of the random y and the real y as the y. Again, you can create an algorithm that fits the training data, but it is fitting all that random stuff as well as the meaningful stuff.
+
+The regularisation penalty stops it from fitting the random stuff by limiting the features that the algorithm will use to predict. Each new feature has to have a certain additional predictive value before it will be included (because the cost of including it must be exceeded by its predictive power). This forces the algorithm to focus on the useful features and therefore look for real relationships.
+
+I hope this helps.

@@ -1,0 +1,19 @@
+Thanks VERY much to Ng Hong Wei for link to the PCA tutorial and Philip Lucht for the notes deriving stuff from Professor Ng's course, including PCA (and also for notes on tensors at same link)!
+
+I intend to study these carefully. First however I still think I need to get a better general background in linear algebra.
+
+I prefer a non-computational approach so my plan is to start with Axler "Linear Algebra Done Right" and perhaps also look at Morton, Curtis and Place "Abstract Linear Algebra" and also get some geometrical background from the series by R. A. Sharipov.
+
+Then Walter Noll "Finite-Dimensional Spaces: Algebra, Geometry, and Analysis" vol 1 and 2.
+
+http://www.math.cmu.edu/~wn0g/noll/
+
+Hopefully I should then be able to follow this stuff more easily.
+
+Any other suggestions?.
+
+BTW thanks also to Chinmay Nerurkar for the stimulating question on eigenvector energies.
+
+http://en.wikipedia.org/wiki/Principal_component_analysis#Compute_the_cumulative_energy_content_for_each_eigenvector
+
+has a notation "clarification needed" ;-)

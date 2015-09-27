@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+ 
+  "name": "Wikifier Extension",
+  "description": "This extension will help user to wikify the forum discussion",
+  "version": "0.1",
+ 
+  "browser_action": {
+   "default_icon": "icon.png"
+  },
+  "background":{
+  "scripts":["background.js"],
+  "persistent":true
+  },
+  "permissions":[
+  "http://*/",
+  "https://*/",
+  "tabs"
+  ],
+  "content_security_policy": "script-src 'self'; object-src 'self'",
+  "web_accessible_resources":["linker_old.js","linker_new.js"]
+}

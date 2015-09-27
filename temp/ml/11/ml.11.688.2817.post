@@ -1,0 +1,10 @@
+Cost function:J=(1/2m) âˆ‘(h_Î¸ (x((i)) )-y((i)) )^2;
+h_Î¸ (x)=Î¸0+Î¸1*x1+Î¸2*x2+Î¸3*x3+Î¸4*x4
+h_Î¸ (x)=Î¸0+Î¸1*x+Î¸2*x^2
+h_Î¸ (x)=Î¸0+Î¸1*x1+Î¸2*x2+Î¸3*x1*x2
+all of them are linear with respect to parameters(Î¸'s).yes? and therefore regarding your saying,linear least square for cost functions causes convexity for it.:-)
+and can we say that all of cost functions with non linear least square for example(h_Î¸ (x)=1/(1+exp(Î¸Tx))) are non convex?
+or h_Î¸ (x)=sin(Î¸Tx) and etc?
+
+and this discussion"One nice feature of using linear least squares for the cost function is that it is always convex." is correct only for this cost function or for all cost functions with linear hypothesis function(with respect to Î¸).
+Thanks in advance.

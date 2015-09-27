@@ -1,0 +1,17 @@
+There is a big difference between returning an array and returning multiple values.
+And the difference is that you can create two different functions with the same input arguments,but different number of output arguments. And the necessary function will be chosen according to the number of varibles you want to fill with the function call.
+For example,if you have two functions function [x,y]=f(A), and function x=f(A)
+and you have 
+
+    A=f(A)
+    [B,C]=f(A)
+
+both things will work. The "find" function is a good example of this, check help for the function.
+
+Note that in ordinary language like C++ or Java you cannot have two different functions with the same input arguments,because the compiler chooses the function by analyzing the input arguments.
+
+ Moreover,in case of dynamic type resolution the compiler can't distinguish between an array and a simple object in some cases,because you can have something like this:
+
+Object a=f(A);//all other classes are inherited from Object
+
+or var a=f(A); (the type of a is defined by the returning value of f)

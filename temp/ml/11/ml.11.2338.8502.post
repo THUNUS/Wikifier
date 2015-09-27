@@ -1,0 +1,15 @@
+On <ref name="file" type="sci">Page 7 ,Lecture9.pdf</ref>, when computing delta(2):
+
+delta(2)=(Theta(2))' * delta(3) .*g'(z(2))
+
+it seems that the dimension of  (Theta(2))' * delta(3) is not equal to that of g'(z(2))
+
+for example ,assume a 3 layer NN,input layer size is 3  ,hidden layer size is 10 , output layer size is 3 
+
+so , 
+
+Theta(2) is a matrix of 3*11, delta(3) is 3*1, (Theta(2))' * delta(3)  is 11*1 
+
+But ,z(2)=Theta(1)*a(1) is a matrix of 10*1
+
+I'm confused about that.

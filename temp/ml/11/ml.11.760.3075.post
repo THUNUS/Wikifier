@@ -1,0 +1,11 @@
+It seems there's a typo in week 3 lectures, specifically in 7-4 video for regularized logistic regression.
+
+In video and on page 19 of the lecture slides steps for calculating gradient are:
+
+$$\frac{1}{m} \sum_{i=1}^{m}(h_\theta(x^{(i)}) - y^{(i)}) x^{(i)}_1 - \frac{\lambda}{m} \theta_1$$
+
+using minus in front of $$\frac{\lambda}{m} \theta_1$$ looks like a typo.
+
+Also in ex2.pdf paragraph 2.3 there's plus sign, which also works for valid submission
+
+$$\frac{\partial J(\theta)}{\partial \theta_j}(\frac{1}{m} \sum_{i=1}^{m}(h_\theta(x^{(i)}) - y^{(i)}) x^{(i)}_j) + \frac{\lambda}{m} \theta_j$$

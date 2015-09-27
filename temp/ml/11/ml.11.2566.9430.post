@@ -1,0 +1,19 @@
+This might not work in some cases. Consider for example a dataset like this:
+
+![Raw dataset][1]
+
+And we want to find two clusters.
+
+Global minimum for this dataset is like that (here green & red are different clusters, and circles are centroids):
+
+![Global minimum][2]
+
+But your algorithm will always choose the most distant point as the second point, and will end up with something like this:
+
+![Local optima][3],
+
+which is definitely a local optima.
+
+  [1]: http://s15.postimage.org/b285rxvpj/raw.png
+  [2]: http://s15.postimage.org/a2huw8gjr/wright.png
+  [3]: http://s15.postimage.org/wsgzp7zrb/wrong.png

@@ -1,0 +1,1 @@
+OK I went back and reviewed the lecture notes and see that batch gradient descent was being compared/contrasted with stochastic. I had thought that batch gradient descent was another term for stochastic and that the question wanted us to see that when the batch size was 1 then it would be the same as stochastic gradient descent. 
