@@ -9,7 +9,7 @@ def decode(dict):
     terms = int(dict['section'][0]);
     chapter = int(dict['section'][1]);
     print os.path.abspath(os.curdir)
-    driver = webdriver.PhantomJS(os.getcwd()+"\\learn\\utilities\\phantomJS\\bin\\phantomjs.exe")
+    driver = webdriver.PhantomJS("phantomjs.exe")
     #driver = webdriver.Chrome("C:\Program Files (x86)\Google\Chrome\Application\chrome.exe")
     site_url = "https://class.coursera.org/"+dict['course']+"/lecture"
     print site_url
@@ -29,7 +29,7 @@ def decode(dict):
         email.send_keys("wing.nus@gmail.com")
         print "find email"
         pwd = form.find_element_by_xpath("//input[@tabindex='10014']")
-        pwd.send_keys("vM4HzTcN")
+        pwd.send_keys("csiscdtlLIFT-15")
         print "find password"
         button = form.find_element_by_xpath("//button[@tabindex='10016']")
         button.click()

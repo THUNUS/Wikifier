@@ -30,12 +30,15 @@ def redirect(request,para):
         post['course'] = para[0]
         post['object'] = para[1]
         post['chapter'] = para[2]
-        try:
-            link = courseVideo.objects.filter(courseName = post['course'],videoName = post['chapter'])[0].resource_link
-        except:
-            pass
-        print link
-        return HttpResponseRedirect(link)
+        if post['chapter'].isdigit() is False:
+            try:
+                link = courseVideo.objects.filter(courseName = post['course'],videoName = post['chapter'])[0].resource_link
+                return HttpResponseRedirect(link)
+            except:
+                pass
+        else:
+            return HttpResponseRedirect("https://class.coursera.org/"+post['course']+"/"+"lecture")
+
     elif list(para).count('lecture') != 0 and para.count('slide') !=0:
         post['course'] = para[0]
         post['object'] = para[1]

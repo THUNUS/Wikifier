@@ -11,10 +11,11 @@
 		var count=0;
 		var title = $("h1.course-topbanner-header a");
 		title = title.attr("href").replace(/[/]/g,'');
+		var host = 'http://127.0.0.1:8000';
 		chrome.runtime.sendMessage({
 		    method: 'GET',
 		    action: 'xhttp',
-		    url: 'http://127.0.0.1:8000',
+		    url: host,
 		    app:'courseInfo',
 		    data: title
 		}, function(responseText) {
@@ -22,6 +23,9 @@
 			//alert(courseInfo.course.length);
 			for(var i =0;i<linked.length;i++){
 		var content = linked[i].innerText;
+		var keyword = "(([Pp]roblem|[Qq]uizz*|[Qq]uestion|[Ee]xam|[Mm]odule|[Ll]ecture|[Ss]lide|[Vv]ideo|[Hh]omework|[Ww]eek)( *[0-9]+( *[\.-－]? *[0-9]+| *))(?![0-9]*%))";
+
+		var reg = new RegExp(keyword,'ig'); 
 		var reg = /((problem|quizz*|question|exam|module|lecture|slide|video|homework|week) *(\d+ *[-\.－] *\d+|\d+))/igm;
 		var patt = content.match(reg);
 		while ((result = reg.exec(content)) !== null) {
@@ -39,9 +43,9 @@
 					}else if(result[3].indexOf('.')>-1){
 						var subResult = result[3].split(".");
 					}
-					linked[i].innerHTML=linked[i].innerHTML.replace(result[0],"<a style=\"color:green\" href=\"http://127.0.0.1:8000\\resolve\\"+title+"\\"+result[2].toLowerCase().trim()+"\\"+subResult[0].trim()+"\\section\\"+subResult[1].trim()+"\">"+result[0].trim()+"</a>");
+					linked[i].innerHTML=linked[i].innerHTML.replace(result[0],"<a style=\"color:green\" href=\""+host+"\\resolve\\"+title+"\\"+result[2].toLowerCase().trim()+"\\"+subResult[0].trim()+"\\section\\"+subResult[1].trim()+"\">"+result[0].trim()+"</a>");
 				}else{
-					linked[i].innerHTML=linked[i].innerHTML.replace(result[0],"<a style=\"color:green\" href=\"http://127.0.0.1:8000\\resolve\\"+title+"\\"+result[2].toLowerCase().trim()+"\\"+result[3].trim()+"\">"+result[0].trim()+"</a>");
+					linked[i].innerHTML=linked[i].innerHTML.replace(result[0],"<a style=\"color:green\" href=\""+host+"\\resolve\\"+title+"\\"+result[2].toLowerCase().trim()+"\\"+result[3].trim()+"\">"+result[0].trim()+"</a>");
 				}
 				
 			
@@ -78,10 +82,10 @@
 				var group = re2.exec(linked[i].innerHTML);
 				if (group!=null&&result.match(group[2])){
 				linked[i].innerHTML=linked[i].innerHTML.replace(group[0],group[2]);
-				linked[i].innerHTML=linked[i].innerHTML.replace(result,"<a style = \"color: green\" name = \"concret\" href=\"http://127.0.0.1:8000\\resolve\\"+title+"\\"+"lecture"+"\\"+videos[m].video+"\">"+result+"</a>");
+				linked[i].innerHTML=linked[i].innerHTML.replace(result,"<a style = \"color: green\" name = \"concret\" href=\""+host+"\\resolve\\"+title+"\\"+"lecture"+"\\"+videos[m].video+"\">"+result+"</a>");
 				}else
 				{
-					linked[i].innerHTML=linked[i].innerHTML.replace(result,"<a style = \"color: green\" name = \"concret\" href=\"http://127.0.0.1:8000\\resolve\\"+title+"\\"+"lecture"+"\\"+videos[m].video+"\">"+result+"</a>");
+					linked[i].innerHTML=linked[i].innerHTML.replace(result,"<a style = \"color: green\" name = \"concret\" href=\""+host+"\\resolve\\"+title+"\\"+"lecture"+"\\"+videos[m].video+"\">"+result+"</a>");
 				}
 			}
 			
@@ -109,7 +113,7 @@
 										var index = content.substring(content.indexOf(child),content.indexOf(parent)+parent.length);
 										//alert(index);
 										//alert(content.indexOf(index));
-										linked[i].innerHTML = content.replace(index,"<a style = \"color: green\" cls = \"inherit\" parent = \"lecture\" child = \"slide\" href = \"http://127.0.0.1:8000\\resolve\\"+title+"\\"+a[new_iter].innerHTML.split(" ")[0].toLowerCase()+"\\"+String(a[new_iter].innerHTML).match(reg3)[0] + "\\"+a[a_iter].innerHTML.split(" ")[0].toLowerCase()+"\\"+String(a[a_iter].innerHTML).match(reg3)[0]+"\">"+a[a_iter].innerHTML+" of "+a[new_iter].innerHTML+"</a>");
+										linked[i].innerHTML = content.replace(index,"<a style = \"color: green\" cls = \"inherit\" parent = \"lecture\" child = \"slide\" href = \""+host+"\\resolve\\"+title+"\\"+a[new_iter].innerHTML.split(" ")[0].toLowerCase()+"\\"+String(a[new_iter].innerHTML).match(reg3)[0] + "\\"+a[a_iter].innerHTML.split(" ")[0].toLowerCase()+"\\"+String(a[a_iter].innerHTML).match(reg3)[0]+"\">"+a[a_iter].innerHTML+" of "+a[new_iter].innerHTML+"</a>");
 							
 										;
 										;

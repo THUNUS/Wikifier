@@ -20,7 +20,7 @@ import re
 def analyse(post): 
     struct = st.struct()
     struct.title = str()
-    driver = webdriver.PhantomJS("\\utilities\\phantomJS\\bin\\phantomjs.exe")
+    driver = webdriver.PhantomJS("phantomjs.exe")
     site = "https://class.coursera.org/"+post+"/lecture"
     print site
     driver.get(site)
@@ -30,12 +30,12 @@ def analyse(post):
         WebDriverWait(driver,5).until(
                                       EC.presence_of_element_located((By.TAG_NAME,"form")))
         form = driver.find_element_by_class_name("c-user-modal-content").find_element_by_tag_name("form")
-        email = form.find_element_by_xpath("//input[@tabindex='10015']")
+        email = form.find_element_by_xpath("//input[@tabindex='10013']")
         email.send_keys("wing.nus@gmail.com")
         
-        pwd = form.find_element_by_xpath("//input[@tabindex='10016']")
-        pwd.send_keys("vM4HzTcN")
-        button = form.find_element_by_xpath("//button[@tabindex='10018']")
+        pwd = form.find_element_by_xpath("//input[@tabindex='10014']")
+        pwd.send_keys("csiscdtlLIFT-15")
+        button = form.find_element_by_xpath("//button[@tabindex='10016']")
         button.click()
     except Exception:
         print 'error in login'
@@ -137,5 +137,5 @@ for courseName in file:
     print courseName
     analyse(courseName.rstrip())
  """   
-#courseVideo.objects.all()
-analyse('3d-motion')    
+courseVideo.objects.all()
+#analyse('3d-motion')    
